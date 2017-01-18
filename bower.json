@@ -1,0 +1,25 @@
+{
+  "name": "panse",
+  "description": "Project template structure for my projects",
+  "main": "index.js",
+  "authors": [
+    "wonderlaw1 <wonderlaw12@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/wonderlaw1/project_template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jQuery": "2.1.0",
+    "slick-carousel": "^1.6.0",
+    "normalize-css": "^5.0.0",
+    "jquery-mask-plugin": "^1.14.3",
+    "jquery-validate": "*",
+    "Tabslet": "^1.7.3"
+  }
+}
