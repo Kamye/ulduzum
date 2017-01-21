@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'PrivaPro-One';
+    font-size: 0;
+    width: 1920px;
+}
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    width: 1420px;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: 'PrivaPro-Three';
+    font-size: 32px;
+    margin: 0;
+}
+
+b{
+    font-family: 'PrivaPro-Four';
+}
