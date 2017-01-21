@@ -393,12 +393,10 @@
     text-align: center;
     padding-top: 45px;
     margin: 0 65px;
+    padding-bottom: 85px;
     &__head{
         color: #363636;
         margin-bottom: 40px;
-    }
-    &__list{
-
     }
 }
 
@@ -462,32 +460,231 @@
     }
 }
 
+.app-wrapper{
+    background: url("../../images/app-bg.png") top center;
+    background-size: cover;
+}
 
+.app{
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 45px;
+    padding-right: 100px;
+    &__img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    &__list{
+        float: right;
+    }
+}
 
+.app-item{
+    float: left;
+}
 
+.app-function{
+    width: 425px;
+    margin-right: 50px;
+    &__head{
+        font-family: 'PrivaPro-Three';
+        font-size: 22px;
+        color: white;
+        margin-bottom: 20px;
+    }
+}
 
+.function-item{
+    width: 212px;
+    float: left;
+    margin-bottom: 30px;
+    &__img{
+        vertical-align: middle;
+    }
+    &__text{
+        vertical-align: middle;
+        font-family: 'PrivaPro-Two';
+        font-size: 22px;
+        color: white;
+        display: inline-block;
+        width: calc(100% - 64px);
+        padding-left: 16px;
+    }
+}
 
+.app-store{
+    width: 251px;
+    padding-top: 20px;
+    &__link{
+        margin-bottom: 15px;
+        display: inline-block;
+        border-radius: 10px;
+        &:hover{
+            box-shadow: 2px 3.5px 30px rgba(50, 5, 13, 0.8);
+            transition: 500ms;
+        }
+    }
+}
 
+.travel-wrapper{
+    background: url("../../images/travel-bg.png") top center no-repeat;
+}
 
+.travel{
+    padding-top: 90px;
+    padding-bottom: 75px;
+    padding-left: 78px;
+}
 
+.travel-content{
+    width: 405px;
+    &__head{
+        color: white;
+        margin-bottom: 25px;
+    }
+    &__text{
+        font-family: 'PrivaPro-One';
+        font-size: 22px;
+        line-height: 30px;
+        color: white;
+        margin-bottom: 35px;
+    }
+    &__btn{
+        font-family: 'PrivaPro-Three';
+        display: block;
+        width: 188px;
+        height: 53px;
+        background-color: #de0027;
+        border-radius: 6px;
+        font-size: 22px;
+        line-height: 53px;
+        text-decoration: none;
+        color: white;
+        padding-left: 23px;position: relative;
+        &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 16px;
+            right: 22px;
+            width: 10px;
+            height: 16px;
+            background: url("../../images/travel-btn-arrow.png") top left no-repeat;
+        }
+        &:hover{
+            box-shadow: 2px 3.5px 20px rgba(30, 30, 30, 0.8);
+            transition: 500ms;
+        }
+    }
+}
 
+.footer{
+    height: 165px;
+    padding: 40px 65px 60px;
+}
 
+.footer-item{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 57px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &__text{
+        font-family: 'PrivaPro-Two';
+        font-size: 14px;
+        line-height: 22px;
+        color: #343434;
+    }
+    &__contacts{
+        padding-top: 6px;
+    }
+    &__logo{
+        width: 170px;
+        margin: 11px 0 0 5px;
+    }
+}
 
+.item-element{
+    display: inline-block;
+    margin-right: 35px;
+    :last-child{
+        margin-right: 0;
+    }
+}
 
+.footer-link{
+    display: block;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: #e50028;
+        transition: 500ms;
+    }
+}
 
+.footer-number{
+    position: relative;
+    padding-top: 6px;
+    &__area{
+        width: 211px;
+        height: 36px;
+        border: 1px solid #d0d0d0;
+        border-radius: 18px;
+        outline: none;
+        font-family: 'PrivaPro-Two';
+        font-size: 12px;
+        padding-left: 15px;
+        color: #333;
+        &:-moz-placeholder{
+            color: #c1c1c1;
+        }
+        &::-webkit-input-placeholder{
+            color: #c1c1c1;
+        }
+    }
+    &__call{
+        position: absolute;
+        top: 18px;
+        right: 13px;
+        width: 24px;
+        height: 13px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        background: rgba(256, 256, 256, 0) url("../../images/footer-arrow.png") left top no-repeat;
+        &:hover{
+            background-position: right top;
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contacts-link{
+    float: left;
+    display: block;
+    text-align: center;
+    width: 36px;
+    height: 37px;
+    background: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    &:last-child{
+        margin-right: 0;
+    }
+    &__i{
+        font-family: 'FontAwesome';
+        font-size: 20px;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    &:hover{
+        background: #e50028;
+        transition: 500ms;
+    }
+}
