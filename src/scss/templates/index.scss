@@ -651,12 +651,14 @@
         border: 0;
         outline: none;
         cursor: pointer;
+        opacity: 0.5;
         padding: 0;
         background: rgba(256, 256, 256, 0) url("../../images/footer-arrow.png") left top no-repeat;
-        &:hover{
-            background-position: right top;
-        }
     }
+}
+
+.opacity1{
+    opacity: 1 !important;
 }
 
 .contacts-link{
