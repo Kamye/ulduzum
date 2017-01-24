@@ -352,6 +352,7 @@
     &:hover{
         .other-partners__text{
             border-bottom: 2px solid #fff;
+            margin-bottom: -2px;
         }
     }
 }
@@ -411,6 +412,9 @@
         line-height: 30px;
         font-family: 'PrivaPro-Two';
         color: #3a3434;
+        span{
+            font-size: 30px;
+        }
         &_sub{
             font-family: 'PrivaPro-One';
             font-size: 18px;
@@ -513,7 +517,7 @@
     &__link{
         margin-bottom: 15px;
         display: inline-block;
-        border-radius: 10px;
+        border-radius: 13px;
         &:hover{
             box-shadow: 2px 3.5px 30px rgba(50, 5, 13, 0.8);
             transition: 500ms;
@@ -589,7 +593,7 @@
 .footer-item{
     display: inline-block;
     vertical-align: top;
-    margin-right: 57px;
+    margin-right: 50px;
     &:last-child{
         margin-right: 0;
     }
