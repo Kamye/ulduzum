@@ -1,0 +1,67 @@
+.applic{
+    width: 1920px;
+    background: #f3f3f3;
+    padding: 50px 0 120px;
+    position: relative;
+    .container{
+        width: 1295px;
+    }
+    &__head{
+        padding: 9px 0 22px;
+        color: #3a3434;
+    }
+    &__img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.applic-block{
+    width: 628px;
+    float: right;
+    &__head{
+        font-family: 'PrivaPro-Four';
+        font-size: 26px;
+        color: #3a3434;
+        line-height: 38px;
+        margin-bottom: 37px;
+    }
+    &__link{
+
+    }
+}
+
+.applic-list{
+    margin-bottom: 45px;
+}
+
+.applic-item{
+    margin-bottom: 35px;
+    &__img{
+        vertical-align: middle;
+    }
+    &__text{
+        display: inline-block;
+        width: calc(100% - 66px);
+        vertical-align: middle;
+        font-family: 'PrivaPro-Two';
+        font-size: 22px;
+        line-height: 32.5px;
+        color: #3a3434;
+        padding: 0 25px 0 34px;
+    }
+}
+
+.applic-link{
+    margin-right: 25px;
+    border-radius: 13px;
+    &:hover{
+        box-shadow: 2px 3.5px 30px rgba(50, 5, 13, 0.8);
+        transition: 500ms;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+}
+

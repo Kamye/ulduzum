@@ -1,0 +1,118 @@
+.footer{
+    padding: 36px 65px 60px;
+}
+
+.footer-block{
+    display: inline-block;
+    margin-right: 57px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.footer-item{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &__text{
+        font-family: 'PrivaPro-Two';
+        font-size: 14px;
+        line-height: 22px;
+        color: #343434;
+    }
+    &__contacts{
+        padding-top: 6px;
+    }
+    &__logo{
+        width: 170px;
+        margin: 11px 0 0 5px;
+    }
+}
+
+.item-element{
+    display: inline-block;
+    margin-right: 35px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.footer-link{
+    display: block;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: #e50028;
+        transition: 500ms;
+    }
+}
+
+.footer-number{
+    position: relative;
+    padding-top: 6px;
+    &__area{
+        width: 211px;
+        height: 36px;
+        border: 1px solid #d0d0d0;
+        border-radius: 18px;
+        outline: none;
+        font-family: 'PrivaPro-Two';
+        font-size: 12px;
+        padding-left: 15px;
+        color: #333;
+        &:-moz-placeholder{
+            color: #c1c1c1;
+        }
+        &::-webkit-input-placeholder{
+            color: #c1c1c1;
+        }
+    }
+    &__call{
+        position: absolute;
+        top: 18px;
+        right: 13px;
+        width: 24px;
+        height: 13px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        opacity: 0.5;
+        padding: 0;
+        background: rgba(256, 256, 256, 0) url("../../images/footer-arrow.png") left top no-repeat;
+    }
+}
+
+.opacity1{
+    opacity: 1 !important;
+}
+
+.contacts-link{
+    float: left;
+    display: block;
+    text-align: center;
+    width: 36px;
+    height: 37px;
+    background: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    &:last-child{
+        margin-right: 0;
+    }
+    &__i{
+        font-family: 'FontAwesome';
+        font-size: 20px;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    &:hover{
+        background: #e50028;
+        transition: 500ms;
+    }
+}

@@ -1,5 +1,10 @@
+@import "templates/header";
+@import "templates/footer";
 @import "templates/index";
 @import "templates/layout";
+@import "templates/app";
 
+@import "responsive/footer";
 @import "responsive/index";
 @import "responsive/layout";
+@import "responsive/app";
