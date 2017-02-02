@@ -1,0 +1,80 @@
+.faq2{
+    background: #f3f3f3;
+    padding: 58px 0 89px;
+    &__head{
+        color: #3a3434;
+        margin-bottom: 18px;
+    }
+    .container{
+
+        padding: 0 63px;
+    }
+}
+
+/*--------Accordion-Style--------*/
+
+.accordion {
+
+    .last{
+        border-bottom: none;
+    }
+}
+.accordion-item {
+    height: 75px;
+    border-bottom: 1px solid rgba(58, 52, 52, 0.2);
+}
+
+.accordion-item p{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 22px;
+    font-family: 'PrivaPro-Four';
+    color: #3a3434;
+    line-height: 75px;
+    padding-left: 34px
+}
+
+.accordion-item.open{
+    border-bottom: none;
+}
+
+.accordion-item.open .type {
+    background: url("../../images/active.png") no-repeat center;
+}
+
+.accordion-item .type {
+    float: none;
+    background: url("../../images/passive.png") no-repeat center;
+}
+
+.type{
+    width: 24px;
+    height: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.data {
+    padding: 8px 44px 38px 58px;
+    border-bottom: 1px solid rgba(58, 52, 52, 0.2);
+    display: none;
+    &__text{
+        font-size: 22px;
+        font-family: 'PrivaPro-Two';
+        line-height: 36px;
+        color: #3a3434;
+        margin-bottom: 18px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.accordion .active{
+    display: block;
+    padding: 8px 44px 38px 58px;
+    border-bottom: 1px solid rgba(58, 52, 52, 0.2);
+}
+
+/*--------END-Accordion-Style--------*/

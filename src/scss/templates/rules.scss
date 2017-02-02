@@ -1,0 +1,17 @@
+.rules{
+    background: #f3f3f3;
+    color: #3a3434;
+    padding: 58px 0 290px;
+    .container{
+        padding: 0 63px;
+    }
+    &__head{
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-size: 22px;
+        font-family: 'PrivaPro-Two';
+        line-height: 36px;
+        margin-bottom: 50px;
+    }
+}

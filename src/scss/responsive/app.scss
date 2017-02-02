@@ -1,0 +1,15 @@
+@media screen and (max-width: 1650px) {
+    .applic {
+        padding: 50px 0;
+    }
+
+    .applic__img {
+        width: 790px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .applic__img {
+        width: 530px;
+    }
+}
