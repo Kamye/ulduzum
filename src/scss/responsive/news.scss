@@ -1,0 +1,22 @@
+@media screen and (max-width: 1650px) {
+    .news-item {
+        margin-right: 41px;
+        &__content{
+            padding-left: 30px;
+        }
+    }
+    .news-head {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .news-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .news .container {
+        padding: 0 40px;
+    }
+}

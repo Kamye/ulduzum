@@ -63,6 +63,9 @@
             border-bottom: 1px solid #e50028;
             transition: 500ms;
         }
+        &_active{
+            color: #e50028;
+        }
     }
 }
 
