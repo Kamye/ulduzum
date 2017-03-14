@@ -1,49 +1,57 @@
 .works{
     background: #f3f3f3;
     color: #3a3434;
-    padding: 59px 0 115px;
+    padding: 37px 0 115px;
     font-family: 'PrivaPro-Two';
     .container{
-        padding: 0 63px;
+        padding: 0 60px;
     }
     &__head{
-        margin-bottom: 36px;
+        margin-bottom: 32px;
         &_sub{
             font-family: 'PrivaPro-Four';
             font-size: 22px;
-            margin-bottom: 11px;
+            margin-bottom: 2px;
         }
     }
     &__text{
         font-size: 22px;
-        margin-bottom: 37px;
+        margin-bottom: 27px;
     }
     &__list-1{
         list-style: disc outside;
         font-size: 22px;
         margin-top: -5px;
         padding-left: 23px;
-        margin-bottom: 39px;
+        margin-bottom: 29px;
     }
     &__process{
-        padding: 21px 0 52px;
+        padding: 21px 0 49px;
+
     }
     &__list-2{
         list-style: disc outside;
         font-size: 22px;
         margin-top: -4px;
         padding-left: 27px;
+        padding-right: 30px;
     }
 }
 
 .works-item-1{
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     &:last-child{
         margin-bottom: 0;
     }
 }
 
 .process{
+    &__list{
+        .work-item:nth-child(1):after,
+        .work-item:nth-child(2):after{
+            display: inline-block;
+        }
+    }
     &__head{
         margin-bottom: 43px;
     }

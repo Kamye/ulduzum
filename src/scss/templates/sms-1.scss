@@ -1,0 +1,294 @@
+.sms{
+	background: #f3f3f3;
+	color: #3a3434;
+	font-size: 22px;
+	font-family: 'PrivaPro-Two';
+	padding-top: 58px;
+	padding-bottom: 271px;
+	.container{
+		padding: 0 63px;
+	}
+	&__head{
+		margin-bottom: 44px;
+	}
+	&__block{
+		width: 47%;
+		float: left;
+		margin-right: 58px;
+		&:last-child{
+			margin-right: 0;
+		}
+		.form-block__head{
+			margin-bottom: 41px;
+		}
+	}
+}
+
+.sms-item__select,
+.sms-form-area{
+	float: left;
+}
+
+.sms-form-area{
+	width: 72%;
+}
+
+.sms-form{
+	display: block;
+	.form-item{
+		margin-right: 0;
+		width: 100%;
+		position: relative;
+		&__place{
+			height: 186px;
+			margin-top: -5px;
+		}
+		&__wrap{
+			.form-item__area{
+				width: 72%;
+			}
+		}
+	}
+}
+
+.sms-item{
+	&__select{
+		width: 21%;
+		margin-right: 40px;
+		float: left;
+		.select2-container {
+			width: 100% !important;
+		}
+		.select2-container .select2-selection--single {
+			padding-right: 0;
+		}
+		.form-item__area{
+			width: 50%;
+		}
+		.select2-selection .select2-selection--single{
+			width: 152px;
+		}
+		.select2-container .select2-selection--single .select2-selection__rendered{
+			font-family: 'PrivaPro-Four';
+			font-size: 26px;
+			color: #3a3434;
+			border-bottom: 1px solid #c6c6c6;
+			padding-bottom: 15px;
+			position: relative;
+			max-width: 500px;
+			box-sizing: border-box;
+			&:after{
+				content: '';
+				display: inline-block;
+				width: 21px;
+				height: 11px;
+				background: url("../../images/form-select.png");
+				position: absolute;
+				top: 9px;
+				right: 4px;
+			}
+		}
+	}
+}
+
+.sms-select1 {
+	width: 9.5% !important;
+	.select2-dropdown {
+		border: none;
+		border-radius: 0;
+		min-width: 128px;
+	}
+	.select2-dropdown--below {
+		width: inherit;
+		max-width: 45%;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}
+
+.confirm-check{
+	vertical-align: top;
+	margin: 0 3px 0 0;
+	width: 17px;
+	height: 17px;
+	&:not(checked) {
+		position: absolute;
+		opacity: 0;
+	}
+}
+
+.confirm-check + label {
+	cursor: pointer;
+}
+
+.confirm-check:not(checked) + label {
+	position: relative;
+	padding: 0;
+}
+
+.confirm-check:not(checked) + label:before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #423d3d;
+	position: absolute;
+	left: -48px;
+	bottom: -2px;
+	border-radius: 2px;
+}
+
+.confirm-check:checked + label:after {
+	content: " ";
+	display: inline-block;
+	width: 12px;
+	height: 11px;
+	background: url("../../images/check.png");
+	position: absolute;
+	top: 12px;
+	left: -42px;
+}
+
+.confirm{
+	margin-left: 47px;
+	padding-top: 2px;
+	border-bottom: 1px solid #9b9898;
+	position: relative;
+	a{
+		text-decoration: none;
+		color: #3a3434;
+	}
+}
+
+.sms-1-submit{
+	float: right;
+	line-height: 53px;
+	padding: 0 26px;
+	background-color: #de0027;
+	border-radius: 5px;
+	font-size: 22px;
+	border: none;
+	color: #fff;
+	font-family: 'PrivaPro-Two';
+	margin: 42px 3px 0 0;
+}
+
+.counter-wrap{
+	font-size: 16px;
+	color: #898989;
+	position: absolute;
+	top: 4px;
+	right: -4px;
+}
+
+/*-------------------------*/
+
+.sms-3{
+	padding-bottom: 201px;
+}
+
+.sms-1-submit-sms-3{
+	margin: 4px 0 0 0;
+}
+
+.sms-4{
+	padding-bottom: 117px;
+	.sms-1-submit{
+		margin: 0px 2px 0 0;
+	}
+}
+
+.sms-help{
+	background: #ededed;
+	padding: 15px 0 19px 25px;
+	border-radius: 5px;
+	&__text{
+		margin-bottom: 1px;
+		b{
+			font-size: 26px;
+			padding-left: 5px;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.sms-rules{
+	display: none;
+	width: 829px;
+	height: 866px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 43px 0 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	&__list{
+		padding-right: 20px;
+	}
+	&__head{
+		text-align: center;
+		color: #3a3434;
+		margin-bottom: 30px;
+
+	}
+}
+
+.sms-rules-scroll{
+	max-height: 500px;
+	width: 829px;
+}
+
+.sms-rules-item{
+	font-size: 18px;
+	font-family: 'PrivaPro-Two';
+	color: #898989;
+	margin-bottom: 17px;
+	&__num{
+		float: left;
+		display: block;
+		line-height: 28px;
+		margin-right: 5px;
+	}
+	&__text{
+		float: left;
+		width: calc(100% - 50px);
+		line-height: 28px;
+	}
+}
+
+.sms-rules.modal{
+	max-width: 100%;
+}
+
+.content{
+	padding: 0 32px 0 46px;
+	.demo {
+		padding: 0;
+		border: none;
+	}
+}
+
+.scrollbar-inner .scroll-content {
+	max-height: 703px;
+}
+
+.content .demo>div {
+	max-height: 703px;
+}
+
+.scrollbar-inner>.scroll-element .scroll-bar {
+	background-color: #a4a4a4;
+}
+
+.sms-rules.modal a.close-modal {
+	top: 30.5px;
+	right: 28.5px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url("../../images/close.png");
+}

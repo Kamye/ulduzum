@@ -1,64 +1,13 @@
 //= templates/header.html
 <ul class="slider">
     <li class="slider-item">
-        <img class="slider-item__img" src="images/slide-1.png" alt="">
-        <div class="slider-item__logo clearfix">
-            <img class="slider-logo-baku" src="images/slider-logo-baku.png" alt="">
-            <img class="slider-logo-xalq" src="images/slider-logo-xalq.png" alt="">
-        </div>
-        <div class="slider-item__shape">
-            <div class="shape">
-                <img class="shape-img" src="images/shape.png" alt="">
-                <div class="slider-text">
-                    <p class="slider-text__main">Alış-verİşdə <br>
-                        xərclənən HƏR <br>
-                        20 AZN üçün 5 dəqİqə <br>
-                        danışıq qazanın!</p>
-                    <p class="slider-text__sub">5 dəqİqə şəbəkədaxİlİ zənglər üçün İstİfadə edİlə bİlər</p>
-                </div>
-            </div>
-
-        </div>
+        <a class="slider-item-link" href="#"><img class="slider-item__img" src="images/slider-img.png" alt=""></a>
     </li>
     <li class="slider-item">
-        <img class="slider-item__img" src="images/slide-1.png" alt="">
-        <div class="slider-item__logo clearfix">
-            <img class="slider-logo-baku" src="images/slider-logo-baku.png" alt="">
-            <img class="slider-logo-xalq" src="images/slider-logo-xalq.png" alt="">
-        </div>
-        <div class="slider-item__shape">
-            <div class="shape">
-                <img class="shape-img" src="images/shape.png" alt="">
-                <div class="slider-text">
-                    <p class="slider-text__main">Alış-verİşdə <br>
-                        xərclənən HƏR <br>
-                        20 AZN üçün 5 dəqİqə <br>
-                        danışıq qazanın!</p>
-                    <p class="slider-text__sub">5 dəqİqə şəbəkədaxİlİ zənglər üçün İstİfadə edİlə bİlər</p>
-                </div>
-            </div>
-
-        </div>
+        <a class="slider-item-link" href="#"><img class="slider-item__img" src="images/slider-img.png" alt=""></a>
     </li>
     <li class="slider-item">
-        <img class="slider-item__img" src="images/slide-1.png" alt="">
-        <div class="slider-item__logo clearfix">
-            <img class="slider-logo-baku" src="images/slider-logo-baku.png" alt="">
-            <img class="slider-logo-xalq" src="images/slider-logo-xalq.png" alt="">
-        </div>
-        <div class="slider-item__shape">
-            <div class="shape">
-                <img class="shape-img" src="images/shape.png" alt="">
-                <div class="slider-text">
-                    <p class="slider-text__main">Alış-verİşdə <br>
-                        xərclənən HƏR <br>
-                        20 AZN üçün 5 dəqİqə <br>
-                        danışıq qazanın!</p>
-                    <p class="slider-text__sub">5 dəqİqə şəbəkədaxİlİ zənglər üçün İstİfadə edİlə bİlər</p>
-                </div>
-            </div>
-
-        </div>
+        <a class="slider-item-link" href="#"><img class="slider-item__img" src="images/slider-img.png" alt=""></a>
     </li>
 </ul>
 <div class="partner-lines clearfix">
@@ -106,7 +55,7 @@
                 <option>Clothes & Accessories</option>
             </select>
         </li>
-        <li class="selects-item">
+        <li class="selects-item last-child">
             <span class="select-name">Əlifba:</span>
             <select class="select">
                 <option>A-Z</option>
@@ -119,16 +68,6 @@
                 <option>Furniture</option>
                 <option>Clothes & Accessories</option>
             </select>
-        </li>
-        <li class="selects-item">
-            <span class="select-name">Reytinq:</span>
-            <div id="star-rating" class="rating">
-                <input type="radio" name="example" class="rating" value="1" />
-                <input type="radio" name="example" class="rating" value="2" />
-                <input type="radio" name="example" class="rating" value="3" />
-                <input type="radio" name="example" class="rating" value="4" />
-                <input type="radio" name="example" class="rating" value="5" />
-            </div>
         </li>
     </ul>
 </div>
@@ -330,28 +269,36 @@
         <div class="work">
             <h2 class="work__head">Ulduzum necə işləyir</h2>
             <ul class="work__list clearfix">
-                <li class="work-item">
+                <li class="work-item clearfix" data-aos="fade-up" data-aos-duration='400'>
                     <div class="work-item__img">
                         <img class="work-img" src="images/work-area.png" alt="">
                         <img class="work-img_sub" src="images/list.png" alt="">
                     </div>
-                    <p class="work-item__text"><span>“<b>1</b>”</span> yazıb <b>5555</b> qısa nömrəsinə SMS göndərin və proqrama qoşulun. </p>
-                    <p class="work-item__text_sub">* SMS pulsuzdur.</p>
+                    <div class="work-item-wrapper">
+                        <p class="work-item__text"><span>“<b>1</b>”</span> yazıb <b>5555</b> qısa nömrəsinə SMS göndərin və proqrama qoşulun. </p>
+                        <p class="work-item__text_sub">* SMS pulsuzdur.</p>
+                    </div>
+                    <img data-aos="fade-right" data-aos-duration='1000' class="work-item-img work-item-img_1" src="images/work-arrow-1.png" alt="">
                 </li>
-                <li class="work-item">
+                <li class="work-item clearfix" data-aos="fade-up" data-aos-duration='1400'>
                     <div class="work-item__img">
                         <img class="work-img" src="images/work-area.png" alt="">
                         <img class="work-img_sub" src="images/cloud.png" alt="">
                     </div>
-                    <p class="work-item__text"><span>“<b>*</b>”</span> yazıb <b>5555</b> qısa nömrəsinə SMS göndərib 4 rəqəmli şifrə alın.</p>
-                    <p class="work-item__text_sub">* SMS-in qiyməti 0.03 AZN.</p>
+                    <div class="work-item-wrapper">
+                        <p class="work-item__text"><span>“<b>*</b>”</span> yazıb <b>5555</b> qısa nömrəsinə SMS göndərib 4 rəqəmli şifrə alın.</p>
+                        <p class="work-item__text_sub">* SMS-in qiyməti 0.03 AZN.</p>
+                    </div>
+                    <img data-aos="fade-right" data-aos-duration='2000' class="work-item-img work-item-img_2" src="images/work-arrow-2.png" alt="">
                 </li>
-                <li class="work-item">
+                <li class="work-item clearfix" data-aos="fade-up" data-aos-duration='3000'>
                     <div class="work-item__img">
                         <img class="work-img" src="images/work-area.png" alt="">
                         <img class="work-img_sub" src="images/percent.png" alt="">
                     </div>
-                    <p class="work-item__text">Aldığınız şifrəni Ulduzum partnyor şəbəkəsində təqdim edin və endirimdən faydalanın.</p>
+                    <div class="work-item-wrapper">
+                        <p class="work-item__text">Aldığınız şifrəni Ulduzum partnyor şəbəkəsində təqdim edin və endirimdən faydalanın.</p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -384,6 +331,7 @@
                     </ul>
                 </li>
                 <li class="app-item app-store">
+                    <p class="app-store__head">Ulduzum aplikasiyası ilə bol endirimlər.</p>
                     <a class="app-store__link" href="#"><img class="store-img" src="images/appstore.png" alt=""></a>
                     <a class="app-store__link" href="#"><img class="store-img" src="images/googleplay.png" alt=""></a>
                 </li>
@@ -393,11 +341,19 @@
 </div>
 <div class="travel-wrapper">
     <div class="container">
-        <div class="travel">
+        <div class="travel clearfix" >
             <div class="travel-content">
                 <h2 class="travel-content__head">Ulduzum TRAVELER</h2>
                 <p class="travel-content__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
                 <a class="travel-content__btn" href="#">Daha ətraflı</a>
+            </div>
+            <div class="travel-content">
+                <img class="travel-content__img" src="images/dotted-map.png" alt="">
+                <img class="travel-content__city travel-content__city_almaniya" src="images/Almaniya.png" alt="">
+                <img class="travel-content__city travel-content__city_belarus" src="images/Belarus.png" alt="">
+                <img class="travel-content__city travel-content__city_turkey" src="images/Turkey.png" alt="">
+                <img class="travel-content__city travel-content__city_azerbajgan" src="images/Azerbajgan.png" alt="">
+                <img class="travel-content__city travel-content__city_oae" src="images/OAE.png" alt="">
             </div>
         </div>
     </div>

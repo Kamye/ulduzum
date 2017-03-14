@@ -2,7 +2,7 @@
     background-color: #404040;
     text-align: right;
     height: 40px;
-    padding-right: 27px;
+    padding-right: 23px;
     &__item{
         display: inline-block;
 
@@ -31,6 +31,133 @@
 .slick-slide{
     outline: none;
 }
+.responsive{
+    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 999;
+}
+
+.responsive-nav{
+    height: 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 0 27px;
+    position: relative;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+    &__logo{
+        display: block;
+        padding: 15px 0;
+        float: left;
+    }
+    &__bar{
+        float: right;
+        padding: 22.5px 0;
+        cursor: pointer;
+    }
+}
+
+.header{
+    display: block;
+}
+
+.slicknav_menu{
+    display: none;
+    padding: 0;
+    position: absolute;
+    z-index: 999;
+    top: 119px;
+    width: 100%;
+    background: #fff;
+}
+
+.slicknav_btn{
+    display: none;
+}
+
+.slicknav_nav{
+    text-align: center;
+    a{
+        font-size: 34px;
+        color: #363636;
+        padding: 0;
+        margin: 0;
+        font-family: 'PrivaPro-Two';
+        border-top: 1px solid #e8e8e8;
+        &:hover{
+            border-radius: 0;
+            background: #e60029;
+            color: #fff;
+            border-bottom: none;
+        }
+    }
+    .nav-item{
+        float: none;
+        margin: 0;
+        line-height: 89px;
+        &__link{
+            text-decoration: none;
+            &_sms{
+                position: relative;
+                margin-left: 0;
+                &:hover{
+                    span{
+                        &:before{
+                            transition: 500ms;
+                            background: url("../../images/sms-act.png") top left no-repeat;
+                        }
+                    }
+                }
+                span{
+                    position: relative;
+                    padding-left: 60px;
+                    &:before{
+                        content: '';
+                        display: inline-block;
+                        width: 32px;
+                        height: 28px;
+                        background: url("../../images/sms.png") top left no-repeat;
+                        position: absolute;
+                        left: 0;
+                        top: -3px;
+                    }
+                }
+                &:before{
+                    content: '';
+                    display: none;
+                    width: 32px;
+                    height: 28px;
+                    background: url("../../images/sms.png") top left no-repeat;
+                    position: absolute;
+                    left: -42px;
+                    top: -3px;
+                }
+            }
+            &:hover{
+                color: #fff;
+                border-bottom: none;
+                transition: 500ms;
+            }
+            &_active{
+                color: #fff;
+                background: #e60029;
+                span{
+                    &:before{
+                        background: url("../../images/sms-act.png") top left no-repeat;
+                    }
+                }
+            }
+        }
+        &:first-child{
+            border-bottom: none;
+        }
+        &:last-child{
+            display: none;
+        }
+    }
+}
 
 .top-line{
     &__logo{
@@ -43,21 +170,35 @@
 }
 
 .nav{
-    padding-right: 35px;
+    padding-right: 32px;
     height: 77px;
     &__item{
         float: left;
-        margin-left: 50px;
+        margin-left: 47px;
     }
 }
 
 .nav-item{
-    line-height: 72px;
+    line-height: 71px;
     &__link{
         font-family: 'PrivaPro-Three';
         text-decoration: none;
         color: #272727;
         font-size: 16px;
+        &_sms{
+            position: relative;
+            margin-left: 41px;
+            &:before{
+                content: '';
+                display: inline-block;
+                width: 32px;
+                height: 28px;
+                background: url("../../images/sms.png") top left no-repeat;
+                position: absolute;
+                left: -42px;
+                top: -3px;
+            }
+        }
         &:hover{
             color: #e50028;
             border-bottom: 1px solid #e50028;

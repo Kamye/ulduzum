@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
-        <div class="footer">
-            <div class="footer-block">
+        <div class="footer clearfix">
+            <div class="footer-block clearfix">
                 <div class="footer-item">
                     <p class="footer-item__text">© 2017. Bakcell LTD.</p>
                     <p class="footer-item__text">Bütün hüquqlar qorunur.</p>
@@ -20,19 +20,27 @@
                     <li class="item-element">
                         <a class="footer-item__text footer-link" href="#">Partnyor olmaq</a>
                         <a class="footer-item__text footer-link" href="rules.html">Şərtlər və Qaydalar</a>
-                        <a class="footer-item__text footer-link" href="#">Məxfilik siyasəti</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-block">
-                <div class="footer-item">
+            <div class="footer-block clearfix">
+                <div class="footer-item-2">
                     <p class="footer-item__text">Yeniliklərə abunə olmaq</p>
+                    <p class="footer-item__text footer-item__text_sub">(xidmət pulsuzdur)</p>
                     <form class="footer-number clearfix">
-                        <input class="footer-number__area" type="tel" placeholder="Nömrənizi daxil edin">
+                        <div class="footer__select" >
+                            <select class="footer-select">
+                                <option>055</option>
+                                <option>050</option>
+                                <option>099</option>
+                                <option>063</option>
+                            </select>
+                        </div>
+                        <input class="footer-number__area" type="tel" placeholder="555 55 55">
                         <input class="footer-number__call" type="submit">
                     </form>
                 </div>
-                <div class="footer-item">
+                <div class="footer-item-2">
                     <p class="footer-item__text">Bizi izləyin</p>
                     <div class="footer-item__contacts clearfix">
                         <a class="contacts-link" href=""><i class="contacts-link__i fa fa-facebook" aria-hidden="true"></i></a>
@@ -40,14 +48,16 @@
                         <a class="contacts-link" href=""><i class="contacts-link__i fa fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="footer-item">
+                <div class="footer-item-2">
                     <a href="#"><img class="footer-item__logo grayscale grayscale-fade" src="images/footer-logo.png" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<script src="js/min/libs.js"></script>
-<script src="js/min/app.js"></script>
+<script src="js/unmin/libs.js"></script>
+<script src="js/unmin/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1YtBzlANzHiGjjfn6A15M-jkt3csFfUs&callback=initMap"
+        async defer></script>
 </body>
 </html>

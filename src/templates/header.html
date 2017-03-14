@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/min/libs.css">
     <link rel="stylesheet" href="css/min/app.css">
 </head>
 <body>
+<div class="responsive">
+    <ul class="language">
+        <li class="language__item"><a class="language-link language-link_active" href="#">Az</a></li>
+        <li class="language__item"><a class="language-link" href="#">Ru</a></li>
+        <li class="language__item"><a class="language-link" href="#">En</a></li>
+    </ul>
+    <div class="responsive-nav clearfix">
+        <a class="responsive-nav__logo" href="#"><img class="responsive-nav__logo_img" src="images/logo.png" alt=""></a>
+        <img id="bar" class="responsive-nav__bar" src="images/nav-bar.png" alt="">
+    </div>
+</div>
 <header class="header clearfix">
     <ul class="language">
         <li class="language__item"><a class="language-link language-link_active" href="#">Az</a></li>
@@ -19,7 +31,7 @@
                 <img class="logo-link__img" src="images/logo.png" alt="">
             </a>
         </div>
-        <ul class="top-line__nav nav clearfix">
+        <ul id="nav" class="top-line__nav nav clearfix">
             <li class="nav__item nav-item">
                 <a class="nav-item__link" href="#">Ulduzum nədir</a>
             </li>
@@ -27,13 +39,16 @@
                 <a class="nav-item__link" href="#">Partnyorlar</a>
             </li>
             <li class="nav__item nav-item">
-                <a class="nav-item__link  nav-item__link_active" href="news.html">Yeniliklər</a>
+                <a class="nav-item__link" href="#">Yeniliklər</a>
             </li>
             <li class="nav__item nav-item">
-                <a class="nav-item__link" href="app.html">Mobil əlavə</a>
+                <a class="nav-item__link" href="#">Mobil əlavə</a>
             </li>
             <li class="nav__item nav-item">
                 <a class="nav-item__link" href="#">Partnyor olmaq</a>
+            </li>
+            <li class="nav__item nav-item">
+                <a class="nav-item__link nav-item__link_sms nav-item__link_active" href="#"><span>Pulsuz SMS</span></a>
             </li>
             <li class="nav__item nav-item">
                 <a class="nav-item__link" href="#">

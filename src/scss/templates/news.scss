@@ -2,9 +2,12 @@
     background: #f3f3f3;
     color: #3a3434;
     font-family: 'PrivaPro-Two';
-    padding: 53px 0 59px;
+    padding: 53px 0 88px;
     .container{
         padding: 0 63px;
+    }
+    &__list{
+        padding-right: 20px;
     }
 }
 
@@ -42,41 +45,63 @@
 }
 
 .news-item{
-    float: left;
-    width: 48%;
-    margin-right: 49px;
-    height: 212px;
-    margin-bottom: 48px;
+    background: #fff;
+    margin-bottom: 30px;
+    &:hover{
+        transition: 500ms;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+        .news-content__name{
+            transition: 500ms;
+            text-decoration: underline;
+            color: #e60029;
+        }
+    }
     &:nth-child(2n){
-        margin-right: 0;
+        text-align: right;
+        .news-item{
+            &__content{
+                padding: 0 63px 0 50px;
+            }
+        }
     }
     &__img{
-        float: left;
+        vertical-align: middle;
     }
     &__content{
-        width: calc(100% - 218px);
+        vertical-align: middle;
         display: inline-block;
-        float: left;
-        padding-left: 41px;
+        width: calc(100% - 420px);
+        padding: 0 50px 0 62px;
     }
 }
 
-.news-item-link{
-    text-decoration: none;
-    display: block;
-    color: #3a3434;
-    width: 100%;
-    height: 100%;
-}
-
-.news-head{
-    font-size: 26px;
-    line-height: 40px;
-    font-family: 'PrivaPro-Four';
-    margin-bottom: 8px;
-}
-
-.news-text{
-    font-size: 22px;
-    line-height: 36px;
+.news-content{
+    &__date{
+        font-size: 18px;
+        padding-left: 40px;
+        position: relative;
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url("../../images/one-partner-date.png");
+            position: absolute;
+            left: 1px;
+            top: -4px;
+        }
+    }
+    &__name{
+        font-size: 26px;
+        font-family: 'PrivaPro-Four';
+        text-decoration: none;
+        color: #3a3434;
+        margin-top: 23px;
+        margin-bottom: 18px;
+        display: block;
+    }
+    &__text{
+        font-size: 22px;
+        line-height: 36px;
+    }
 }

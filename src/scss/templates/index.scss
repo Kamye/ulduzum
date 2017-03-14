@@ -1,61 +1,10 @@
-.slider-item{
-    position: relative;
-    &__img{
-
-    }
-    &__logo{
-        position: absolute;
-        left: 0;
-        top: calc(50% - 78px);
-        width: 403px;
-        height: 156px;
-        background-color: white;
-        border-radius: 0 8px 8px 0;
-        padding-left: 43px;
-    }
-    &__shape{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-}
-
-.slider-logo-baku,
-.slider-logo-xalq{
+.slider-item-link{
     display: block;
-    float: left;
 }
 
-.slider-logo-baku{
-    margin-top: 35px;
-    padding-right: 25px;
-    padding-bottom: 5px;
-    border-right: 2px solid #1b1c20;
-}
-
-.slider-logo-xalq{
-    margin-top: 63px;
-    padding-left: 27px;
-}
-
-.shape{
-    position: relative;
-}
-
-.slider-text{
-    position: absolute;
-    right: 24px;
-    top: 129px;
-    text-align: right;
-    font-family: 'PrivaPro-Three';
-    text-transform: uppercase;
-    color: white;
-    &__main{
-        font-size: 40px;
-        margin-bottom: 29px;
-    }
-    &__sub{
-        font-size: 20px;
+.slider-item{
+    &__img{
+        width: 100%;
     }
 }
 
@@ -66,13 +15,13 @@
     color: white;
     padding-left: 30px;
     &__head{
-        line-height: 80px;
+        line-height: 75px;
         font-size: 26px;
         float: left;
     }
     &__selects{
         float: right;
-        padding-right: 27px;
+        padding-right: 32px;
     }
 }
 
@@ -106,7 +55,7 @@
                 height: 8px;
                 background: url("../../images/select-arrow.png") no-repeat top left;
                 position: absolute;
-                top: 10px;
+                top: 13px;
                 right: 0;
             }
         }
@@ -218,7 +167,7 @@
         top: 0;
         color: white;
         transition: top 500ms;
-        padding-bottom: 50px;
+        padding-bottom: 59px;
     }
     &__active{
         position: absolute;
@@ -239,6 +188,31 @@
         .partners-link__active{
             bottom: 0;
         }
+        .other-partners__img{
+            animation: swing 0.6s ease;
+            animation-iteration-count: 1;
+        }
+    }
+}
+
+@keyframes swing {
+    15% {
+        transform: translateX(9px);
+    }
+    30% {
+        transform: translateX(-9px);
+    }
+    40% {
+        transform: translateX(6px);
+    }
+    50% {
+        transform: translateX(-6px);
+    }
+    65% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -313,12 +287,12 @@
 
 .work{
     text-align: center;
-    padding-top: 45px;
-    margin: 0 65px;
-    padding-bottom: 78px;
+    padding-top: 48px;
+    margin: 0 60px;
+    padding-bottom: 74px;
     &__head{
         color: #363636;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 }
 
@@ -328,7 +302,7 @@
     text-align: center;
     position: relative;
     &:nth-child(2){
-        margin: 0 80px;
+        margin: 0 84px;
     }
     &__img{
         height: 192px;
@@ -356,7 +330,7 @@
     &:nth-child(1):after,
     &:nth-child(2):after{
         content: '';
-        display: inline-block;
+        display: none;
         position: absolute;
         width: 190px;
         height: 47px;
@@ -375,8 +349,20 @@
     }
 }
 
-.work-img{
+.work-item-img{
+    position: absolute;
+    &_1{
+        top: 80px;
+        right: -137px;
+    }
+    &_2{
+        top: 64px;
+        right: -140px;
+    }
 
+}
+
+.work-img{
     &_sub{
         position: absolute;
         top: 50%;
@@ -389,16 +375,27 @@
 .app-wrapper{
     background: url("../../images/app-bg.png") no-repeat top center;
     background-size: cover;
+    position: relative;
+    &:after{
+        content: ' ';
+        display: inline-block;
+        width: 100%;
+        height: 8px;
+        background: #404040;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+    }
 }
 
 .app{
     position: relative;
     padding-top: 70px;
-    padding-bottom: 48px;
+    padding-bottom: 45px;
     padding-right: 100px;
     &__img{
         position: absolute;
-        left: 0;
+        left: -97px;
         bottom: 0;
     }
     &__list{
@@ -417,14 +414,14 @@
         font-family: 'PrivaPro-Three';
         font-size: 22px;
         color: white;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
 }
 
 .function-item{
-    width: 212px;
+    width: 209px;
     float: left;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     &__img{
         vertical-align: middle;
     }
@@ -442,6 +439,13 @@
 .app-store{
     width: 251px;
     padding-top: 20px;
+    &__head{
+        font-family: 'PrivaPro-Three';
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 25px;
+        display: none;
+    }
     &__link{
         margin-bottom: 15px;
         display: inline-block;
@@ -460,12 +464,19 @@
 
 .travel{
     padding-top: 90px;
-    padding-bottom: 75px;
-    padding-left: 78px;
+    padding-bottom: 4px;
+    padding-left: 77px;
 }
 
 .travel-content{
     width: 405px;
+    float: left;
+    position: relative;
+    &:last-child{
+        width: calc(100% - 405px);
+        margin-top: -73px;
+        margin-left: -8px;
+    }
     &__head{
         color: white;
         margin-bottom: 14px;
@@ -475,7 +486,7 @@
         font-size: 22px;
         line-height: 30px;
         color: white;
-        margin-bottom: 35px;
+        margin-bottom: 37px;
     }
     &__btn{
         font-family: 'PrivaPro-Three';
@@ -503,5 +514,40 @@
             box-shadow: 2px 3.5px 20px rgba(30, 30, 30, 0.8);
             transition: 500ms;
         }
+    }
+    &__city{
+        position: absolute;
+        &_almaniya{
+            top: 54px;
+            left: 447px;
+        }
+        &_belarus{
+            top: 41px;
+            left: 528px;
+        }
+        &_turkey{
+            top: 103px;
+            left: 503px;
+        }
+        &_azerbajgan{
+            top: 129px;
+            left: 571px;
+        }
+        &_oae{
+            top: 180px;
+            left: 571px;
+        }
+    }
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.last_child{
+    &.select2-container--open .select2-dropdown--below,
+    &.select2-container--open .select2-dropdown--above{
+        left: -210px;
     }
 }

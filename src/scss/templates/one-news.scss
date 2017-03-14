@@ -4,13 +4,13 @@
     font-family: 'PrivaPro-Two';
     padding-bottom: 100px;
     .container{
-        padding: 0 63px;
+        padding: 0 60px;
     }
     &__desk{
         height: 419px;
         background: url("../../images/one-news-img.png") no-repeat top center;
         background-size: cover;
-        margin-bottom: 35px;
+        margin-bottom: 38px;
     }
     &__text{
         font-size: 22px;
@@ -68,4 +68,11 @@
         vertical-align: bottom;
         padding-bottom: 3px;
     }
+}
+
+.face-shape{
+    padding: 20px;
+    background: #e3e3e3;
+    display: inline-block;
+    margin-top: 30px;
 }

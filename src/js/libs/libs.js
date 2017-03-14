@@ -4,3 +4,7 @@
 //= rating.js
 //= jquery.gray.js
 //= jquery-mask.js
+//= jquery.modal.min.js
+//= jquery.scrollbar.min.js
+//= aos.js
+//= jquery.slicknav.js

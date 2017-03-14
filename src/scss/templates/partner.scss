@@ -1,0 +1,124 @@
+.partner-page{
+	font-family: 'PrivaPro-Two';
+	background: #f3f3f3;
+	padding-bottom: 40px;
+	.container{
+		padding: 40px 60px;
+	}
+	&__partner-lines{
+		background: rgba(256, 256, 256, 0);
+		padding-left: 0;
+		margin-bottom: 21px;
+	}
+	.partner-lines{
+		color: #404040;
+		&__selects{
+			padding-right: 22px;
+		}
+		.select2-selection__rendered {
+			color: #404040;
+			border-bottom: 1px solid #404040;
+			&:after{
+				background: url("../../images/select-arrow-black.png") no-repeat top left;
+			}
+		}
+	}
+	&__partners{
+		.partners-item{
+			width: 383px;
+			background: #fff;
+			margin-right: 66px;
+			margin-bottom: 38px;
+			&:nth-child(3n){
+				margin-right: 0;
+			}
+			&:hover{
+				transition: 500ms;
+				box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+				.partners-link{
+					transition: top 700ms;
+					.partners-link__default{
+						top: -100%;
+						left: 0;
+					}
+					.partners-link__active{
+						bottom: 0;
+					}
+				}
+				.present-item{
+					&__link{
+						transition: 500ms;
+						color: #fff;
+						background: #e52443;
+					}
+				}
+			}
+			&__top{
+				position: relative;
+				margin-bottom: 19px;
+			}
+			&__bot{
+				text-align: center;
+				height: 225px;
+			}
+		}
+		.partners-logo{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+		}
+	}
+}
+
+.partners-head{
+	color: #3a3434;
+	margin-top: 2px;
+	margin-bottom: 17px;
+	&__sub{
+		color: #afafaf;
+		font-size: 18px;
+	}
+}
+
+.partners-line{
+	width: 331px;
+	height: 2px;
+	margin: 0 auto 23px;
+	border-bottom: 2px dotted #3a3434;
+}
+
+.present-item{
+	float: left;
+	width: 50%;
+	&__link{
+		margin: 0 auto 10px;
+		display: block;
+		width: 120px;
+		height: 39px;
+		border: 2px solid #e50028;
+		border-radius: 19px;
+		color: #3a3434;
+		font-size: 18px;
+		line-height: 39px;
+		text-decoration: none;
+	}
+	&__text{
+		color: #333334;
+		font-family: 'PrivaPro-Four';
+		font-size: 20px;
+		line-height: 30px;
+	}
+	&__percent{
+		font-family: 'NimbusSans-Light';
+		font-size: 54px;
+		margin-top: -12px;
+		span{
+			font-size: 30px;
+			vertical-align: top;
+		}
+	}
+	&__img{
+		padding-top: 8px;
+	}
+}

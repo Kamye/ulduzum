@@ -9,3 +9,27 @@
         width: 1170px !important;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .container{
+        width: 950px!important;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .container{
+        width: 680px!important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        width: 100%!important;
+    }
+    h2{
+        font-family: 'PrivaPro-Three';
+        font-size: 28px;
+        margin: 0;
+    }
+}
+
