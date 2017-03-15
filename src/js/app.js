@@ -157,3 +157,10 @@ Array.prototype.forEach.call( inputs, function( input )
             label.innerHTML = labelVal;
     });
 });
+
+$('body').on('click', '#sorting-filter .selection', function () {
+    $('.select2-container').css({
+        'left': 'auto',
+        'right': 0
+    })
+});

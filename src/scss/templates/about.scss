@@ -1,22 +1,23 @@
 .about{
   background: #f3f3f3;
-  padding-top: 58px;
-  padding-bottom: 119px;
+  padding-top: 42px;
+  padding-bottom: 97px;
   .container{
     padding: 0 60px;
   }
   &__head{
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    font-size: 30px;
   }
   &__content{
-    margin-bottom: 14px;
+    margin-bottom: 21px;
   }
 }
 .about-content{
   &__item{
     float: left;
-    width: 47%;
-    margin-right: 64px;
+    width: 48%;
+    margin-right: 31px;
     &:last-child{
       margin-right: 0;
     }
@@ -26,8 +27,8 @@
 .about-content-text{
   color: #3a3434;
   font-family: 'PrivaPro-Two';
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 17px;
 }
 
@@ -53,7 +54,7 @@
   height: 261px;
   z-index: 1;
   position: relative;
-  padding: 0 21px;
+  padding: 0 32px;
   &:hover{
     transition: 500ms;
     border: 4px solid #e60029;
@@ -62,12 +63,12 @@
   &__img-block{
     height: 107px;
     position: relative;
-    margin-bottom: 26px;
+    margin-bottom: 32px;
   }
   &__text{
     font-family: 'PrivaPro-Two';
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
     &_sub{
       font-size: 18px;
     }

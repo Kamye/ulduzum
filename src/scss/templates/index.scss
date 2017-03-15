@@ -37,7 +37,7 @@
 
 .select2-container {
     width: auto !important;
-
+    max-width: 330px;
     .select2-selection--single {
         height: auto;
         padding-right: 28px;
@@ -76,7 +76,7 @@
 .select2-container--open .select2-dropdown--below{
     width: auto !important;
     position: relative;
-    top: 28px;
+    top: 27px;
     left: -29px;
 }
 
@@ -92,15 +92,14 @@
 .select2-dropdown {
     border: none;
     border-radius: 0;
-    min-width: 300px;
+    min-width: 180px;
 }
 
 .select2-results__option {
-    padding: 0 29px;
+    padding: 15px 29px;
     background: #404040;
     color: #fff;
     font-size: 19px;
-    line-height: 60px;
     position: relative;
     border-bottom: 1px solid #515151;
 }
@@ -110,8 +109,8 @@
 }
 
 .select-name{
-    font-family: 'PrivaPro-Four';
-    font-size: 19px;
+    font-family: 'PrivaPro-Three';
+    font-size: 18px;
     vertical-align: middle;
     margin-right: 7px;
 }
@@ -548,6 +547,6 @@
 .last_child{
     &.select2-container--open .select2-dropdown--below,
     &.select2-container--open .select2-dropdown--above{
-        left: -210px;
+        left: auto;
     }
 }

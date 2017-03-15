@@ -3,15 +3,18 @@
 	background: #f3f3f3;
 	padding-bottom: 40px;
 	.container{
-		padding: 40px 60px;
+		padding: 20px 60px;
 	}
 	&__partner-lines{
 		background: rgba(256, 256, 256, 0);
 		padding-left: 0;
-		margin-bottom: 21px;
+		margin-bottom: 17px;
 	}
 	.partner-lines{
 		color: #404040;
+		&__head{
+			font-size: 30px;
+		}
 		&__selects{
 			padding-right: 22px;
 		}
@@ -25,12 +28,15 @@
 	}
 	&__partners{
 		.partners-item{
-			width: 383px;
+			width: 300px;
 			background: #fff;
-			margin-right: 66px;
-			margin-bottom: 38px;
-			&:nth-child(3n){
+			margin-right: 26px;
+			margin-bottom: 23px;
+			&:nth-child(4n){
 				margin-right: 0;
+			}
+			.partners-link__active {
+				width: 152px;
 			}
 			&:hover{
 				transition: 500ms;
@@ -59,7 +65,7 @@
 			}
 			&__bot{
 				text-align: center;
-				height: 225px;
+				height: 175px;
 			}
 		}
 		.partners-logo{
@@ -67,6 +73,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translateY(-50%) translateX(-50%);
+			width: 54%;
 		}
 	}
 }
@@ -74,17 +81,18 @@
 .partners-head{
 	color: #3a3434;
 	margin-top: 2px;
-	margin-bottom: 17px;
+	margin-bottom: 10px;
+	font-size: 22px;
 	&__sub{
 		color: #afafaf;
-		font-size: 18px;
+		font-size: 14px;
 	}
 }
 
 .partners-line{
-	width: 331px;
+	width: 261px;
 	height: 2px;
-	margin: 0 auto 23px;
+	margin: 0 auto 15px;
 	border-bottom: 2px dotted #3a3434;
 }
 
@@ -94,31 +102,34 @@
 	&__link{
 		margin: 0 auto 10px;
 		display: block;
-		width: 120px;
-		height: 39px;
+		width: 94px;
+		height: 31px;
 		border: 2px solid #e50028;
 		border-radius: 19px;
 		color: #3a3434;
-		font-size: 18px;
-		line-height: 39px;
+		font-size: 14px;
+		line-height: 31px;
 		text-decoration: none;
 	}
 	&__text{
 		color: #333334;
 		font-family: 'PrivaPro-Four';
-		font-size: 20px;
-		line-height: 30px;
+		font-size: 16px;
+		line-height: 23px;
 	}
 	&__percent{
 		font-family: 'NimbusSans-Light';
-		font-size: 54px;
+		font-size: 40px;
 		margin-top: -12px;
 		span{
-			font-size: 30px;
+			font-size: 24px;
 			vertical-align: top;
+			display: inline-block;
+			padding-top: 6px;
 		}
 	}
 	&__img{
 		padding-top: 8px;
+		width: 33px;
 	}
 }

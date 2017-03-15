@@ -104,7 +104,7 @@
     .travel-content{
         z-index: 2;
         &:last-child{
-            margin-left: -217px;
+            margin-left: -257px;
             z-index: 1;
         }
     }
@@ -113,7 +113,7 @@
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .top-line{
         &__logo{
             padding: 13px 0 0 20px;
@@ -196,7 +196,7 @@
     }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 992px) {
     .language{
         padding: 0;
         text-align: center;
@@ -330,7 +330,7 @@
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .language {
         height: 64px;
         &__item{
@@ -626,7 +626,7 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
     .partners{
         width: 100%;
         background: #404040;
