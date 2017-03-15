@@ -26,20 +26,25 @@
 
 .one-partner-content{
 	&__logo{
-		float: left;
+		position: absolute;
+		left: 60px;
 	}
 	&__block{
-		float: left;
+		float: right;
 		width: calc(100% - 200px);
 		padding-left: 68px;
 		padding-right: 21px;
+
+	}
+	&__wrap{
+		border-bottom: 2px dotted #a9a9a9;
+		padding-bottom: 15px;
+		margin-bottom: 28px;
 	}
 }
 
 .one-partner-block__present-line{
-	padding-bottom: 15px;
-	border-bottom: 2px dotted darkgrey;
-	margin-bottom: 28px;
+	position: relative;
 }
 
 .one-partner-present{
@@ -52,6 +57,11 @@
 			margin-right: 0;
 		}
 	}
+}
+
+.one-partner-present-wrap{
+	display: inline-block;
+	width: calc(100% - 163px);
 }
 
 .one-partner-present-link{
@@ -285,7 +295,7 @@
 
 .one-partner-wrap{
 	position: relative;
-	float: left;
+	display: inline-block;
 	margin: 0 14px 16px 0;
 	&:nth-child(3n){
 		margin-right: 0;
