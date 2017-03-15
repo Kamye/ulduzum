@@ -19,6 +19,10 @@
 @media screen and (max-width: 970px) {
     .container{
         width: 680px!important;
+        padding: 0 !important;
+    }
+    h2{
+        font-size: 28px;
     }
 }
 
@@ -30,6 +34,12 @@
         font-family: 'PrivaPro-Three';
         font-size: 28px;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2{
+        font-size: 24px;
     }
 }
 
