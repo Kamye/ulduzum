@@ -218,7 +218,6 @@
 }
 
 .form-select{
-	width: 100% !important;
 	.select2-container{
 		min-width: 100%;
 	}
@@ -229,6 +228,12 @@
 		top: -1px;
 		left: 0;
 	}
+}
+
+.form{
+    .form-select {
+        width: auto;
+    }
 }
 
 .form-item-wrap{
