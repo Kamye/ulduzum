@@ -9,18 +9,18 @@
     &__head{
         margin-bottom: 32px;
         &_sub{
-            font-family: 'PrivaPro-Four';
-            font-size: 22px;
+            font-family: 'PrivaPro-Three';
+            font-size: 18px;
             margin-bottom: 2px;
         }
     }
     &__text{
-        font-size: 22px;
+        font-size: 16px;
         margin-bottom: 27px;
     }
     &__list-1{
         list-style: disc outside;
-        font-size: 22px;
+        font-size: 16px;
         margin-top: -5px;
         padding-left: 23px;
         margin-bottom: 29px;
@@ -31,7 +31,7 @@
     }
     &__list-2{
         list-style: disc outside;
-        font-size: 22px;
+        font-size: 16px;
         margin-top: -4px;
         padding-left: 27px;
         padding-right: 30px;
@@ -58,8 +58,8 @@
 }
 
 .works-item-2{
-    line-height: 36px;
-    margin-bottom: 20px;
+    line-height: 32px;
+    margin-bottom: 10px;
     &:last-child{
         margin-bottom: 0;
     }

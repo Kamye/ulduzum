@@ -1,15 +1,24 @@
-@media screen and (max-width: 1650px) {
-    .applic {
-        padding: 50px 0;
-    }
-
-    .applic__img {
-        width: 675px;
-    }
+@media screen and (max-width: 1600px) {
+	.applic{
+		&__img{
+			left: -135px;
+		}
+	}
 }
 
-@media screen and (max-width: 1365px) {
-    .applic__img {
-        width: 530px;
-    }
+@media screen and (max-width: 1366px) {
+	.applic{
+		&__img {
+			left: -314px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.applic{
+		&__img{
+			left: -314px;
+			width: 790px;
+		}
+	}
 }

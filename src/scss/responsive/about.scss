@@ -1,11 +1,19 @@
+@media screen and (max-width: 1600px) {
+	.about-link{
+		&__img-block{
+			margin-bottom: 22px;
+		}
+	}
+}
+
 @media screen and (max-width: 1366px) {
 	.about-content{
 		&__item{
-			margin-right: 63px;
+			margin-right: 40px;
 		}
 	}
 	.about-link{
-		padding: 0;
+		padding: 0 8px;
 	}
 }
 
@@ -18,10 +26,11 @@
 	.about-content{
 		&__item{
 			margin-right: 49px;
+			width: 47%;
 		}
 	}
 	.about-item{
-		width: 25.3%;
+		width: 25%;
 		display: inline-block;
 		float: none;
 		vertical-align: top;
@@ -40,6 +49,7 @@
 	}
 }
 
+/*
 @media screen and (max-width: 992px) {
 	.about{
 		padding-top: 175px;
@@ -191,4 +201,4 @@
 			margin-left: -2px;
 		}
 	}
-}
+}*/

@@ -176,26 +176,20 @@
     }
     .work-item-img{
         &_1{
-            right: -72px;
-            width: 110px;
+            right: -88px;
         }
         &_2{
-            right: -72px;
-            width: 110px;
-        }
-    }
-    .app{
-        &__img{
-            display: none;
+            right: -88px;
         }
     }
     .travel-content{
         &:last-child{
-            margin-left: -482px;
+            margin-left: -259px;
         }
     }
 }
 
+/*
 @media screen and (max-width: 992px) {
     .language{
         padding: 0;
@@ -677,4 +671,4 @@
             padding: 0;
         }
     }
-}
+}*/

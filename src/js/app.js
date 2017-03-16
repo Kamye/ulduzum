@@ -122,7 +122,15 @@ $('.slider-nav').slick({
     asNavFor: '.slider-for',
     dots: false,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 1366,
+            settings: {
+                slidesToShow: 3
+            }
+        }
+    ]
 });
 
 $(document).ready(function(){
