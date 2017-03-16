@@ -1,15 +1,14 @@
 .sms{
 	background: #f3f3f3;
 	color: #3a3434;
-	font-size: 22px;
 	font-family: 'PrivaPro-Two';
-	padding-top: 58px;
+	padding-top: 42px;
 	padding-bottom: 271px;
 	.container{
 		padding: 0 63px;
 	}
 	&__head{
-		margin-bottom: 44px;
+		margin-bottom: 40px;
 	}
 	&__block{
 		width: 47%;
@@ -19,7 +18,7 @@
 			margin-right: 0;
 		}
 		.form-block__head{
-			margin-bottom: 41px;
+			margin-bottom: 27px;
 		}
 	}
 }
@@ -39,13 +38,14 @@
 		margin-right: 0;
 		width: 100%;
 		position: relative;
+		margin-bottom: 31px;
 		&__place{
 			height: 186px;
 			margin-top: -5px;
 		}
 		&__wrap{
 			.form-item__area{
-				width: 72%;
+				width: 74%;
 			}
 		}
 	}
@@ -53,8 +53,8 @@
 
 .sms-item{
 	&__select{
-		width: 21%;
-		margin-right: 40px;
+		width: 20%;
+		margin-right: 32px;
 		float: left;
 		.select2-container {
 			width: 100% !important;
@@ -70,22 +70,22 @@
 		}
 		.select2-container .select2-selection--single .select2-selection__rendered{
 			font-family: 'PrivaPro-Four';
-			font-size: 26px;
+			font-size: 22px;
 			color: #3a3434;
 			border-bottom: 1px solid #c6c6c6;
-			padding-bottom: 15px;
+			padding-bottom: 16px;
 			position: relative;
 			max-width: 500px;
 			box-sizing: border-box;
 			&:after{
 				content: '';
 				display: inline-block;
-				width: 21px;
-				height: 11px;
+				width: 16px;
+				height: 8px;
 				background: url("../../images/form-select.png");
 				position: absolute;
-				top: 9px;
-				right: 4px;
+				top: -8px;
+				right: -1px;
 			}
 		}
 	}
@@ -134,8 +134,8 @@
 	height: 20px;
 	border: 2px solid #423d3d;
 	position: absolute;
-	left: -48px;
-	bottom: -2px;
+	left: -42px;
+	bottom: -7px;
 	border-radius: 2px;
 }
 
@@ -147,17 +147,18 @@
 	background: url("../../images/check.png");
 	position: absolute;
 	top: 12px;
-	left: -42px;
+	left: -35px;
 }
 
 .confirm{
-	margin-left: 47px;
+	margin-left: 40px;
 	padding-top: 2px;
 	border-bottom: 1px solid #9b9898;
 	position: relative;
 	a{
 		text-decoration: none;
 		color: #3a3434;
+		font-size: 16px;
 	}
 }
 
@@ -171,7 +172,7 @@
 	border: none;
 	color: #fff;
 	font-family: 'PrivaPro-Two';
-	margin: 42px 3px 0 0;
+	margin: 50px 3px 0 0;
 }
 
 .counter-wrap{

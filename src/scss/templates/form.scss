@@ -59,19 +59,19 @@
 }
 
 .form-block-num{
-	font-size: 28px;
 	display: table-cell;
+	font-size: 22px;
 	text-align: center;
 	border: 3px solid #e60029;
-	height: 64px;
-	width: 64px;
+	height: 48px;
+	width: 48px;
 	border-radius: 50%;
 	vertical-align: middle;
 }
 .form-block-head{
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 22px;
+	padding-left: 14px;
 }
 
 .form-item{
@@ -83,18 +83,18 @@
 		margin-right: 0;
 	}
 	&__head{
-		font-size: 22px;
+		font-size: 16px;
 		color: #898989;
-		margin-bottom: 21px;
+		margin-bottom: 10px;
 	}
 	&__area{
 		width: 100%;
 		border: none;
 		height: 44px;
-		padding-bottom: 17px;
+		padding-bottom: 7px;
 		background: rgba(256, 256, 256, 0);
 		border-bottom: 1px solid #c6c6c6;
-		font-size: 26px;
+		font-size: 22px;
 		font-family: 'PrivaPro-Four';
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			color: #3a3434;

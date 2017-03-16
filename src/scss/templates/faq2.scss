@@ -1,6 +1,6 @@
 .faq2{
     background: #f3f3f3;
-    padding: 41px 0 89px;
+    padding: 41px 0 75px;
     &__head{
         color: #3a3434;
         margin-bottom: 16px;
@@ -57,13 +57,13 @@
 }
 
 .data {
-    padding: 8px 44px 38px 58px;
+    padding: 0 33px 28px 58px;
     border-bottom: 1px solid rgba(58, 52, 52, 0.2);
     display: none;
     &__text{
-        font-size: 22px;
+        font-size: 16px;
+        line-height: 24px;
         font-family: 'PrivaPro-Two';
-        line-height: 36px;
         color: #3a3434;
         margin-bottom: 18px;
         &:last-child{

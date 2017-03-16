@@ -1,10 +1,10 @@
 .contacts{
 	background: #f3f3f3;
-	padding-top: 58px;
+	padding-top: 42px;
 	color: #3a3434;
 	font-family: 'PrivaPro-Two';
 	.container{
-		padding: 0 63px
+		padding: 0 60px;
 	}
 	&__head{
 		margin-bottom: 41px;
@@ -12,7 +12,7 @@
 	&__block{
 		float: left;
 		width: 47%;
-		padding-bottom: 119px;
+		padding-bottom: 95px;
 		margin-right: 59px;
 		&:last-child{
 			margin-right: 0;
@@ -24,12 +24,12 @@
 		&__place{
 			resize: none;
 			width: 100%;
-			height: 320px;
+			height: 345px;
 			border: none;
 			background: rgba(256, 256, 256, 0);
 			border-bottom: 1px solid #c6c6c6;
 			outline: none;
-			font-size: 26px;
+			font-size: 22px;
 			padding: 0;
 			line-height: 36px;
 			font-family: 'PrivaPro-Four';
@@ -50,12 +50,12 @@
 }
 
 .contacts-inf{
-	padding-top: 26px;
-	margin-bottom: 84px;
+	padding-top: 27px;
+	margin-bottom: 62px;
 }
 
 .inf-item{
-	margin-bottom: 35px;
+	margin-bottom: 23px;
 	&:last-child{
 		margin-bottom: 0;
 	}
@@ -64,16 +64,14 @@
 	}
 	&__text{
 		display: inline-block;
-		font-size: 22px;
-		width: calc(100% - 66px);
-		line-height: 33px;
+		width: calc(100% - 228px);
+		padding-left: 25px;;
 		vertical-align: middle;
-		padding-left: 33px;
 		&_link{
 			text-decoration: underline;
 			color: #3a3434;
-			font-size: 22px;
-			padding-left: 33px;
+			font-size: 16px;
+			padding-left: 26px;
 		}
 	}
 }
@@ -107,31 +105,32 @@
 .contacts-form{
 
 	&__head{
-		margin-bottom: 39px;
+		margin-bottom: 35px;
 	}
 	&__list{
 
 		.form-item{
 			margin-right: 0;
 			width: 100%;
-			margin-bottom: 38px;
+			margin-bottom: 25px;
 			&:last-child{
 				margin-bottom: 0;
 			}
 			&__sub{
-				width: 57%;
+				width: 69%;
 				float: left;
-				margin-right: 43px;
+				margin-right: 17px;
 				&:nth-child(2){
-					width: 35%;
-					margin-top: 5px;
+					width: 28%;
+					margin-top: 9px;
 					margin-right: 0;
 				}
 				.form-item-img{
-					margin-bottom: 17px;
+					margin-bottom: 7px;
+					width: 168px;
 				}
 				.form-item-text{
-					font-size: 22px;
+					font-size: 16px;
 					color: #898989;
 				}
 			}
@@ -155,6 +154,6 @@
 
 .contacts-map{
 	width: 100%;
-	height: 319px;
-	margin-bottom: 134px;
+	height: 248px;
+	margin-bottom: 106px;
 }
