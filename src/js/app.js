@@ -172,3 +172,31 @@ $('body').on('click', '#sorting-filter .selection', function () {
         'right': 0
     })
 });
+
+$('.show-filter').on('click', function () {
+    $('.sort-modal, .sort-backdrop').show();
+    $('body').addClass('body-show-filter');
+});
+
+$('.sort-close__btn').on('click', function(){
+    $('.sort-modal, .sort-backdrop').hide();
+    $('body').removeClass('body-show-filter');
+});
+
+$('.sort-filter__header').on('click', function () {
+    if($(this).parent().find('.sort-list').is(':visible')){
+        $(this).removeClass('open-chevron');
+        $(this).parent().find('.sort-list').slideUp(300);
+        if($(this).next().text() != ''){
+            $(this).next().show();
+        }
+    } else{
+        $(this).parent().find('.sort-list').slideDown();
+        $(this).addClass('open-chevron');
+        $(this).next().hide();
+    }
+});
+
+$('.sort-list__item').on('click', function(){
+    $(this).parent().prev('.sort-filter__chosen').text($(this).text());
+});

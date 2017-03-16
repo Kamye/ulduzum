@@ -10,6 +10,9 @@
         <a class="slider-item-link" href="#"><img class="slider-item__img" src="images/slider-img.png" alt=""></a>
     </li>
 </ul>
+
+<button type="button" class="show-filter" style="font-size: 20px">Show filter</button>
+
 <div class="partner-lines clearfix">
     <p class="partner-lines__head">Partnyorlar</p>
     <ul class="partner-lines__selects clearfix">
@@ -338,4 +341,85 @@
         </div>
     </div>
 </div>
+
+<div class="sort-modal">
+    <div class="sort-dialog">
+        <div class="sort-close clearfix">
+            <span class="sort-close__btn"></span>
+        </div>
+        <form>
+            <div class="sort-filter">
+                <div class="sort-filter__header">
+                    Kateqoriya
+                </div>
+                <div class="sort-filter__chosen"></div>
+                <div class="sort-list">
+                    <input type="radio" id="r1" name="rr" />
+                    <label class="sort-list__item" for="r1"><span></span><i>Bütün kateqoriyalar</i></label>
+                    <input type="radio" id="r2" name="rr" />
+                    <label class="sort-list__item" for="r2"><span></span><i>Avto</i></label>
+                    <input type="radio" id="r3" name="rr" />
+                    <label class="sort-list__item" for="r3"><span></span><i>Güllər və hədiyyələr</i></label>
+                    <input type="radio" id="r4" name="rr" />
+                    <label class="sort-list__item" for="r4"><span></span><i>Kafe və restoranlar</i></label>
+                    <input type="radio" id="r5" name="rr" />
+                    <label class="sort-list__item" for="r5"><span></span><i>Sağlamlıq və gözəllik</i></label>
+                    <input type="radio" id="r6" name="rr" />
+                    <label class="sort-list__item" for="r6"><span></span><i>Əyləncə və turizm</i></label>
+                    <input type="radio" id="r7" name="rr" />
+                    <label class="sort-list__item" for="r7"><span></span><i>TV və onlayn xidmətlər</i></label>
+                    <input type="radio" id="r8" name="rr" />
+                    <label class="sort-list__item" for="r8"><span></span><i>Bank və sığorta</i></label>
+                    <input type="radio" id="r9" name="rr" />
+                    <label class="sort-list__item" for="r9"><span></span><i>Təhsil və kitab mağazası</i></label>
+                    <input type="radio" id="r10" name="rr" />
+                    <label class="sort-list__item" for="r10"><span></span><i>Məişət texnikası, Elektronika,
+                        Mebel və supermarket </i></label>
+                </div>
+            </div>
+            <div class="sort-filter">
+                <div class="sort-filter__header">
+                    Endirim
+                </div>
+                <div class="sort-filter__chosen"></div>
+                <div class="sort-list">
+                    <input type="radio" id="r11" name="rr1" />
+                    <label class="sort-list__item" for="r11"><span></span><i>azdan çoxa</i></label>
+                    <input type="radio" id="r12" name="rr1" />
+                    <label class="sort-list__item" for="r12"><span></span><i>çoxdan aza</i></label>
+                </div>
+            </div>
+            <div class="sort-filter">
+                <div class="sort-filter__header">
+                    Region
+                </div>
+                <div class="sort-filter__chosen"></div>
+                <div class="sort-list">
+                    <input type="radio" id="r13" name="rr2" />
+                    <label class="sort-list__item" for="r13"><span></span><i>Bütün regionlarr</i></label>
+                    <input type="radio" id="r14" name="rr2" />
+                    <label class="sort-list__item" for="r14"><span></span><i>Bakıo</i></label>
+                    <input type="radio" id="r15" name="rr2" />
+                    <label class="sort-list__item" for="r15"><span></span><i>Gəncə</i></label>
+                </div>
+            </div>
+            <div class="sort-filter">
+                <div class="sort-filter__header">
+                    Əlifba
+                </div>
+                <div class="sort-filter__chosen"></div>
+                <div class="sort-list">
+                    <input type="radio" id="r16" name="rr3" />
+                    <label class="sort-list__item" for="r16"><span></span><i>A - Z</i></label>
+                    <input type="radio" id="r17" name="rr3" />
+                    <label class="sort-list__item" for="r17"><span></span><i>Z - A</i></label>
+                </div>
+            </div>
+            <button class="sort-submit" type="submit">Nəticəyə baxmaq</button>
+        </form>
+    </div>
+</div>
+
+<div class="sort-backdrop"></div>
+
 //= templates/footer.html

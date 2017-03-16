@@ -1,0 +1,159 @@
+@media all and (max-width: 768px) {
+    .body-show-filter{
+        overflow: hidden;
+        position: relative;
+    }
+
+    .sort-modal{
+        position: fixed;
+        z-index: 1050;
+        display: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .sort-dialog{
+        background: #404040;
+        font-size: 15px;
+        color: #fff;
+        position: relative;
+        width: auto;
+        transform: translate(0,0);
+    }
+
+    .sort-backdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: #000;
+        opacity: .5;
+    }
+
+    .sort-close{
+        padding: 15px 14px;
+        &__btn{
+            cursor: pointer;
+            display: block;
+            float: right;
+            height: 23px;
+            width: 23px;
+            position: relative;
+            &:after, &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 7.4px;
+                height: 100%;
+                width: 2px;
+                background: #fff;
+                z-index: 99999;
+            }
+            &:after{
+                transform: rotate(-45deg);
+            }
+            &:before{
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .sort-filter{
+        &__header{
+            background-color: #373737;
+            font-size: 17px;
+            cursor: pointer;
+            padding: 11px 14px;
+            font-weight: 700;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                right: 14px;
+                top: 19px;
+                width: 23px;
+                height: 12px;
+                background: url("../../images/chevron.png") top left no-repeat;
+                background-size: contain;
+                transform: rotate(0deg);
+            }
+        }
+        &__header.open-chevron{
+            &:after{
+                transform: rotate(180deg);
+            }
+        }
+        &__chosen{
+            display: none;
+            text-align: right;
+            font-size: 17px;
+            padding: 11px 14px;
+            font-weight: 500;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .sort-list{
+        display: none;
+        &__item{
+            border-bottom: 1px solid #373737;
+            text-align: right;
+            font-size: 17px;
+            padding: 11px 14px;
+            font-weight: 500;
+            color: #fff;
+            display: block;
+            cursor: pointer;
+        }
+        &__item:hover{
+            background: #373737;
+        }
+
+        input[type="radio"] {
+            display:none;
+        }
+
+        input[type="radio"] + label i{
+            font-style: normal;
+            display: inline-block;
+        }
+
+        input[type="radio"] + label span {
+            width:22px;
+            height:17px;
+            vertical-align:middle;
+            background:url('../../images/check-radio.png') top left no-repeat;
+            background-size: contain;
+            display: none;
+            cursor:pointer;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            top: 4px;
+        }
+
+        input[type="radio"]:checked + label span {
+            display: inline-block;
+        }
+    }
+
+    .sort-submit{
+        background: #e60029;
+        font-size: 17px;
+        color: #fff;
+        text-align: center;
+        border: none;
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 11px 14px;
+    }
+}
