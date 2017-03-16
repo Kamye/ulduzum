@@ -3,9 +3,20 @@
 		margin-right: 28px;
 	}
 	.sms-rules{
-		height: 710px;
+		height: 640px;
 	}
 	.scrollbar-inner .scroll-content {
-		max-height: 573px;
+		max-height: 500px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.sms-item__select {
+		margin-right: 23px;
+	}
+	.sms{
+		&__block{
+			margin-right: 50px;
+		}
 	}
 }

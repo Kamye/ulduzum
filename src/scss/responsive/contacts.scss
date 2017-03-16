@@ -6,3 +6,25 @@
 		margin-right: 14px;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.contacts{
+		&__block{
+			margin-right: 51px;
+		}
+	}
+	.contacts-form{
+		&__list{
+			.form-item{
+				&__sub {
+					width: 68%;
+				}
+			}
+		}
+	}
+	.inf-item{
+		&__text {
+			width: calc(100% - 106px);
+		}
+	}
+}

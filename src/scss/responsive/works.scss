@@ -1,0 +1,19 @@
+@media screen and (max-width: 1366px) {
+	.works{
+		.work-item:nth-child(1):after,
+		.work-item:nth-child(2):after {
+			right: -80px;
+			width: 128px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.works{
+		.work-item:nth-child(1):after,
+		.work-item:nth-child(2):after {
+			right: -72px;
+			width: 110px;
+		}
+	}
+}
