@@ -67,7 +67,10 @@
 			}
 		}
 	}
-
+	.gallery.modal a.close-modal {
+		top: 30px;
+		right: -68px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -95,7 +98,7 @@
 	.one-partner-item{
 		&__photo{
 			&_link{
-				height: 229px;
+				height: 184px;
 			}
 		}
 	}
@@ -106,7 +109,16 @@
 	}
 	.one-partner-news{
 		&__content{
-			padding: 50px 0 0 31px;
+			padding: 24px 0 0 31px;
+		}
+	}
+	.gallery{
+		&__top,
+		&__bot{
+			width: 970px;
+		}
+		.modal{
+			width: auto;
 		}
 	}
 }

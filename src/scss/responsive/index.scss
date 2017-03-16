@@ -176,15 +176,23 @@
     }
     .work-item-img{
         &_1{
-            right: -88px;
+            right: -75px;
+            width: 120px;
         }
         &_2{
-            right: -88px;
+            right: -75px;
+            width: 120px;
         }
     }
     .travel-content{
         &:last-child{
-            margin-left: -259px;
+            margin-left: -422px;
+        }
+    }
+    .app{
+        &__img{
+            width: 383px;
+            left: -240px;
         }
     }
 }

@@ -19,13 +19,13 @@
 .applic-block{
     width: 685px;
     float: right;
+    padding-right: 138px;
     &__head{
         font-family: 'PrivaPro-Three';
         font-size: 22px;
         color: #3a3434;
         line-height: 32px;
         margin-bottom: 39px;
-        padding-right: 140px;
     }
 }
 
@@ -52,13 +52,17 @@
         vertical-align: middle;
         font-family: 'PrivaPro-Two';
         color: #3a3434;
-        padding: 0 246px 0 23px;
+        padding: 0 0 0 23px;
     }
 }
 
 .applic-item-img{
+    margin: 0;
+    position: absolute;
     top: 50%;
-    transform: translateY(50%);
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .applic-link{

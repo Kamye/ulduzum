@@ -9,3 +9,9 @@
 		margin-right: 40px;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.tabs .content__item {
+		width: 47%;
+	}
+}

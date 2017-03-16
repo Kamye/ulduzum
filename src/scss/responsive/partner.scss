@@ -40,7 +40,13 @@
 		&__partners{
 			.partners-item{
 				display: inline-block;
-
+				margin-right: 50px;
+				&:nth-child(4n){
+					margin-right: 50px;
+				}
+				&:last-child{
+					margin-right: 0;
+				}
 			}
 		}
 	}
