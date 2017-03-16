@@ -36,7 +36,7 @@
 }
 
 .select2-container {
-    max-width: 330px;
+
     .select2-selection--single {
         height: auto;
         padding-right: 28px;
@@ -58,6 +58,12 @@
                 right: 0;
             }
         }
+    }
+}
+
+.select{
+    .select2-container{
+
     }
 }
 
@@ -113,8 +119,12 @@
     margin-right: 7px;
 }
 
-.select{
+select{
     vertical-align: middle;
+}
+
+.main-select.select2-container{
+    max-width: 330px;
 }
 
 .rating{
@@ -547,8 +557,4 @@
     &.select2-container--open .select2-dropdown--above{
         left: auto;
     }
-}
-
-.sort-modal{
-    display: none;
 }

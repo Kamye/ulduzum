@@ -1,31 +1,33 @@
 @media screen and (max-width: 1600px) {
     .container {
-        width: 1350px !important;
+        width: 1350px;
     }
 }
 
 @media screen and (max-width: 1366px) {
     .container{
-        width: 1170px !important;
+        width: 1170px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .container{
-        width: 970px!important;
+        width: 970px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .container{
-        width: 750px!important;
-        padding: 0 !important;
+        width: 750px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container{
-        width: 100%!important;
+        width: 100%;
+    }
+    h2{
+        font-size: 28px;
     }
 }
 

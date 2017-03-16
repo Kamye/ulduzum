@@ -1,5 +1,5 @@
 //= templates/header.html
-<div class="one-partner">
+<div class="one-partner pt">
     <div class="map" id="map">
 
     </div>
@@ -38,21 +38,21 @@
                         <div id="process" class="one-partner-process">
                             <h2 class="one-partner-process__head">İstifadə qaydaları</h2>
                             <ul class="work__list clearfix">
-                                <li class="work-item">
+                                <li class="work-item clearfix">
                                     <div class="work-item__img">
                                         <img class="work-img" src="images/help-process.png" alt="">
                                         <img class="work-img_sub" src="images/list.png" alt="">
                                     </div>
                                     <p class="work-item__text"><span>“<b>*</b>”</span> yazıb <b>5555-ə</b> göndər Ulduzum kodu əldə et.</p>
                                 </li>
-                                <li class="work-item">
+                                <li class="work-item clearfix">
                                     <div class="work-item__img">
                                         <img class="work-img" src="images/help-process.png" alt="">
                                         <img class="work-img_sub" src="images/code.png" alt="">
                                     </div>
                                     <p class="work-item__text">Kodu Ulduzum partner şəbəkəsində təqdim et.</p>
                                 </li>
-                                <li class="work-item">
+                                <li class="work-item clearfix">
                                     <div class="work-item__img">
                                         <img class="work-img" src="images/help-process.png" alt="">
                                         <img class="work-img_sub" src="images/percent.png" alt="">
@@ -124,11 +124,13 @@
                     <li class="one-partner-item">
                         <h5 class="one-partner-item__head">Yeniliklər</h5>
                         <div class="one-partner-item__news clearfix">
-                            <img class="one-partner-news__img" src="images/one-partner-news.png" alt="">
-                            <div class="one-partner-news__content">
-                                <span class="one-partner-news-date">10 Yanvar 2017</span>
-                                <a href="#" class="one-partner-news-name">Bakcell-in sərfəli CIN tariflərindən faydalanmağın əsl vaxtıdır!</a>
-                                <p class="one-partner-news-text">20.03.11 tarixindən etibarən Bakcell-in SevinCIN, SevimliCIN və ya QoşaCIN tariflərinin birinə qoşulun 1 il ərzində hər ay şəbəkədaxili zənglər üçün 25 dəqiqə BONUS alın.</p>
+                            <div class="news-item clearfix">
+                                <img class="news-item__img" src="images/news-3.png" alt="">
+                                <div class="news-item__content">
+                                    <span class="news-content__date">10 Yanvar 2017</span>
+                                    <a class="news-content__name" href="#">Bakcell-in sərfəli CIN tariflərindən faydalanmağın əsl vaxtıdır!</a>
+                                    <p class="news-content__text">20.03.11 tarixindən etibarən Bakcell-in SevinCIN, SevimliCIN və ya QoşaCIN tariflərinin birinə qoşulun 1 il ərzində hər ay şəbəkədaxili zənglər üçün 25 dəqiqə BONUS alın.</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -209,6 +211,8 @@
         </div>
     </div>
 </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1YtBzlANzHiGjjfn6A15M-jkt3csFfUs&callback=initMap"
+        async defer></script>
 <script>
     function initMap() {
         var myLatLng = {lat: -25.363, lng: 131.044};

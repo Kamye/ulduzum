@@ -112,6 +112,14 @@
 			padding: 24px 0 0 31px;
 		}
 	}
+	.one-partner-process{
+		width: 970px;
+		.work-item{
+			&:nth-child(2){
+				margin: 0 67px;
+			}
+		}
+	}
 	.gallery{
 		&__top,
 		&__bot{
@@ -123,8 +131,10 @@
 	}
 }
 
-/*
 @media screen and (max-width: 992px) {
+	.map{
+		display: none;
+	}
 	.one-partner{
 		padding-top: 120px;
 		&__head{
@@ -142,15 +152,15 @@
 		margin-left: 33px;
 	}
 	.one-partner-list{
-		padding: 0 20px;
+		padding: 0;
 	}
 	.one-partner-item{
 		&__table{
 			th {
-				font-size: 20px;
+				font-size: 18px;
 			}
 			td{
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 	}
@@ -178,23 +188,59 @@
 			display: none;
 		}
 	}
+	.one-partner-process{
+		width: 720px;
+		&__head{
+			margin-bottom: 25px;
+		}
+		.work-item{
+			width: 28%;
+			float: left;
+			text-align: center;
+			&:first-child:after{
+				right: -71px;
+				width: 86px;
+			}
+			&:nth-child(2):after{
+				right: -72px;
+				width: 90px;
+			}
+		}
+		&.modal{
+			padding: 41px 27px 15px;
+		}
+		.work-item:nth-child(2){
+			margin: 0 53px;
+			.work-item__img {
+				float: none;
+			}
+		}
+	}
 	.one-partner-item-img{
 		height: 100%;
 	}
+	.one-partner-process .work-item__img {
+		height: 144px;
+		margin-bottom: 14px;
+		float: none;
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.map{
 		display: none;
 	}
 	.one-partner {
-		padding-top: 207px;
+		padding-top: 120px;
 		&__head {
 			font-size: 23px;
 			font-family: 'PrivaPro-Three';
 			line-height: 30px;
 			padding-right: 23px;
 			margin-bottom: 31px;
+		}
+		.container{
+			padding: 0 26px;
 		}
 	}
 	.one-news-line{
@@ -216,7 +262,6 @@
 	.one-partner-content{
 		&__wrap {
 			padding-top: 47px;
-			padding-left: 28px;
 			padding-bottom: 35px;
 			margin-bottom: 25px;
 		}
@@ -269,30 +314,86 @@
 		line-height: 32px;
 	}
 	.one-partner-item__photo_link {
-		height: 188px;
+		height: 166px;
+	}
+	.one-partner-process{
+		.work__list{
+			padding: 0;
+		}
+		&.modal{
+			padding: 35px 70px;
+			border-radius: 0;
+			height: 490px;
+		}
+		.work-item{
+			float: none;
+			width: 100%;
+			.work-item__img .work-img_sub {
+				height: auto;
+				width: 41px;
+			}
+			&:nth-child(2),
+			&:first-child{
+				&:after{
+					display: none;
+				}
+			}
+			&__img{
+				height: 80px;
+			}
+		}
+		
+		.work-item__img {
+			height: 96px;
+			margin-bottom: 0;
+			float: left;
+		}
 	}
 }
 
 @media screen and (max-width: 640px) {
 	.one-partner {
 		padding-top: 140px;
+		&__head{
+			font-size: 18px;
+			line-height: 22px;
+			padding-right: 0;
+			margin-bottom: 3px;
+		}
+	}
+	.one-news-line{
+		&__link{
+			width: 150px;
+			height: 35px;
+			line-height: 33px;
+			margin-right: 11px;
+			padding-left: 48px;
+			font-size: 16px;
+			&:after{
+				left: 14px;
+				top: 9px;
+			}
+		}
 	}
 	.one-partner-content{
 		&__wrap {
 			padding-top: 30px;
 		}
 		&__logo {
-			display: none;
+			width: 150px;
 		}
 	}
 	.one-partner-block{
 		&__present-line {
-			width: 100%;
-			padding-left: 0;
+			width: calc(100% - 150px);
+			padding-left: 10px;
 		}
 	}
 	.one-partner-item {
 		font-size: 16px;
+		&__photo{
+			text-align: center;
+		}
 	}
 	.one-partner-item{
 		&__news {
@@ -316,6 +417,31 @@
 			display: none;
 		}
 	}
+	.one-partner-present-link {
+		margin-bottom: 0;
+		width: 90px;
+		height: 30px;
+		font-size: 16px;
+		line-height: 28px;
+	}
+	.one-partner-present-text{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.one-partner-present{
+		margin-bottom: 0;
+		&__item{
+			width: 100px;
+		}
+	}
+	.one-partner-help{
+		&__link{
+			font-size: 18px;
+		}
+	}
+	.one-partner-list {
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -337,9 +463,6 @@
 	.one-partner-content__wrap {
 		padding-left: 10px;
 	}
-	.one-partner-list {
-		padding: 0 15px;
-	}
 	.one-partner-item__text {
 		line-height: 28px;
 	}
@@ -360,4 +483,14 @@
 	.one-partner-news-date {
 		padding-bottom: 5px;
 	}
-}*/
+	.one-partner-content__logo {
+		width: 150px;
+		margin: 0 auto 18px;
+		display: block;
+		float: none;
+	}
+	.one-partner-block__present-line {
+		width: 100%;
+		padding-left: 0;
+	}
+}
