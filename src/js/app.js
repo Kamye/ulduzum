@@ -125,7 +125,7 @@ $('.slider-nav').slick({
     focusOnSelect: true,
     responsive: [
         {
-            breakpoint: 1366,
+            breakpoint: 1367,
             settings: {
                 slidesToShow: 3
             }

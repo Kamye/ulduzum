@@ -12,40 +12,28 @@
 
 @media screen and (max-width: 1200px) {
     .container{
-        width: 1170px!important;
+        width: 970px!important;
     }
 }
 
 @media screen and (max-width: 992px) {
     .container{
-        width: 970px!important;
+        width: 750px!important;
         padding: 0 !important;
-    }
-    h2{
-        font-size: 28px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container{
-        width: 750px!important;
-    }
-    h2{
-        font-family: 'PrivaPro-Three';
-        font-size: 28px;
-        margin: 0;
+        width: 100%!important;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .container{
-        width: 100%;
-    }
+
 }
 
 @media screen and (max-width: 480px) {
-    h2{
-        font-size: 24px;
-    }
+
 }
 
