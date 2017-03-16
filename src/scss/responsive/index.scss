@@ -197,7 +197,6 @@
     }
 }
 
-/*
 @media screen and (max-width: 992px) {
     .language{
         padding: 0;
@@ -212,7 +211,7 @@
         display: block;
     }
     .slider{
-        padding-top: 171px;
+        padding-top: 120px;
     }
     .partner-lines{
         padding: 0;
@@ -230,6 +229,7 @@
     }
     .work{
         margin: 0;
+        padding: 50px 40px;
     }
     .work-item{
         float: none;
@@ -285,7 +285,7 @@
         padding: 0 30px;
     }
     .app{
-        padding-right: 60px;
+        padding-right: 110px;
         &__img{
             display: block;
             width: 478px;
@@ -334,7 +334,6 @@
 
 @media screen and (max-width: 768px) {
     .language {
-        height: 64px;
         &__item{
             margin-right: 26px;
             &:last-child{
@@ -343,24 +342,12 @@
         }
     }
     .language-link{
-        font-size: 28px;
-        line-height: 64px;
-        width: 62px;
+        font-size: 22px;
+        line-height: 32px;
+        width: 42px;
         &_active{
             color: #fff;
             border-top: 4px solid #e50028;
-        }
-    }
-    .responsive-nav{
-        height: 107px;
-        &__logo{
-            padding: 22px 0;
-            &_img{
-                width: 162px;
-            }
-        }
-        &__bar{
-            padding: 36px 0;
         }
     }
     .slicknav_menu {
@@ -372,6 +359,9 @@
             line-height: 61px;
             font-size: 30px;
         }
+    }
+    .slider{
+        padding-top: 100px;
     }
     .partners-item{
         width: 50%;
@@ -392,9 +382,14 @@
 
         }
     }
+    .partners-logo {
+        width: 182px;
+    }
+    .partners-name {
+        font-size: 26px;
+    }
     .work{
-        padding-top: 39px;
-        padding-bottom: 46px;
+        padding: 39px 0 46px 0;
         &__list{
             padding: 0 48px;
         }
@@ -521,26 +516,6 @@
 }
 
 @media screen and (max-width: 640px) {
-    .language {
-        height: 45px;
-    }
-    .language-link{
-        font-size: 25px;
-        line-height: 36px;
-        width: 40px;
-    }
-    .responsive-nav{
-        height: 70px;
-        &__logo{
-            padding: 15px 0;
-            &_img{
-                width: 102px;
-            }
-        }
-        &__bar{
-            padding: 18px 0;
-        }
-    }
     .slicknav_menu {
         top: 114px;
     }
@@ -564,6 +539,12 @@
         &__active{
             width: 155px;
         }
+    }
+    .partners-logo {
+        width: 120px;
+    }
+    .partners-name {
+         font-size: 20px;
     }
     .work{
         padding-top: 39px;
@@ -679,4 +660,4 @@
             padding: 0;
         }
     }
-}*/
+}

@@ -40,7 +40,6 @@
 }
 
 .responsive-nav{
-    height: 80px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 0 27px;
     position: relative;
@@ -49,13 +48,17 @@
     z-index: 999;
     &__logo{
         display: block;
-        padding: 15px 0;
+        padding: 8px 0;
         float: left;
+        &_img{
+            width: 112px;
+        }
     }
     &__bar{
         float: right;
-        padding: 22.5px 0;
+        padding: 17px 0;
         cursor: pointer;
+        width: 37px;
     }
 }
 
