@@ -15,3 +15,46 @@
 		width: 47%;
 	}
 }
+
+@media screen and (max-width: 992px){
+    .traveler-form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.traveler{
+        padding-bottom: 21px;
+        .one-partner-item__table{
+            width: 750px;
+        }
+        .content__item{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        .tabs__caption{
+            text-align: center;
+        }
+        .tabs .tabs-item{
+            float: none;
+            display: inline-block;
+        }
+        .one-partner-item__table{
+            th{
+                height: 66px;
+            }
+        }
+        .tabs .content {
+            margin-bottom: 15px;
+        }
+        .traveler-form{
+            width: 100%;
+        }
+        .tabs__content .form-item_sub{
+            font-size: 21px;
+            bottom: 5px;
+            left: 3px;
+        }
+    }
+}
