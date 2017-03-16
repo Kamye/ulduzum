@@ -36,7 +36,6 @@
 }
 
 .select2-container {
-    width: auto !important;
     max-width: 330px;
     .select2-selection--single {
         height: auto;
@@ -74,7 +73,6 @@
 }
 
 .select2-container--open .select2-dropdown--below{
-    width: auto !important;
     position: relative;
     top: 27px;
     left: -29px;
