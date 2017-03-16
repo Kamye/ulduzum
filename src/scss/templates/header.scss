@@ -71,7 +71,7 @@
     padding: 0;
     position: absolute;
     z-index: 999;
-    top: 119px;
+    top: 99px;
     width: 100%;
     background: #fff;
 }
@@ -83,7 +83,7 @@
 .slicknav_nav{
     text-align: center;
     a{
-        font-size: 34px;
+        font-size: 20px;
         color: #363636;
         padding: 0;
         margin: 0;
@@ -99,7 +99,7 @@
     .nav-item{
         float: none;
         margin: 0;
-        line-height: 89px;
+        line-height: 45px;
         &__link{
             text-decoration: none;
             &_sms{

@@ -64,6 +64,10 @@
 	width: calc(100% - 125px);
 }
 
+.blocker{
+	z-index: 999;
+}
+
 .one-partner-present-link{
 	display: block;
 	text-align: center;
@@ -274,6 +278,10 @@
 		display: block;
 		background: #fff;
 		color: #3a3434;
+		font-size: 0;
+		.news-item{
+			margin: 0;
+		}
 	}
 	&__photo{
 		&_link{

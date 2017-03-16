@@ -15,7 +15,7 @@ $('.select').on('select2:open', function () {
 });
 
 $('.select').on('select2:close', function () {
-    setTimeout(function(){ jQuery('.select2-dropdown').slideUp(); }, 200);
+    setTimeout(function(){ $('.select2-dropdown').slideUp(); }, 200);
 });
 
 $('.footer-select').select2({
@@ -28,6 +28,12 @@ $('.form-select').select2({
 
 $('.sms-select').select2({
     minimumResultsForSearch: -1
+});
+
+$(document).ready(function () {
+    $('body').on('click', ".selects-item .select2", function(){
+        $('.select2-container').addClass('main-select');
+    });
 });
 
 $(document).ready(function () {
