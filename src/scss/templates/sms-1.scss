@@ -13,13 +13,34 @@
 	&__block{
 		width: 47%;
 		float: left;
-		margin-right: 58px;
+		margin-right: 6%;
 		&:last-child{
 			margin-right: 0;
 		}
 		.form-block__head{
 			margin-bottom: 27px;
 		}
+	}
+	.form-block__head{
+		vertical-align: middle;
+		display: inline-block;
+		float: none;
+	}
+}
+
+.sms-4{
+	.form-block__head{
+		width: 47%;
+		margin-right: 6%;
+	}
+	.sms-form-top{
+		margin-bottom: 20px;
+	}
+	.sms__block_informer {
+		width: 47%;
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
 	}
 }
 
@@ -42,6 +63,12 @@
 		&__place{
 			height: 186px;
 			margin-top: -5px;
+			resize: none;
+			width: 100%;
+			border: none;
+			background: rgba(255,255,255,0);
+			border-bottom: 1px solid #c6c6c6;
+			font-size: 22px;
 		}
 		&__wrap{
 			.form-item__area{
@@ -73,7 +100,8 @@
 			font-size: 22px;
 			color: #3a3434;
 			border-bottom: 1px solid #c6c6c6;
-			padding-bottom: 16px;
+			padding-bottom: 11px;
+			padding-top: 5px;
 			position: relative;
 			max-width: 500px;
 			box-sizing: border-box;
@@ -133,10 +161,9 @@
 	width: 20px;
 	height: 20px;
 	border: 2px solid #423d3d;
-	position: absolute;
-	left: -42px;
-	bottom: -7px;
+	margin-right: 14px;
 	border-radius: 2px;
+	vertical-align: middle;
 }
 
 .confirm-check:checked + label:after {
@@ -151,14 +178,15 @@
 }
 
 .confirm{
-	margin-left: 40px;
 	padding-top: 2px;
-	border-bottom: 1px solid #9b9898;
 	position: relative;
 	a{
-		text-decoration: none;
 		color: #3a3434;
 		font-size: 16px;
+		display: inline-block;
+		width: calc(100% - 40px);
+		text-decoration: underline;
+		vertical-align: middle;
 	}
 }
 
@@ -180,7 +208,7 @@
 	color: #898989;
 	position: absolute;
 	top: 4px;
-	right: -4px;
+	right: 0px;
 }
 
 /*-------------------------*/
@@ -205,12 +233,16 @@
 	padding: 15px 0 19px 25px;
 	border-radius: 5px;
 	&__text{
+		width: calc(100% - 43px);
+		display: inline-block;
+		vertical-align: middle;
 		margin-bottom: 1px;
-		b{
-			font-size: 26px;
+		b {
+			font-size: 18px;
 			padding-left: 5px;
 		}
 		&:last-child{
+			color: #898989;
 			margin-bottom: 0;
 		}
 	}
@@ -234,8 +266,11 @@
 		text-align: center;
 		color: #3a3434;
 		margin-bottom: 30px;
-
 	}
+}
+
+.sms_block{
+
 }
 
 .sms-rules-scroll{
@@ -292,4 +327,11 @@
 	width: 16px;
 	height: 16px;
 	background: url("../../images/close.png");
+}
+
+.informer-img{
+	width: 32px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
 }

@@ -10,14 +10,14 @@
 @media screen and (max-width: 1200px) {
 	.contacts{
 		&__block{
-			margin-right: 51px;
+
 		}
 	}
 	.contacts-form{
 		&__list{
 			.form-item{
 				&__sub {
-					width: 68%;
+                    width: calc(100% - 152px);
 				}
 			}
 		}
@@ -28,3 +28,21 @@
 		}
 	}
 }
+
+@media screen and (max-width: 992px) {
+    .contacts__block{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacts-inf, .contacts-map, .contacts-form__list, .form-item.form-item_text{
+        width: 100%;
+        margin-right: 0;
+    }
+    .contacts-inf{
+        margin-bottom: 30px;
+    }
+}
+
+
