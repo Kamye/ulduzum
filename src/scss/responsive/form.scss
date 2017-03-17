@@ -6,6 +6,15 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .form{
+        padding-top: 120px;
+        .container{
+            padding: 0 26px;
+        }
+    }
+}
+
 @media all and (max-width: 767px) {
     .form-item{
         width: 100%;
@@ -47,6 +56,9 @@
 
     .form{
         padding-bottom: 40px;
+        .container{
+            padding: 0 13px;
+        }
         .form-item-wrap{
             margin-bottom: 22px;
             float: none;

@@ -20,6 +20,12 @@
     .traveler-form{
         width: 100%;
     }
+	.traveler{
+		padding-top: 120px;
+		.container{
+			padding: 0 27px;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -57,4 +63,12 @@
             left: 3px;
         }
     }
+}
+
+@media screen and (max-width: 640px) {
+	.traveler{
+		.container{
+			padding: 0 13px;
+		}
+	}
 }

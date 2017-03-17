@@ -89,11 +89,24 @@
 	}
 }
 
+.show-filter{
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	border: none;
+	outline: none;
+	width: 64px;
+	height: 64px;
+	background: url("../../images/filter.png") top center no-repeat;
+	background-size: contain;
+}
+
 .partners-line{
 	width: 261px;
 	height: 2px;
 	margin: 0 auto 15px;
-	border-bottom: 2px dotted #3a3434;
+	border-bottom: 2px dotted #999;
 }
 
 .present-item{

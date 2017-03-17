@@ -33,6 +33,12 @@
     .contacts__block{
         margin-right: 0;
     }
+	.contacts{
+		padding-top: 120px;
+		.container{
+			padding: 0 27px;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -43,6 +49,14 @@
     .contacts-inf{
         margin-bottom: 30px;
     }
+}
+
+@media screen and (max-width: 640px) {
+	.contacts{
+		.container{
+			padding: 0 13px;
+		}
+	}
 }
 
 

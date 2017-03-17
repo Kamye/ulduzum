@@ -54,9 +54,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-    .select2-container .select2-selection--single .select2-selection__rendered {
-        max-width: 50px;
-    }
     .partners-logo {
         width: 120px;
         &_oth{
@@ -109,7 +106,34 @@
         }
     }
     .footer-block{
+        width: 50%;
+        vertical-align: top;
+        text-align: left;
+        display: inline-block;
+        margin-bottom: 20px;
         margin-right: 0;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .item-element{
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .footer {
+        padding: 36px 65px 30px;
+    }
+
+    .footer-item-2{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-number{
+        display: inline-block;
     }
 }
 
@@ -127,6 +151,9 @@
                 margin-left: 0;
             }
         }
+    }
+    .partner-lines .select2 {
+        max-width: 130px;
     }
     .partner-lines{
         padding-left: 20px;
@@ -158,6 +185,7 @@
         }
         &__img{
             height: 160px;
+            width: 160px;
         }
         &__text{
             font-size: 18px;
@@ -186,7 +214,7 @@
     }
     .travel-content{
         &:last-child{
-            margin-left: -422px;
+            margin-left: -460px;
         }
     }
     .app{
@@ -211,7 +239,7 @@
         display: block;
     }
     .slider{
-        padding-top: 120px;
+        padding-top: 100px;
     }
     .partner-lines{
         padding: 0;
@@ -236,6 +264,9 @@
         width: 100%;
         height: 160px;
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+
         &__text{
             font-size: 23px;
             line-height: 30px;
@@ -245,33 +276,15 @@
             }
         }
         &__img{
-            float: left;
             margin-bottom: 0;
             display: inline-block;
-            vertical-align: middle;
 
-        }
-        &:first-child{
-            .work-item-wrapper{
-                padding-top: 41px;
-            }
         }
         &:nth-child(2){
             margin: 0 0 30px;
-            .work-item{
-                &__img{
-                    float: right;
-                }
-            }
-            .work-item-wrapper{
-                padding-top: 41px;
-            }
         }
         &:last-child{
             margin-bottom: 0;
-            .work-item-wrapper{
-                padding-top: 54px;
-            }
         }
     }
     .work-item-img{
@@ -279,10 +292,11 @@
     }
     .work-item-wrapper{
         display: inline-block;
-        float: left;
         width: calc(100% - 160px);
-        vertical-align: middle;
         padding: 0 30px;
+    }
+    .work-item__img_right{
+        order: 2;
     }
     .app{
         padding-right: 110px;
@@ -351,7 +365,7 @@
         }
     }
     .slicknav_menu {
-        top: 170px;
+        top: 100px;
     }
     .partner-lines{
         height: 64px;
@@ -401,6 +415,7 @@
         height: 96px;
         &__img{
             height: 96px;
+            width: 96px;
         }
         &:first-child{
             .work-item-wrapper {
@@ -481,6 +496,7 @@
         padding: 25px 13px;
     }
     .footer-block{
+        width: 100%;
         &:first-child{
             display: none;
         }
@@ -516,9 +532,6 @@
 }
 
 @media screen and (max-width: 640px) {
-    .slicknav_menu {
-        top: 114px;
-    }
     .slicknav_nav{
         .nav-item{
             line-height: 60px;
@@ -526,9 +539,6 @@
         a{
             font-size: 26px;
         }
-    }
-    .slider{
-        padding-top: 115px;
     }
     .partner-lines{
         &__head{
@@ -575,12 +585,15 @@
         padding: 0 0 0 20px;
     }
     .app{
-        padding: 15px 0;
+        padding: 24px 0;
         &__list{
-            width: 100%;
+            width: 150px;
+            float: right;
+            margin-right: 7%;
         }
         &__img{
-            display: none;
+            width: 396px;
+            left: -125px;
         }
     }
     .app-store{
@@ -588,13 +601,16 @@
         text-align: center;
         &__head{
             text-align: center;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 12px;
         }
         &__link{
             margin-bottom: 22px;
         }
     }
     .store-img{
-        width: 235px;
+        width: 150px;
     }
     .footer-item{
         &__logo{
@@ -617,12 +633,46 @@
         padding-bottom: 1px;
     }
     .partners-item{
-        width: 303px;
-        &:nth-child(n + 5){
-            display: none;
-        }
         &:last-child{
             display: inline-block;
+        }
+    }
+    .partners-link{
+        &__default{
+            padding-bottom: 38px;
+        }
+        &__active{
+            width: 100px;
+        }
+    }
+    .partners-name{
+        font-size: 13px;
+        left: 11px;
+        bottom: 8px;
+    }
+    .partners-bonus{
+        bottom: 2px;
+        right: 4px;
+        font-size: 30px;
+        span{
+            font-size: 20px;
+            vertical-align: top;
+            padding-left: 3px;
+            display: inline-block;
+            padding-top: 0;
+        }
+        img{
+            width: 31px;
+        }
+    }
+    .other-partners{
+        &__text{
+            font-size: 16px;
+        }
+        &__img{
+            display: block;
+            width: 50px;
+            margin: 0 auto 4px;
         }
     }
     .work{
@@ -646,14 +696,55 @@
             }
         }
     }
+    .store-img{
+        width: 101px;
+    }
+    .app__img{
+        width: 219px;
+        left: -67px
+    }
+    .app__list{
+        width: 100px;
+        float: right;
+        margin-right: 13%;
+    }
+    .app-store{
+        &__link{
+            margin-bottom: 10px;
+        }
+        &__head{
+            text-align: left;
+            font-size: 10px;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+    }
     .travel-content{
         padding: 0 10px;
+        &__head{
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 23px;
+        }
     }
     .footer-item-2{
         float: none !important;
         text-align: center;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+    .footer-block{
+        display: block;
+        width: 277px;
+        margin: 0 auto !important;
+    }
+    .contacts-link{
+        float: none;
+        display: inline-block;
     }
     .footer-item{
         &__logo{

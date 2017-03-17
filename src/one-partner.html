@@ -163,6 +163,7 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="shape-partner"></div>
                         <div id="gallery" class="gallery modal">
                             <div class="gallery__top slider-for">
                                 <div class="gallery__top_sub slick-slide">
@@ -217,6 +218,7 @@
     function initMap() {
         var myLatLng = {lat: -25.363, lng: 131.044};
         var myLatLng2 = {lat: -26.363, lng: 132.044};
+        var myLatLng3 = {lat: -27.363, lng: 131.044};
 
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -235,11 +237,67 @@
             icon: image
         });
 
+        var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">w1</h1>'+
+                '<div id="bodyContent">'+
+
+                '</div>'+
+                '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
+
         var marker2 = new google.maps.Marker({
             map: map,
             position: myLatLng2,
             title: 'Hello World!',
             icon: image
+        });
+
+        var contentString2 = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">B1</h1>'+
+                '<div id="bodyContent">'+
+
+                '</div>'+
+                '</div>';
+
+        var infowindow2 = new google.maps.InfoWindow({
+            content: contentString2
+        });
+        marker2.addListener('click', function() {
+            infowindow2.open(map, marker2);
+        });
+
+        var marker3 = new google.maps.Marker({
+            map: map,
+            position: myLatLng3,
+            title: 'Hello World!',
+            icon: image
+        });
+
+        var contentString3 = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">A!</h1>'+
+                '<div id="bodyContent">'+
+
+                '</div>'+
+                '</div>';
+
+        var infowindow3 = new google.maps.InfoWindow({
+            content: contentString3
+        });
+        marker3.addListener('click', function() {
+            infowindow3.open(map, marker3);
         });
     }
 

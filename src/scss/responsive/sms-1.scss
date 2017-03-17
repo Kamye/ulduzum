@@ -26,6 +26,12 @@
 }
 
 @media screen and (max-width: 992px){
+	.sms{
+		padding-top: 120px;
+		.container{
+			padding: 0 27px;
+		}
+	}
 	.sms-4{
 		.form-block__head{
 			width: 41%;
@@ -70,6 +76,14 @@
 			.informer-img{
 				width: 16px;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.sms{
+		.container{
+			padding: 0 13px;
 		}
 	}
 }
