@@ -3,3 +3,23 @@
         padding-bottom: 100px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .rules{
+        padding-top: 120px;
+        .container{
+            padding: 0 27px;
+        }
+        &__head{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .rules{
+        .container{
+            padding: 0 10px;
+        }
+    }
+}

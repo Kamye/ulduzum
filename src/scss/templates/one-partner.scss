@@ -112,7 +112,6 @@
 .one-partner-process{
 	display: none;
 	width: 1086px;
-	height: 378px;
 	background-color: white;
 	border-radius: 10px;
 	top: 50%;
@@ -126,6 +125,7 @@
 		width: 28%;
 		&__img{
 			height: 144px;
+			width: 144px;
 			margin-bottom: 14px;
 		}
 		&__text{
@@ -148,7 +148,6 @@
 			width: 137px;
 		}
 		&:nth-child(2) {
-			display: inline-block;
 			margin: 0 77px;
 			.work-item__img{
 				margin-bottom: 20px;
@@ -171,7 +170,7 @@
 .one-partner-process.modal{
 	position: absolute;
 	max-width: 100%;
-	padding: 41px 61px 15px;
+	padding: 41px 61px 46px;
 	color: #3a3434;
 	a.close-modal {
 		top: 19.5px;
@@ -401,7 +400,8 @@
 				background: #e60029;
 				&:before{
 					transition: 500ms;
-					background: url("../../images/gallery-left-arrow-top-act.png");
+					background: url("../../images/gallery-left-arrow-top-act.png") top	center no-repeat;
+					background-size: contain;
 				}
 			}
 		}
@@ -410,7 +410,8 @@
 			display: inline-block;
 			width: 18px;
 			height: 32px;
-			background: url("../../images/gallery-left-arrow-top-pas.png");
+			background: url("../../images/gallery-left-arrow-top-pas.png") top	center no-repeat;
+			background-size: contain;
 		}
 		.slick-next{
 			top: 366px;
@@ -420,14 +421,16 @@
 				content: ' ';
 				width: 18px;
 				height: 32px;
-				background: url("../../images/gallery-right-arrow-top-pas.png");
+				background: url("../../images/gallery-right-arrow-top-pas.png") top	center no-repeat;
+				background-size: contain;
 			}
 			&:hover{
 				transition: 500ms;
 				background: #e60029;
 				&:before{
 					transition: 500ms;
-					background: url("../../images/gallery-right-arrow-top-act.png");
+					background: url("../../images/gallery-right-arrow-top-act.png") top	center no-repeat;
+					background-size: contain;
 				}
 			}
 		}
@@ -466,7 +469,8 @@
 				height: 32px;
 				content: '';
 				display: inline-block;
-				background: url("../../images/gallery-right-arrow-bot-pas.png");
+				background: url("../../images/gallery-right-arrow-bot-pas.png") no-repeat;
+				background-size: contain;
 			}
 
 		}
@@ -479,7 +483,8 @@
 }
 
 .gallery.modal a.close-modal{
-	background: url("../../images/gallery-close.png");
+	background: url("../../images/gallery-close.png") no-repeat;
+	background-size: contain;
 	width: 32px;
 	height: 32px;
 	top: -57px;
@@ -491,8 +496,8 @@
 }
 
 .gallery-img{
-	width: 1280px;
-	height: 853px;
+	width: 100%;
+	height: auto;
 	&_sub{
 		margin: 0 auto;
 		width: 203px;

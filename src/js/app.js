@@ -126,6 +126,12 @@ $('.slider-nav').slick({
             settings: {
                 slidesToShow: 3
             }
+        },
+        {
+            breakpoint: 993,
+            settings: {
+                slidesToShow: 2
+            }
         }
     ]
 });

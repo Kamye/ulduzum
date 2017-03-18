@@ -1,19 +1,22 @@
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 992px) {
 	.works{
-		.work-item:nth-child(1):after,
-		.work-item:nth-child(2):after {
-			right: -80px;
-			width: 128px;
+		padding-top: 120px;
+		.container{
+			padding: 0 27px;
+		}
+		&__head{
+			text-align: center;
+		}
+		.process__head{
+			text-align: center;
 		}
 	}
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 767px) {
 	.works{
-		.work-item:nth-child(1):after,
-		.work-item:nth-child(2):after {
-			right: -72px;
-			width: 110px;
+		.container{
+			padding: 0 10px;
 		}
 	}
 }

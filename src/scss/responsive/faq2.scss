@@ -1,0 +1,19 @@
+@media screen and (max-width: 992px) {
+	.faq2{
+		padding-top: 120px;
+		.container{
+			padding: 0 27px;
+		}
+		&__head{
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.faq2{
+		.container{
+			padding: 0 10px;
+		}
+	}
+}
