@@ -102,7 +102,7 @@
 		background: rgba(256, 256, 256, 0);
 		border-bottom: 1px solid #c6c6c6;
 		font-size: 22px;
-		font-family: 'PrivaPro-Four';
+		font-family: 'PrivaPro-Three';
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			color: #3a3434;
 		}
@@ -128,7 +128,7 @@
 			max-width: 999px;
 			width: 100%;
 			display: block;
-			font-family: 'PrivaPro-Four';
+			font-family: 'PrivaPro-Three';
 			color: #3a3434;
 			font-size: 26px;
 			border-bottom: 1px solid #c6c6c6;
@@ -166,7 +166,7 @@
 
 .label{
 	font-size: 26px;
-	font-family: 'PrivaPro-Four';
+	font-family: 'PrivaPro-Three';
 	&:nth-child(4){
 		padding-left: 90px;
 		cursor: pointer;

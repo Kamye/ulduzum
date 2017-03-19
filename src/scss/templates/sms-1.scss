@@ -96,7 +96,7 @@
 			width: 152px;
 		}
 		.select2-container .select2-selection--single .select2-selection__rendered{
-			font-family: 'PrivaPro-Four';
+			font-family: 'PrivaPro-Three';
 			font-size: 22px;
 			color: #3a3434;
 			border-bottom: 1px solid #c6c6c6;
@@ -184,9 +184,35 @@
 		color: #3a3434;
 		font-size: 16px;
 		display: inline-block;
-		width: calc(100% - 40px);
-		text-decoration: underline;
+		width: 362px;
+		text-decoration: none;
 		vertical-align: middle;
+		position: relative;
+		&:before{
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: #3a3434;
+			left: 0;
+			bottom: 0;
+		}
+		&:hover{
+			&:before{
+				animation: right-down 0.6s ease;
+				animation-iteration-count: 1;
+			}
+		}
+	}
+}
+
+@keyframes right-down {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
 	}
 }
 
@@ -269,10 +295,6 @@
 	}
 }
 
-.sms_block{
-
-}
-
 .sms-rules-scroll{
 	max-height: 500px;
 	width: 829px;
@@ -334,4 +356,17 @@
 	margin-right: 10px;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.sms-1-submit-sms-3, .form-item-code-accept{
+	display: none;
+}
+
+.form-item-number{
+	&:-moz-placeholder{
+		color: #b2b2b2;
+	}
+	&::-webkit-input-placeholder{
+		color: #b2b2b2;
+	}
 }

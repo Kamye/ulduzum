@@ -51,6 +51,10 @@
     &:hover{
         transition: 500ms;
         box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+        .news-content__name{
+            transition: 500ms;
+            color: #e60029;
+        }
     }
     &:nth-child(2n){
         text-align: right;
@@ -69,6 +73,11 @@
         display: inline-block;
         width: calc(100% - 320px);
         padding: 0 50px 0 30px;
+    }
+    &__link{
+        text-decoration: none;
+        display: inline-block;
+        color: #3a3434;
     }
 }
 
@@ -98,7 +107,6 @@
         line-height: 28px;
         &:hover{
             transition: 500ms;
-            text-decoration: underline;
             color: #e60029;
         }
     }

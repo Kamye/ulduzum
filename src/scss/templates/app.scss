@@ -1,9 +1,9 @@
 .applic{
     background: #f3f3f3;
-    padding: 33px 0 110px;
+    padding: 33px 0 0;
     position: relative;
     .container{
-        width: 1295px;
+        padding: 0 60px;
     }
     &__head{
         padding: 9px 0 43px;
@@ -11,7 +11,7 @@
     }
     &__img{
         position: absolute;
-        left: 0;
+        left: -249px;
         bottom: 0;
     }
 }
@@ -26,6 +26,9 @@
         color: #3a3434;
         line-height: 32px;
         margin-bottom: 39px;
+    }
+    &__link{
+        padding-top: 25px;
     }
 }
 
@@ -81,3 +84,17 @@
     }
 }
 
+.applic-wrap{
+    padding-bottom: 113px;
+}
+
+.tab-item{
+    display: inline-block;
+    position: absolute;
+    left: 176px;
+    top: 95px;
+}
+
+.applic-logo{
+    display: none;
+}

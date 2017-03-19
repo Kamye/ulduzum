@@ -74,6 +74,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+	.one-partner{
+		&__head{
+			width: 425px;
+		}
+	}
 	.one-partner-content{
 		&__block {
 			float: none;
@@ -93,6 +98,7 @@
 	.one-partner-block{
 		&__present-line{
 			float: left;
+			width: calc(100% - 220px);
 		}
 	}
 	.one-partner-item{
@@ -132,6 +138,11 @@
 	.gallery, .gallery__top {
 		width: 970px;
 	}
+
+	.gallery.modal a.close-modal {
+		top: 45px;
+		right: 25px;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -143,6 +154,7 @@
 		&__head{
 			font-size: 24px;
 			margin-bottom: 15px;
+			width: 100%;
 		}
 	}
 	.one-partner-block{
@@ -234,11 +246,6 @@
 	}
 	.gallery, .gallery__top {
 		width: 750px;
-	}
-
-	.gallery.modal a.close-modal {
-		top: -54px;
-		right: 18px;
 	}
 	.gallery, .gallery__top .slick-list {
 		height: auto;
@@ -522,8 +529,6 @@
 	.gallery.modal a.close-modal {
 		width: 22px;
 		height: 22px;
-		top: -45px;
-		right: 14px;
 	}
 }
 

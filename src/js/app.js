@@ -53,6 +53,8 @@ $(document).ready(function () {
 
 $('.footer-number__area').mask('000 00 00');
 
+$('.form-item-number').mask('000 00 00');
+
 $('.footer-number').on('submit', function (event) {
     event.preventDefault();
     var number = $('.footer-number__area');
@@ -113,6 +115,7 @@ $('.slider-for').slick({
     fade: true,
     asNavFor: '.slider-nav'
 });
+
 $('.slider-nav').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -134,6 +137,12 @@ $('.slider-nav').slick({
             }
         }
     ]
+});
+
+$('.one-partner-item__photo_link').on('click', function () {
+    setTimeout(function () {
+        $('.slider-nav, .slider-for').slick('setPosition');
+    }, 100);
 });
 
 $(document).ready(function(){
@@ -174,7 +183,7 @@ $('body').on('click', '#sorting-filter .selection', function () {
         'left': 'auto',
         'right': '0px'
     });
-   /* $('.select2-container').style('right', '0px', 'important')*/
+    /* $('.select2-container').style('right', '0px', 'important')*/
 });
 
 $('.show-filter').on('click', function () {
@@ -204,3 +213,16 @@ $('.sort-filter__header').on('click', function () {
 $('.sort-list__item').on('click', function(){
     $(this).parent().prev('.sort-filter__chosen').text($(this).text());
 });
+
+
+$('button.sms-1-submit').on('click', function(){
+    if($('#confirm').is(':checked') && $('.form-item-number').val().length == 9){
+        $('.accept').hide();
+        $(this).hide();
+        $('input.sms-1-submit, .form-item-code-accept').show();
+    } else{
+        alert('Укажите телефон, и подтвердите условия');
+    }
+});
+
+$('.tabs').tabslet();

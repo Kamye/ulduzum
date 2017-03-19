@@ -8,3 +8,4 @@
 //= jquery.scrollbar.min.js
 //= aos.js
 //= jquery.slicknav.js
+//= jquery.tabslet.js

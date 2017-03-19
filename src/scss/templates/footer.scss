@@ -79,7 +79,7 @@
         line-height: 22px;
         color: #343434;
         &_sub{
-            font-family: 'PrivaPro-Four';
+            font-family: 'PrivaPro-Three';
             margin-top: -5px;
         }
     }
@@ -143,10 +143,10 @@
         padding-left: 60px;
         color: #333;
         &:-moz-placeholder{
-            color: #525252;
+            color: #b2b2b2;
         }
         &::-webkit-input-placeholder{
-            color: #525252;
+            color: #b2b2b2;
         }
     }
     &__call{

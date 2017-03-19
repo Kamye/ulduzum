@@ -1,32 +1,134 @@
 @media screen and (max-width: 1600px) {
-	.applic{
-		&__img{
-			left: -135px;
-		}
+	.applic-block {
+		width: 640px;
+		padding-right: 80px;
+	}
+	.tab-item{
+		left: 177px;
+		top: 95px;
 	}
 }
 
 @media screen and (max-width: 1366px) {
-	.applic{
-		&__img {
-			left: -222px;
-		}
+	.applic__img{
+		left: -314px;
 	}
-	.applic-block{
-		width: 599px;
-		padding-right: 54px;
+	.applic-block {
+		width: 525px;
+		padding-right: 0;
+	}
+	.tab-item {
+		left: 113px;
+		top: 120px;
 	}
 }
 
 @media screen and (max-width: 1200px) {
-	.applic{
-		&__img{
-			left: -243px;
-			width: 790px;
-		}
+	.applic__img {
+		left: -352px;
+		width: 790px;
 	}
 	.applic-block{
-		width: 514px;
+		width: 450px;
 		padding-right: 0;
+	}
+	.applic-screen{
+		width: 360px;
+	}
+	.tab-item{
+		left: 40px;
+		top: 172px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.applic{
+		padding: 120px 0 0;
+		&__img{
+			display: none;
+		}
+		&__head{
+			text-align: center;
+		}
+	}
+	.tab-item{
+		display: none !important;
+	}
+	.applic-block{
+		width: 100%;
+		&__link{
+			text-align: center;
+		}
+	}
+	.applic-logo{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.applic-block-text{
+		display: inline-block;
+		width: calc(100% - 135px);
+		vertical-align: middle;
+		font-size: 22px;
+		padding-left: 30px;
+		line-height: 32px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.applic{
+		.container{
+			padding: 0 27px;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.applic-link__img {
+		width: 156px;
+	}
+
+	.applic-block-text {
+		width: calc(100% - 102px);
+		font-size: 18px;
+		padding-left: 9px;
+		line-height: 26px;
+	}
+
+	.applic-logo{
+		width: 96px;
+	}
+	.applic .container {
+		padding: 0 15px;
+	}
+	.applic-item{
+		&__text{
+			padding: 0 0 0 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.applic-link__img {
+		width: 102px;
+	}
+
+	.applic-block-text {
+		width: calc(100% - 70px);
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.applic-logo{
+		width: 64px;
+	}
+	.applic-item{
+		&__text{
+			font-size: 9px;
+			line-height: 14px;
+		}
+	}
+
+	.applic-wrap {
+		padding-bottom: 60px;
 	}
 }
