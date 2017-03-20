@@ -1,33 +1,30 @@
 .language{
     background-color: #404040;
     text-align: right;
-    height: 64px;
+    height: 40px;
     padding-right: 23px;
     &__item{
         display: inline-block;
-        margin-right: 26px;
-        &:last-child{
-            margin-right: 0;
-        }
+
     }
 }
 
 .language-link {
-    font-family: PrivaPro-Two;
+    font-family: 'PrivaPro-Two';
+    font-size: 16px;
     color: #7e7e7e;
+    line-height: 34px;
+    width: 36px;
     text-decoration: none;
     display: block;
     text-align: center;
-    font-size: 29px;
-    line-height: 62px;
-    width: 70px;
     &:hover{
         color: white;
         transition: 700ms;
     }
     &_active{
         color: white;
-        border-top: 4px solid #e50028;
+        border-top: 2px solid #e50028;
     }
 }
 
@@ -51,17 +48,17 @@
     z-index: 999;
     &__logo{
         display: block;
-        padding: 22px 0;
+        padding: 8px 0;
         float: left;
         &_img{
-            width: 162px;
+            width: 112px;
         }
     }
     &__bar{
         float: right;
-        padding: 36px 0;
+        padding: 17px 0;
         cursor: pointer;
-        width: 50px;
+        width: 37px;
     }
 }
 

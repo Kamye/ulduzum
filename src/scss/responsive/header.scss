@@ -1,3 +1,38 @@
+@media screen and (max-width: 992px) {
+	.language{
+		background-color: #404040;
+		text-align: right;
+		height: 64px;
+		padding-right: 23px;
+		&__item{
+			display: inline-block;
+			margin-right: 26px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+
+	.language-link {
+		color: #7e7e7e;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		font-size: 29px;
+		line-height: 62px;
+		width: 70px;
+		&:hover{
+			color: white;
+			transition: 700ms;
+		}
+		&_active{
+			color: white;
+			border-top: 4px solid #e50028;
+		}
+	}
+
+}
+
 @media screen and (max-width: 640px) {
 	.language{
 		height: 48px;
