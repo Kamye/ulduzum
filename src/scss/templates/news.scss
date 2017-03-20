@@ -38,6 +38,7 @@
             width: 23px;
             height: 13px;
             background: url("../../images/news-arrow.png") no-repeat top left;
+            background-size: contain;
             position: absolute;
             right: 25px;
             top: 13px;
@@ -91,7 +92,8 @@
             display: inline-block;
             width: 17px;
             height: 17px;
-            background: url("../../images/one-partner-date.png");
+            background: url("../../images/one-partner-date.png") no-repeat;
+            background-size: contain;
             position: absolute;
             left: 1px;
             top: 0;

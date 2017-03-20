@@ -55,7 +55,7 @@
 @media screen and (max-width: 992px) {
 	.partner-page{
 		.slider {
-			padding-top: 100px;
+			padding-top: 172px;
 		}
 		&__partners{
 			.partners-item{
@@ -82,18 +82,21 @@
 	}
 	.show-filter{
 		display: block;
+		bottom: 175px;
+		right: 30px;
+		top: auto;
 	}
 
 }
 
 @media screen and (max-width: 767px) {
 	.partner-page{
-		padding-top: 100px;
+		padding-top: 198px;
 		.slider {
 			display: none;
 		}
 		&__partner-lines{
-			margin-bottom: 2px;
+			margin-bottom: 29px;
 		}
 		.container{
 			padding: 0;
@@ -101,39 +104,38 @@
 		&__partners{
 			.partners-item{
 				display: block;
-				width: 596px;
-				margin: 0 auto 11px !important;
+				width: 589px;
+				margin: 0 auto 8px!important;
 				&:nth-child(3){
-					margin: 0 auto 11px !important;
+					margin: 0 auto 8px!important;
 				}
 				&__top{
-					width: 48%;
+					width: 49%;
 					float: left;
 					margin-bottom: 0;
 				}
 				&__bot{
-					width: 52%;
+					width: 51%;
 					float: left;
-					padding-top: 8px;
-					height: 195px;
+					padding-top: 11px;
+					height: 198px;
 				}
 				.partners-link__active {
 					width: 170px;
 				}
+				.partners-logo{
+					width: 165px;
+				}
 			}
-		}
-	}
-	.partner-lines{
-		&__head{
-			font-size: 28px;
-			line-height: 65px;
-			font-family: 'PrivaPro-Three';
 		}
 	}
 	.partners-head {
 		margin-top: 2px;
 		margin-bottom: 15px;
 		font-size: 23px;
+		&__sub{
+			font-size: 16px;
+		}
 	}
 	.partners-line {
 		width: 243px;
@@ -151,22 +153,34 @@
 			line-height: 25px;
 			font-family: 'PrivaPro-Three';
 		}
+		&__percent{
+			font-size: 53px;
+			margin-top: 22px;
+			span{
+				font-size: 28px;
+				padding-top: 0;
+				margin-top: -9px;
+			}
+		}
+		&__img{
+			width: 39px;
+		}
 	}
 
 	.show-filter{
-		top: 12px;
-		width: 45px;
-		height: 45px;
+		top: 198px;
+		bottom: auto;
 	}
 }
 
 @media screen and (max-width: 640px) {
 	.partner-page{
+		padding-top: 148px;
 		&__partners{
 			.partners-item{
-				width: 412px;
+				width: 440px;
 				.partners-logo{
-					width: 160px;
+					width: 125px;
 				}
 				.partners-link{
 					&__active{
@@ -174,46 +188,72 @@
 					}
 				}
 				&__bot{
-					padding-top: 0;
-					height: auto;
+					padding-top: 7px;
+					height: auto
 				}
 			}
 		}
+		.partner-lines{
+			margin-bottom: 22px;
+		}
+	}
+	.show-filter {
+		top: 149px;
+		right: 22px;
+		bottom: auto;
+		width: 48px;
+		height: 48px;
 	}
 	.partners-head{
 		margin-top: 0;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		font-size: 16px;
 		&__sub{
-			font-size: 12px;
+			font-size: 13px;
+			display: inline-block;
+			margin-bottom: 2px;
 		}
 	}
 	.partners-line{
 		width: 190px;
-		margin-bottom: 6px;
+		margin-bottom: 11px;
 	}
 	.present-item{
 		&__link{
-			width: 80px;
+			width: 70px;
 			height: 24px;
-			font-size: 14px;
-			line-height: 24px;
+			font-size: 12px;
+			line-height: 21px;
+			margin: 0 auto 7px;
 		}
 		&__text{
 			font-size: 14px;
 			line-height: 18px;
+		}
+		&__percent{
+			font-size: 38px;
+			margin-top: 10px;
+			span{
+				font-size: 22px;
+				margin-top: -5px;
+			}
+		}
+		&__img{
+			width: 29px;
+			padding-top: 4px;
 		}
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.partner-page{
+		padding-top: 92px;
 		&__partners{
 			background: rgba(0, 0, 0, 0);
 			.partners-item{
-				width: 280px;
+				width: 293px;
 				.partners-logo{
-					width: 110px;
+					width: 83px;
 				}
 				.partners-link{
 					&__active{
@@ -221,63 +261,63 @@
 					}
 				}
 				&__bot{
-					padding-top: 0;
+					padding-top: 4px;
 					height: auto;
 				}
 			}
 		}
-		.partner-lines__head {
-			font-size: 22px;
-			line-height: 40px;
+		.partner-lines{
+			margin-bottom: 13px;
+			&__head {
+				line-height: 40px;
+			}
 		}
 	}
 	.partner-lines {
 		height: auto;
-		&__head{
-			font-size: 22px;
-			line-height: 40px;
-		}
 	}
 	.partners-head{
 		margin-top: 0;
-		margin-bottom: 3px;
-		font-size: 14px;
+		margin-bottom: 6px;
+		font-size: 12px;
 		&__sub{
 			font-size: 10px;
+			margin-bottom: 0;
 		}
 	}
 	.partners-line{
 		width: 130px;
-		margin-bottom: 3px;
+		margin-bottom: 7px;
 	}
 	.present-item{
 		&__link{
-			width: 62px;
-			height: 20px;
-			font-size: 11px;
-			line-height: 17px;
-			margin-bottom: 3px;
+			width: 48px;
+			height: 16px;
+			font-size: 8px;
+			line-height: 13px;
+			margin-bottom: 4px;
 		}
 		&__text{
 			font-size: 10px;
-			line-height: 14px;
+			line-height: 12px;
 		}
 		&__percent{
-			font-size: 30px;
+			font-size: 26px;
 			margin-top: 4px;
 			span{
-				font-size: 16px;
+				font-size: 12px;
 				padding-top: 0;
-				margin-top: -7px;
+				margin-top: -5px;
 			}
 		}
 		&__img{
-			padding-top: 0;
-			width: 27px;
+			padding-top: 3px;
+			width: 20px;
 		}
 	}
 	.show-filter {
-		top: 6px;
+		top: 99px;
+		right: 15px;
 		width: 32px;
 		height: 32px;
 	}

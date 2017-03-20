@@ -1,6 +1,6 @@
 @media screen and (max-width: 992px) {
 	.news{
-		padding: 120px 0 88px;
+		padding: 206px 0 88px;
 		&__list{
 			padding: 0;
 		}
@@ -52,36 +52,42 @@
 			top: 2px;
 			width: 146px;
 			height: 48px;
+			margin-right: 0;
+			font-size: 24px;
 			&:after{
-				top: 17px;
+				top: 15px;
 			}
 		}
 	}
 	.news-item{
+		margin-bottom: 17px;
 		&__img{
 			width: 293px;
 		}
 		&__content{
 			width: calc(100% - 293px);
-			padding: 0 10px;
+			padding: 0 10px 0 29px;
 		}
 	}
 	.news-item:nth-child(2n) .news-item__content {
-		padding: 0 10px;
+		padding: 0 27px 0 10px;
 	}
 	.news-content{
 		&__date{
-			font-size: 18px;
+			font-size: 19px;
+			padding-left: 40px;
 			&:before{
 				top: 1px;
+				width: 24px;
+				height: 24px
 			}
 		}
 		&__text{
 			display: none;
 		}
 		&__name{
-			font-size: 20px;
-			line-height: 26px;
+			font-size: 23px;
+			line-height: 30px;
 			margin: 3px 0;
 		}
 	}
@@ -89,30 +95,37 @@
 
 @media screen and (max-width: 640px) {
 	.news{
-		padding: 120px 0 40px;
+		padding: 153px 0 40px;
+		.container{
+			padding: 0 21px;
+		}
 	}
 	.news-line{
-		margin-bottom: 15px;
+		margin-bottom: 17px;
 		&__head{
 			font-size: 22px;
 		}
 		&__link{
-			width: 125px;
-			height: 40px;
-			line-height: 36px;
+			width: 111px;
+			height: 36px;
+			padding-left: 18px;
+			line-height: 32px;
 			margin-right: 0;
 			font-size: 18px;
 			&:after{
-				top: 13px;
+				top: 12px;
+				right: 17px;
+				width: 18px;
+				height: 10px;
 			}
 		}
 	}
 	.news-item{
 		&__img{
-			width: 200px;
+			width: 218px;
 		}
 		&__content{
-			width: calc(100% - 200px);
+			width: calc(100% - 218px);
 		}
 	}
 	.news-content{

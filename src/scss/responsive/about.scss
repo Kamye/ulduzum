@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 992px) {
 	.about{
-		padding-top: 120px;
+		padding-top: 213px;
 		padding-bottom: 60px;
 		&__head{
 			text-align: center;
@@ -116,7 +116,6 @@
 			margin-bottom: 35px;
 		}
 		&__content{
-			padding: 0 55px;
 			margin-bottom: 22px;
 		}
 		&__list{
@@ -125,6 +124,8 @@
 	}
 	.about-content-text{
 		margin-bottom: 15px;
+		font-size: 22px;
+		line-height: 32px;
 	}
 	.about-link{
 		&__text{
