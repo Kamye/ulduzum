@@ -162,6 +162,7 @@ Array.prototype.forEach.call( inputs, function( input )
 {
     var label	 = input.nextElementSibling,
         labelVal = label.innerHTML;
+    var namePlaceHolder = label.nextElementSibling;
 
     input.addEventListener( 'change', function( e )
     {
@@ -171,8 +172,16 @@ Array.prototype.forEach.call( inputs, function( input )
         else
             fileName = e.target.value.split( '\\' ).pop();
 
-        if( fileName )
-            label.querySelector( 'span' ).innerHTML = fileName;
+        if(fileName.length > 14){
+            var extension = fileName.substr(fileName.length - 4);
+            var cut_name = fileName.slice(0, 6);
+            fileName = cut_name + '...' + extension;
+        }
+
+        if( fileName ){
+            /*label.querySelector( 'span' ).innerHTML = fileName;*/
+            namePlaceHolder.innerHTML = fileName;
+        }
         else
             label.innerHTML = labelVal;
     });
@@ -225,4 +234,18 @@ $('button.sms-1-submit').on('click', function(){
     }
 });
 
-$('.tabs').tabslet();
+$('.tabs-main').tabslet({
+    mouseevent: 'click',
+    attribute: 'href',
+    animation: true,
+    autorotate: true,
+    delay: 3000
+});
+
+$('.nav-item__link_search').on('click', function(){
+    if($('.search').is(':visible')){
+        $('.search').show();
+    } else{
+        $('.search').hide();
+    }
+});

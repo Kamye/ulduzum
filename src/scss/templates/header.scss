@@ -64,6 +64,7 @@
 
 .header{
     display: block;
+    position: relative;
 }
 
 .slicknav_menu{
@@ -274,4 +275,37 @@
 
 .nav-link-img{
     padding-top: 20px;
+}
+
+.search{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    top: 39px;
+    display: none;
+    &__area{
+        font-size: 22px;
+        font-family: 'PrivaPro-Two';
+        line-height: 76px;
+        width: 100%;
+        outline: none;
+        border: none;
+        padding-left: 32px;
+    }
+    &__close{
+        width: 32px;
+        height: 32px;
+        background: url("../../images/search-close.png") top center no-repeat;
+        border: none;
+        outline: none;
+        padding: 0;
+        position: absolute;
+        right: 32px;
+        top: 22px;
+    }
+}
+
+.search-wrap{
+    position: relative;
 }

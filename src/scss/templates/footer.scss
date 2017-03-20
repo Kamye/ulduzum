@@ -196,8 +196,22 @@
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-    &:hover{
-        background: #e50028;
-        transition: 500ms;
+    &__fb{
+        &:hover{
+            background: #39539c;
+            transition: 500ms;
+        }
+    }
+    &__twitter{
+        &:hover{
+            background: #53abeb;
+            transition: 500ms;
+        }
+    }
+    &__yt{
+        &:hover{
+            background: #d9342c;
+            transition: 500ms;
+        }
     }
 }

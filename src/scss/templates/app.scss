@@ -26,10 +26,16 @@
         color: #3a3434;
         line-height: 32px;
         margin-bottom: 39px;
+        display: inline-block !important;
     }
     &__link{
         padding-top: 25px;
+        display: inline-block !important;
     }
+}
+
+.applic-block-text{
+    font-size: inherit;
 }
 
 .applic-list{
@@ -65,7 +71,29 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    &_act{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}
+
+.tabs{
+    .active{
+        .applic-item__img{
+            background: #e70025;
+            .applic-item-img{
+                display: none;
+                &_act{
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 .applic-link{
@@ -92,9 +120,11 @@
     display: inline-block;
     position: absolute;
     left: 176px;
-    top: 95px;
+    top: 120px;
 }
 
 .applic-logo{
     display: none;
 }
+
+
