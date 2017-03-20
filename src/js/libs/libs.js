@@ -9,3 +9,4 @@
 //= aos.js
 //= jquery.slicknav.js
 //= jquery.tabslet.js
+//= jquery.validate.min.js

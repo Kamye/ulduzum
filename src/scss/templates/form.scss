@@ -263,7 +263,12 @@
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-	background-color: red;
+	background-color: #e60029;
+}
+
+.file__name{
+	font-size: 16px;
+	font-family: 'PrivaPro-Two';
 }
 
 .inputfile + label {
@@ -272,5 +277,21 @@
 
 .inputfile:focus + label {
 	outline:none;
+}
+
+/*------form-error-----*/
+
+.error{
+	.form-item__head{
+		color: red;
+	}
+	.form-item__area{
+		border-color: red;
+		&::-webkit-input-placeholder{
+			color: red;
+			opacity: 1;
+		}
+	}
+
 }
 

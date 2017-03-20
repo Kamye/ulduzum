@@ -104,36 +104,6 @@
             z-index: 1;
         }
     }
-    .footer-block{
-        width: 50%;
-        vertical-align: top;
-        text-align: left;
-        display: inline-block;
-        margin-bottom: 20px;
-        margin-right: 0;
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
-
-    .item-element{
-        width: 100%;
-        margin: 15px 0 0 0;
-    }
-
-    .footer {
-        padding: 36px 65px 30px;
-    }
-
-    .footer-item-2{
-        display: block;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .footer-number{
-        display: inline-block;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -339,9 +309,6 @@
             display: none;
         }
     }
-    .footer {
-        padding: 36px 15px 30px;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -490,43 +457,6 @@
     .store-img{
         width: 202px;
     }
-    .footer{
-        padding: 25px 13px;
-    }
-    .footer-block{
-        width: 100%;
-        &:first-child{
-            display: none;
-        }
-    }
-    .footer-item-2{
-        &:first-child{
-            display: none;
-        }
-        &:nth-child(2){
-            float: left;
-        }
-        &:last-child{
-            float: right;
-        }
-    }
-    .footer-item{
-        &__text{
-            display: none;
-        }
-        &__logo{
-            padding: 12px 11px 0 0;
-            width: 210px;
-        }
-    }
-    .contacts-link{
-        width: 56px;
-        height: 56px;
-        margin-right: 36px;
-        &__i{
-            font-size: 33px;
-        }
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -609,17 +539,6 @@
     }
     .store-img{
         width: 150px;
-    }
-    .footer-item{
-        &__logo{
-            width: 146px;
-        }
-    }
-    .contacts-link{
-        margin-right: 20px;
-        &__i{
-            font-size: 33px;
-        }
     }
 }
 
@@ -726,26 +645,6 @@
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 23px;
-        }
-    }
-    .footer-item-2{
-        float: none !important;
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    .footer-block{
-        display: block;
-        width: 277px;
-        margin: 0 auto !important;
-    }
-    .contacts-link{
-        float: none;
-        display: inline-block;
-    }
-    .footer-item{
-        &__logo{
-            padding: 0;
         }
     }
 }

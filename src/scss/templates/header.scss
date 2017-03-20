@@ -230,13 +230,6 @@
             border-bottom: 1px solid #e50028;
             transition: 500ms;
         }
-        &_search{
-            &:hover{
-                border-bottom: none;
-                opacity: 0.5;
-                transition: 500ms;
-            }
-        }
         &_active{
             color: #e50028;
         }
@@ -303,6 +296,15 @@
         position: absolute;
         right: 32px;
         top: 22px;
+    }
+}
+
+.search-img{
+    cursor: pointer;
+    &:hover{
+        border-bottom: none;
+        opacity: 0.5;
+        transition: 500ms;
     }
 }
 

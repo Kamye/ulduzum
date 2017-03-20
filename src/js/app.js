@@ -234,18 +234,63 @@ $('button.sms-1-submit').on('click', function(){
     }
 });
 
-$('.tabs-main').tabslet({
+$('.tabs').tabslet({
     mouseevent: 'click',
     attribute: 'href',
     animation: true,
     autorotate: true,
-    delay: 3000
+    delay: 3000,
+    container: '#tabs_container'
 });
 
-$('.nav-item__link_search').on('click', function(){
+$('.tabs-2').tabslet({
+});
+
+$('.nav-link-img').on('click', function(){
     if($('.search').is(':visible')){
-        $('.search').show();
+        $('.search').fadeOut();
     } else{
-        $('.search').hide();
+        $('.search').fadeIn();
     }
+});
+
+$('.search__close').on('click', function(){
+
+});
+
+$(document).keyup(function(e) {
+    if (e.keyCode === 27){
+        $('.search').fadeOut();
+    }
+});
+
+$(function() {
+    $("form[name='form']").validate({
+        errorPlacement: function(error, element) {
+            element.attr("placeholder",error.text());
+        },
+        highlight: function (element, errorClass, validClass) {
+            if (element.type === "radio") {
+                this.findByName(element.name).addClass(errorClass).removeClass(validClass);
+            } else {
+                $(element).parent().addClass(errorClass).removeClass(validClass);
+            }
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            if (element.type === "radio") {
+                this.findByName(element.name).removeClass(errorClass).addClass(validClass);
+            } else {
+                $(element).parent().removeClass(errorClass).addClass(validClass);
+            }
+        },
+        rules: {
+            field1: "required"
+        },
+        messages: {
+            field1: "Xananı doldurmaq vacibdir"
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
 });
