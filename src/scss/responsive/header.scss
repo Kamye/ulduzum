@@ -1,4 +1,43 @@
 @media screen and (max-width: 992px) {
+
+	.slicknav_nav {
+		clear: both;
+		color: #fff;
+		margin: 0;
+		font-size: .875em;
+		position: fixed;
+		width: 100%;
+		background: #fff;
+		overflow-y: scroll;
+		a{
+			border-bottom: 1px solid #e8e8e8;
+			border-top: none;
+		}
+	}
+
+	.nav-item__link_sms{
+		display: block;
+		width: 100%;
+		line-height: 47px;
+		position: fixed;
+		bottom: 0;
+		background: #e50028;
+		color: #fff;
+		margin-left: 0;
+		text-align: center;
+		font-size: 20px;
+		span:before{
+			content: '';
+			height: 28px;
+			width: 32px;
+			display: inline-block;
+			top: 9px;
+			margin-right: 20px;
+			position: relative;
+			background: url(../../images/sms-act.png) top left no-repeat;
+		}
+	}
+
 	.language{
 		background-color: #404040;
 		text-align: right;

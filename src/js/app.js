@@ -150,10 +150,24 @@ $(document).ready(function(){
 });
 
 $(function(){
-    $('#nav').slicknav();
+    $('#nav').slicknav({
+        'afterOpen': function () {
+            $('html, body').animate({scrollTop: 0}, 100);
+            var win_height = $(window).height();
+            $('.slicknav_nav').height(win_height - 132);
+            $('body').css('overflow', 'hidden');
+            $('ul .nav-item__link_sms').remove();
+            $('.slicknav_menu').append('<a class="nav-item__link nav-item__link_sms nav-item__link_active" href="#" role="menuitem" tabindex="0"><span>Pulsuz SMS</span></a>')
+        },
+        'beforeClose': function () {
+            $('.slicknav_menu .nav-item__link_sms').remove();
+            $('body').css('overflow', 'auto');
+        }
+    });
 });
 
-$('#bar').on('click', function(){ $("#nav").slicknav('toggle');})
+
+$('#bar').on('click', function(){ $("#nav").slicknav('toggle');});
 
 AOS.init();
 
@@ -198,6 +212,21 @@ $('body').on('click', '#sorting-filter .selection', function () {
 $('.show-filter').on('click', function () {
     $('.sort-modal, .sort-backdrop').show();
     $('body').addClass('body-show-filter');
+    setTimeout(function () {
+        var height_filter = $('.sort-dialog').height();
+        $('.sort-filter-wrap').height(height_filter - 101);
+    }, 100)
+});
+
+$(window).on('resize', function () {
+    if ($('.sort-modal').length > 0 ) {
+        var height_filter = $('.sort-dialog').height();
+        $('.sort-filter-wrap').height(height_filter - 101);
+
+        var win_height = $(window).height();
+        $('.slicknav_nav').height(win_height - 132);
+        $('body').css('overflow', 'hidden');
+    }
 });
 
 $('.sort-close__btn').on('click', function(){
@@ -221,8 +250,15 @@ $('.sort-filter__header').on('click', function () {
 
 $('.sort-list__item').on('click', function(){
     $(this).parent().prev('.sort-filter__chosen').text($(this).text());
+    $(this).addClass('choosen_filter');
 });
 
+$('.choosen_filter').each(function(){
+    var attr_filter = $(this).attr('for');
+    $('#'+attr_filter).prop( "checked", true );
+    $(this).parent().prev('.sort-filter__chosen').text($(this).text());
+    $('.sort-filter__chosen').show();
+});
 
 $('button.sms-1-submit').on('click', function(){
     if($('#confirm').is(':checked') && $('.form-item-number').val().length == 9){
@@ -294,3 +330,4 @@ $(function() {
         }
     });
 });
+

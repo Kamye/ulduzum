@@ -8,7 +8,9 @@
         position: fixed;
         z-index: 1050;
         display: none;
-        top: 0;
+        top: 171px;
+        background: #404040;
+        //top: 0;
         right: 0;
         bottom: 0;
         left: 0;
@@ -17,8 +19,8 @@
     }
 
     .sort-dialog{
-        background: #404040;
         font-size: 15px;
+        height: 100%;
         color: #fff;
         position: relative;
         width: auto;
@@ -63,6 +65,10 @@
                 transform: rotate(45deg);
             }
         }
+    }
+
+    .sort-filter-wrap{
+        overflow-y: auto;
     }
 
     .sort-filter{
@@ -162,5 +168,17 @@
         .sms-1-submit{
             float: none;
         }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sort-modal{
+        top: 129px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sort-modal{
+        top: 86px;
     }
 }
