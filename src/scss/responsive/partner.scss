@@ -267,9 +267,10 @@
 	.partner-page{
 		padding-bottom: 26px;
 		&__partners{
+			padding: 0 15px;
 			background: rgba(0, 0, 0, 0);
 			.partners-item{
-				width: 293px;
+				width: 100%;
 				margin: 0 auto 5px!important;
 				&:nth-child(3){
 					margin: 0 auto 5px!important;
@@ -282,9 +283,17 @@
 						width: 80px;
 					}
 				}
+				&__top{
+					float: none;
+					display: inline-block;
+					vertical-align: middle;
+				}
 				&__bot{
 					padding-top: 4px;
 					height: auto;
+					float: none;
+					display: inline-block;
+					vertical-align: middle;
 				}
 			}
 		}

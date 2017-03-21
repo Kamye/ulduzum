@@ -34,6 +34,7 @@
 @media screen and (max-width: 767px) {
 
 	.sms {
+		min-height: calc(100vh - 283px);
 		padding-top: 61px;
 		padding-bottom: 71px;
 		.container{
@@ -155,6 +156,7 @@
 
 @media screen and (max-width: 640px) {
 	.sms{
+		min-height: calc(100vh - 212px);
 		padding-top: 48px;
 		padding-bottom: 48px;
 		.container{
@@ -245,6 +247,7 @@
 
 @media screen and (max-width: 480px) {
 	.sms{
+		min-height: calc(100vh - 150px);
 		padding-bottom: 35px;
 		padding-top: 27px;
 	}
