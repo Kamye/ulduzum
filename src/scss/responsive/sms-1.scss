@@ -27,31 +27,30 @@
 
 @media screen and (max-width: 992px){
 
-	.sms {
-		padding-top: 231px;
-		padding-bottom: 104px;
-	}
+
 
 }
 
 @media screen and (max-width: 767px) {
 
 	.sms {
-		padding-top: 213px;
-		padding-bottom: 155px;
+		padding-top: 61px;
+		padding-bottom: 71px;
 		.container{
 			padding: 0 27px;
 		}
 	}
 
 	.sms .sms-item__select .select2-container .select2-selection--single .select2-selection__rendered,
-	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered{
+	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered,
+	.sms-item__select .select2-container .select2-selection--single .select2-selection__rendered{
 		line-height: 1;
 		font-size: 28px;
 		padding: 16px 0;
 	}
 	.sms .sms-item__select .select2-container .select2-selection--single .select2-selection__rendered:after,
-	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered:after{
+	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered:after,
+	.sms-item__select .select2-container .select2-selection--single .select2-selection__rendered:after{
 		top: 26px;
 	}
 
@@ -156,20 +155,22 @@
 
 @media screen and (max-width: 640px) {
 	.sms{
-		padding-top: 160px;
-		padding-bottom: 113px;
+		padding-top: 48px;
+		padding-bottom: 48px;
 		.container{
 			padding: 0 13px;
 		}
 	}
 	.sms .sms-item__select .select2-container .select2-selection--single .select2-selection__rendered,
-	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered{
+	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered,
+	.sms-item__select .select2-container .select2-selection--single .select2-selection__rendered{
 		line-height: 1;
 		font-size: 22px;
 		padding: 13px 0;
 	}
 	.sms .sms-item__select .select2-container .select2-selection--single .select2-selection__rendered:after,
-	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered:after{
+	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered:after,
+	.sms-item__select .select2-container .select2-selection--single .select2-selection__rendered:after{
 		top: 20px;
 	}
 	.form-item__head {
@@ -204,10 +205,6 @@
 	.form-block__head,
 	.sms__block .form-block__head{
 		margin-bottom: 30px;
-	}
-	.sms-item__select .select2-container .select2-selection--single .select2-selection__rendered{
-		line-height: 17px;
-		font-size: 17px;
 	}
 	.sms-4{
 		padding-bottom: 33px;
@@ -248,17 +245,19 @@
 
 @media screen and (max-width: 480px) {
 	.sms{
-		padding-bottom: 73px;
-		padding-top: 107px;
+		padding-bottom: 35px;
+		padding-top: 27px;
 	}
 	.sms .sms-item__select .select2-container .select2-selection--single .select2-selection__rendered,
-	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered {
+	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered,
+	.sms-item__select .select2-container .select2-selection--single .select2-selection__rendered{
 		line-height: 1;
 		font-size: 15px;
 		padding: 10px 0;
 	}
 	.sms .sms-item__select .select2-container .select2-selection--single .select2-selection__rendered:after,
-	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered:after {
+	.form-item__select .select2-container .select2-selection--single .select2-selection__rendered:after,
+	.sms-item__select .select2-container .select2-selection--single .select2-selection__rendered:after{
 		top: 14px;
 		width: 13px;
 		height: 6px;

@@ -21,7 +21,7 @@
         width: 100%;
     }
 	.traveler{
-		padding-top: 120px;
+        padding-top: 57px;
 		.container{
 			padding: 0 27px;
 		}
@@ -30,14 +30,26 @@
 
 @media screen and (max-width: 767px) {
 	.traveler{
+        padding-top: 42px;
         padding-bottom: 21px;
+        .sms-1-submit{
+            margin: 8px 0px 30px 0;
+        }
+        .tabs__caption {
+            margin-bottom: 40px;
+        }
+        .traveler__head{
+            text-align: center;
+        }
         .one-partner-item__table{
             width: 750px;
         }
         .content__item{
             width: 100%;
             margin-right: 0;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 23px;
+            line-height: 1.5;
         }
         .tabs__caption{
             text-align: center;
@@ -47,6 +59,7 @@
             display: inline-block;
         }
         .one-partner-item__table{
+            display: table;
             th{
                 height: 66px;
             }
@@ -57,18 +70,93 @@
         .traveler-form{
             width: 100%;
         }
-        .tabs__content .form-item_sub{
-            font-size: 21px;
-            bottom: 5px;
+        .tabs__content .form-item_sub {
+            bottom: 18px;
             left: 3px;
+            font-size: 25px;
         }
     }
 }
 
 @media screen and (max-width: 640px) {
 	.traveler{
+        padding-top: 32px;
+        .traveler__head {
+            margin-bottom: 37px;
+        }
+        .tabs .tabs-item {
+            box-sizing: border-box;
+            font-size: 20px;
+            line-height: 48px;
+            text-align: center;
+            width: 147px;
+            height: 50px;
+        }
+        .tabs__caption {
+            margin-bottom: 27px;
+        }
+        .content__item{
+            font-size: 18px;
+        }
 		.container{
 			padding: 0 13px;
 		}
-	}
+        .tabs__content .form-item_sub {
+            bottom: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .traveler {
+        padding-top: 19px;
+        .tabs .tabs-item {
+            box-sizing: border-box;
+            font-size: 15px;
+            line-height: 33px;
+            text-align: center;
+            width: 103px;
+            height: 36px;
+            border: 2px solid #e60029;
+            border-radius: 28px;
+        }
+        .tabs .tabs-item.active {
+            border: 2px solid #e60029;
+            background: #e60029;
+            color: #fff;
+        }
+        .traveler__head {
+            margin-bottom: 20px;
+        }
+        .tabs__caption {
+            margin-bottom: 17px;
+        }
+        .content__item {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .one-partner-item__table th {
+            height: 45px;
+            font-size: 14px;
+        }
+        .one-partner-item__table td {
+            font-size: 13px;
+            height: 39px;
+        }
+        .tabs__content .one-partner-item__table td:first-child {
+            width: 74%;
+            text-align: left;
+            padding-left: 23px;
+        }
+        .tabs__content .one-partner-item__table th:first-child {
+            padding-left: 22px;
+        }
+        .tabs__content .form-item_sub {
+            bottom: 7px;
+            font-size: 18px;
+        }
+        .sms-1-submit {
+            margin: 8px 0 16px;
+        }
+    }
 }

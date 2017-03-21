@@ -20,7 +20,7 @@
 		font-size: 22px;
 		line-height: 53px;
 		float: left;
-		margin-right: 7px;
+		margin-right: 20px;
 		text-align: center;
 		width: 158px;
 		height: 56px;
@@ -116,4 +116,15 @@
 
 .tabs-item{
 	cursor: pointer;
+}
+
+.tabs .tabs-item.active {
+	border: 2px solid #e60029;
+	background: #e60029;
+	color: #fff;
+}
+
+.tabs .tabs-item {
+	border: 2px solid #e60029;
+	border-radius: 28px;
 }

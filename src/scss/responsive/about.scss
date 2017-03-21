@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 992px) {
 	.about{
-		padding-top: 213px;
+		padding-top: 43px;
 		padding-bottom: 60px;
 		&__head{
 			text-align: center;
@@ -129,7 +129,7 @@
 	}
 	.about-link{
 		&__text{
-			font-size: 14px;
+			font-size: 15px;
 			line-height: 18px;
 		}
 		&__img-block {
@@ -139,7 +139,7 @@
 .about-item{
 	&:nth-child(9){
 		.about-link-img{
-			width: 30%;
+			width: 35%;
 		}
 	}
 }
@@ -147,7 +147,7 @@
 
 @media screen and (max-width: 640px) {
 	.about{
-		padding-top: 145px;
+		padding-top: 50px;
 		&__content{
 			padding: 0;
 		}
@@ -157,9 +157,36 @@
 	}
 	.about-content-text{
 		font-size: 18px;
-		line-height: 24px;
+		line-height: 26px;
 	}
 	.about-item{
+		width: 25%;
+	}
+	.about-link{
+		padding: 0 7px;
+		&__text{
+			font-size: 11px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.about{
+		padding-top: 34px;
+		&__head{
+			margin-bottom: 15px;
+			font-size: 17px;
+		}
+		.container{
+			padding: 0 20px;
+		}
+	}
+	.about-content-text {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 10px;
+	}
+	.about-item {
 		width: 33%;
 		&:nth-child(5){
 			margin-left: -2px;
@@ -177,39 +204,14 @@
 			margin-top: -2px;
 		}
 	}
-	.about-link{
-		padding: 0 7px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.about{
-		padding-top: 130px;
-		&__head{
-			margin-bottom: 15px;
-		}
-		.container{
-			padding: 0 20px;
-		}
-	}
 	.about-content-text {
-		font-size: 16px;
-		line-height: 22px;
-		margin-bottom: 10px;
+		font-size: 13px;
+		line-height: 1.5;
 	}
-	.about-item {
-		width: 50%;
-		&:nth-child(2n - 1){
-			margin-left: 0;
-		}
-		&:nth-child(n + 3){
-			margin-top: -2px;
-		}
-		&:nth-child(4){
-			margin-left: -2px;
-		}
-		&:last-child{
-			margin-left: -2px;
+	.about-link{
+		padding: 0 3px;
+		&__text{
+			font-size: 10px;
 		}
 	}
 }

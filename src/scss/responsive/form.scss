@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 992px) {
     .form{
-        padding-top: 120px;
+        padding-top: 59px;
         .container{
             padding: 0 26px;
         }
@@ -53,9 +53,12 @@
     .form .label{
         font-size: 19px;
     }
-
+    .form__head {
+        margin-bottom: 27px;
+    }
     .form{
         padding-bottom: 40px;
+        padding-top: 35px;
         .container{
             padding: 0 13px;
         }
