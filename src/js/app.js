@@ -234,7 +234,7 @@ $('button.sms-1-submit').on('click', function(){
     }
 });
 
-$('.tabs').tabslet({
+$('.app-tabs').tabslet({
     mouseevent: 'click',
     attribute: 'href',
     animation: true,
@@ -255,7 +255,7 @@ $('.nav-link-img').on('click', function(){
 });
 
 $('.search__close').on('click', function(){
-
+    $('.search').fadeOut();
 });
 
 $(document).keyup(function(e) {

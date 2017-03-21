@@ -105,6 +105,7 @@
 			width: 24px;
 			height: 24px;
 			background: url("../../images/one-partner-help.png") top left no-repeat;
+			background-size: contain;
 			position: absolute;
 			top: -2px;
 			left: -38px;
@@ -240,6 +241,7 @@
 			background: url("../../images/one-partner-address.png");
 			top: 5px;
 			left: -30px;
+			background-size: contain;
 		}
 		&_phone-home:before{
 			width: 18px;
@@ -247,6 +249,7 @@
 			background: url("../../images/home-phone.png");
 			top: 8px;
 			left: -32px;
+			background-size: contain;
 		}
 		&_phone-mob:before{
 			width: 10px;
@@ -254,6 +257,7 @@
 			background: url("../../images/mob-phone.png");
 			top: 8px;
 			left: -28px;
+			background-size: contain;
 		}
 		&_site{
 			text-decoration: underline;
@@ -263,6 +267,7 @@
 				background: url("../../images/site.png");
 				top: 8px;
 				left: -32px;
+				background-size: contain;
 			}
 		}
 

@@ -83,6 +83,7 @@ iframe{
     &:after{
         transition: 500ms;
         background: url("../../images/one-news-arrow-act.png") no-repeat;
+        background-size: contain;
     }
 }
 
@@ -90,6 +91,7 @@ iframe{
     &:after{
         transition: 500ms;
         background: url("../../images/news-arrow-act.png") no-repeat;
+        background-size: contain;
     }
 }
 

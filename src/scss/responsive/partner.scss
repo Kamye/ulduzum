@@ -55,7 +55,14 @@
 @media screen and (max-width: 992px) {
 	.partner-page{
 		.slider {
-			padding-top: 172px;
+			display: none;
+		}
+		.partner-lines{
+			height: 103px;
+			&__head{
+				font-size: 28px;
+				line-height: 113px;
+			}
 		}
 		&__partners{
 			.partners-item{
@@ -82,21 +89,16 @@
 	}
 	.show-filter{
 		display: block;
-		bottom: 175px;
 		right: 30px;
-		top: auto;
+		top: 198px;
 	}
 
 }
 
 @media screen and (max-width: 767px) {
 	.partner-page{
-		padding-top: 198px;
-		.slider {
-			display: none;
-		}
 		&__partner-lines{
-			margin-bottom: 29px;
+			margin-bottom: 17px;
 		}
 		.container{
 			padding: 0;
@@ -175,7 +177,6 @@
 
 @media screen and (max-width: 640px) {
 	.partner-page{
-		padding-top: 148px;
 		&__partners{
 			.partners-item{
 				width: 440px;
@@ -195,6 +196,11 @@
 		}
 		.partner-lines{
 			margin-bottom: 22px;
+			height: 68px;
+			&__head{
+				font-size: 20px;
+				line-height: 86px
+			}
 		}
 	}
 	.show-filter {
@@ -247,7 +253,6 @@
 
 @media screen and (max-width: 480px) {
 	.partner-page{
-		padding-top: 92px;
 		&__partners{
 			background: rgba(0, 0, 0, 0);
 			.partners-item{
@@ -268,8 +273,10 @@
 		}
 		.partner-lines{
 			margin-bottom: 13px;
+			height: 46px;
 			&__head {
-				line-height: 40px;
+				font-size: 13px;
+				line-height: 58px;
 			}
 		}
 	}

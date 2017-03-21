@@ -33,7 +33,7 @@
 }
 .responsive{
     display: none;
-    position: absolute;
+    position: relative;
     top:0;
     width: 100%;
     z-index: 999;
@@ -48,17 +48,17 @@
     z-index: 999;
     &__logo{
         display: block;
-        padding: 8px 0;
+        padding: 21px 0;
         float: left;
         &_img{
-            width: 112px;
+            width: 162px;
         }
     }
     &__bar{
         float: right;
-        padding: 17px 0;
+        padding: 36px 0;
         cursor: pointer;
-        width: 37px;
+        width: 50px;
     }
 }
 
