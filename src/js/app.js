@@ -151,7 +151,7 @@ $(document).ready(function(){
 
 $(function(){
     $('#nav').slicknav({
-        'afterOpen': function () {
+        'beforeOpen': function () {
             $('html, body').animate({scrollTop: 0}, 100);
             $('html, body').css('position', 'fixed');
             var win_height = $(window).height();
