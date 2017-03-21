@@ -81,6 +81,18 @@
 				.partners-link__active {
 					width: 200px;
 				}
+				&:hover{
+					.partners-link{
+						transition: top 700ms;
+						.partners-link__default{
+							top: 0;
+							left: 0;
+						}
+						.partners-link__active{
+							bottom: -100%;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -253,10 +265,15 @@
 
 @media screen and (max-width: 480px) {
 	.partner-page{
+		padding-bottom: 26px;
 		&__partners{
 			background: rgba(0, 0, 0, 0);
 			.partners-item{
 				width: 293px;
+				margin: 0 auto 5px!important;
+				&:nth-child(3){
+					margin: 0 auto 5px!important;
+				}
 				.partners-logo{
 					width: 83px;
 				}
@@ -295,17 +312,19 @@
 	.partners-line{
 		width: 130px;
 		margin-bottom: 7px;
+		height: 1px;
 	}
 	.present-item{
 		&__link{
-			width: 48px;
-			height: 16px;
+			width: 47px;
+			height: 15px;
 			font-size: 8px;
-			line-height: 13px;
+			line-height: 15px;
 			margin-bottom: 4px;
+			border: 1px solid #e50028;
 		}
 		&__text{
-			font-size: 10px;
+			font-size: 9px;
 			line-height: 12px;
 		}
 		&__percent{

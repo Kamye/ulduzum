@@ -97,19 +97,24 @@
 		}
 	}
 	.one-news-line{
+		margin-bottom: 10px;
 		&__link{
 			width: 112px;
 			height: 25px;
 			font-size: 12px;
-			line-height: 18px;
+			line-height: 22px;
 			margin-right: 0;
 			padding-left: 30px;
+			border: 1px solid #e50028;
 			&:after{
 				width: 11px;
 				height: 6px;
 				left: 12px;
-				top: 6px;
+				top: 8px;
 			}
+		}
+		&__head{
+			line-height: 26px;
 		}
 	}
 

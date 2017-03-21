@@ -273,7 +273,7 @@
 		}
 	}
 	.one-partner-line{
-		margin-bottom: 0px;
+		margin-bottom: 0;
 		&__name{
 			padding-top: 15px;
 			padding-left: 9px;
@@ -336,7 +336,8 @@
 		padding: 0;
 	}
 	.one-partner-item__table{
-		display: none;
+		width: 750px;
+		display: table;
 	}
 	.one-partner-item{
 		margin-bottom: 28px;
@@ -455,6 +456,15 @@
 		height: 60px;
 		width: 60px;
 	}
+	.one-partner-item__table{
+		width: 750px;
+	}
+	.one-partner-item__table{
+		display: table;
+		th{
+			height: 66px;
+		}
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -507,10 +517,6 @@
 		}
 	}
 	.one-partner-item{
-		&__news {
-			width: 380px;
-			margin: 0 auto;
-		}
 		&__link{
 			line-height: 31px;
 			padding-left: 11px;
@@ -544,7 +550,7 @@
 		margin-bottom: 17px;
 		&__item{
 			width: 100px;
-			margin-right: 20px;
+			margin-right: 7px;
 		}
 	}
 	.one-partner-item__link_address:before {
@@ -599,7 +605,7 @@
 	}
 
 	.one-partner-item__photo_link {
-		height: 148px;
+		height: 145px;
 	}
 
 	.gallery__top .slick-next, .gallery__top .slick-prev {
@@ -616,18 +622,20 @@
 	.gallery{
 		&__top{
 			.slick-next{
-				top: 164px;
+				top: 50%;
 				right: 18px;
 			}
 			.slick-prev{
-				top: 164px;
+				top: 50%;
 				left: 18px;
 			}
 		}
 	}
 	.gallery.modal a.close-modal {
-		width: 22px;
-		height: 22px;
+		width: 16px;
+		height: 16px;
+		top: 18px;
+		right: 15px;
 	}
 }
 
@@ -672,9 +680,6 @@
 	.one-partner-logo {
 		width: 100%;
 	}
-	.one-partner-item__news {
-		width: 273px;
-	}
 	.one-partner-news__content {
 		padding: 18px 0 20px 20px;
 	}
@@ -683,7 +688,7 @@
 	}
 	.one-partner-block__present-line {
 		width: calc(100% - 134px);
-		padding-left: 14px;
+		padding-left: 7px;
 	}
 	.one-partner__head {
 		font-size: 12px;
@@ -696,7 +701,8 @@
 		width: 57px;
 		height: 19px;
 		font-size: 9px;
-		line-height: 16px;
+		line-height: 17px;
+		border: 1px solid #e50028;
 	}
 	.one-partner-present-text {
 		font-size: 10px;
@@ -704,7 +710,7 @@
 	}
 	.one-partner-present__item {
 		width: 66px;
-		margin-right: 14px;
+		margin-right: 8px;
 	}
 	.one-partner-help__link {
 		font-size: 11px;
@@ -712,7 +718,7 @@
 	.one-partner-help__link:before {
 		width: 16px;
 		height: 15px;
-		top: 1px;
+		top: -3px;
 		left: -23px;
 	}
 	.one-partner-present {
@@ -751,6 +757,22 @@
 	}
 
 	.one-partner-item__photo_link {
-		height: 100px;
+		height: 94px;
+	}
+	.one-partner-item__table th {
+		height: 45px;
+		font-size: 14px;
+	}
+	.one-partner-item__table td {
+		font-size: 13px;
+		height: 39px;
+	}
+	.one-partner-item__table td:first-child {
+		width: 74%;
+		text-align: left;
+		padding-left: 23px;
+	}
+	.one-partner-item__table th:first-child {
+		padding-left: 22px;
 	}
 }
