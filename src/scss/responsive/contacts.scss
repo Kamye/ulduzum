@@ -34,7 +34,7 @@
         margin-right: 0;
     }
 	.contacts{
-		padding-top: 120px;
+		padding-top: 220px;
 		.container{
 			padding: 0 27px;
 		}
@@ -47,8 +47,51 @@
         margin-right: 0;
     }
     .contacts-inf{
+		padding-top: 9px;
         margin-bottom: 30px;
     }
+	.contacts {
+		padding-top: 206px;
+	}
+	.contacts__head{
+		text-align: center;
+	}
+	.contacts-map{
+		display: none;
+	}
+	.inf-item p,
+	.inf-item a{
+		font-size: 21px;
+	}
+	.contacts-form__head{
+		text-align: center;
+	}
+
+	.contacts-form{
+		.form-item{
+			margin-bottom: 49px;
+		}
+		.form-item_text{
+			text-align: center;
+		}
+		.form-item_text p,
+		.form-item_text textarea{
+			display: none;
+		}
+	}
+
+
+	.contacts__block{
+		padding-bottom: 0;
+	}
+
+	.contacts-form__button{
+		float: none;
+	}
+
+	.contacts-form__list .form-item__sub:nth-child(2){
+		margin-top: 16px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -57,6 +100,101 @@
 			padding: 0 13px;
 		}
 	}
+
+
+	.contacts-inf{
+		padding-top: 9px;
+		margin-bottom: 30px;
+	}
+	.contacts {
+		padding-top: 157px;
+	}
+	.contacts__head{
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.contacts-map{
+		display: none;
+	}
+	.inf-item p,
+	.inf-item a{
+		font-size: 17px;
+	}
+	.contacts-form__head{
+		text-align: center;
+	}
+
+	.contacts-form{
+		.form-item{
+			margin-bottom: 35px;
+		}
+		.form-item_text{
+			text-align: center;
+		}
+		.form-item_text p,
+		.form-item_text textarea{
+			display: none;
+		}
+	}
+
+	.contacts-form__list .form-item__sub:nth-child(2) {
+		margin-top: -4px !important;
+	}
+
+	.contacts-form__button {
+		width: 206px;
+		height: 48px;
+		font-size: 19px;
+		margin: 30px 3px 0 0;
+	}
+
+
+	.contacts__block{
+		padding-bottom: 0;
+	}
+
+	.contacts-form__button{
+		float: none;
+	}
+
+	.contacts-form__list .form-item__sub:nth-child(2){
+		margin-top: 16px;
+	}
+
 }
 
+@media screen and (max-width: 480px){
+	.contacts {
+		padding-top: 109px;
+		padding-bottom: 10px;
+	}
+	.inf-item a, .inf-item p {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.applic-item__img{
+		width: 40px;
+		height: 40px;
+	}
+	.inf-item__text,
+	.inf-item__text_link{
+		padding-left: 13px;
+		width: calc(100% - 40px);
+	}
+	.contacts-form__list .form-item__sub {
+		width: calc(100% - 119px);
+	}
+	.contacts-form__list .form-item__sub:nth-child(2) {
+		width: 105px;
+	}
+	.contacts-form__list .form-item__sub .form-item-text {
+		font-size: 12px;
+	}
+	.contacts-form__button {
+		width: 148px;
+		height: 36px;
+		font-size: 14px;
+		margin: 5px 3px 0 0;
+	}
+}
 
