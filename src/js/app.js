@@ -153,6 +153,7 @@ $(function(){
     $('#nav').slicknav({
         'afterOpen': function () {
             $('html, body').animate({scrollTop: 0}, 100);
+            $('html').css('position', 'fixed');
             var win_height = $(window).height();
             $('.slicknav_nav').height(win_height - 132);
             $('body').css('overflow', 'hidden');
@@ -160,6 +161,7 @@ $(function(){
             $('.slicknav_menu').append('<a class="nav-item__link nav-item__link_sms nav-item__link_active" href="#" role="menuitem" tabindex="0"><span>Pulsuz SMS</span></a>')
         },
         'beforeClose': function () {
+            $('html').css('position', 'static');
             $('.slicknav_menu .nav-item__link_sms').remove();
             $('body').css('overflow', 'auto');
         }
@@ -210,8 +212,10 @@ $('body').on('click', '#sorting-filter .selection', function () {
 });
 
 $('.show-filter').on('click', function () {
+    $('html, body').animate({scrollTop: 0}, 100);
     $('.sort-modal, .sort-backdrop').show();
     $('body').addClass('body-show-filter');
+    $('html').css('position', 'fixed');
     setTimeout(function () {
         var height_filter = $('.sort-dialog').height();
         $('.sort-filter-wrap').height(height_filter - 101);
@@ -232,6 +236,7 @@ $(window).on('resize', function () {
 $('.sort-close__btn').on('click', function(){
     $('.sort-modal, .sort-backdrop').hide();
     $('body').removeClass('body-show-filter');
+    $('html').css('position', 'static');
 });
 
 $('.sort-filter__header').on('click', function () {
