@@ -226,7 +226,7 @@ $(window).on('resize', function () {
     if ($('.sort-modal').length > 0 ) {
         var height_filter = $('.sort-dialog').height();
         $('.sort-filter-wrap').height(height_filter - 101);
-
+        
         var win_height = $(window).height();
         $('.slicknav_nav').height(win_height - 132);
         $('body').css('overflow', 'hidden');
