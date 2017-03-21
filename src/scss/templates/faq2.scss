@@ -28,7 +28,7 @@
     display: table-cell;
     vertical-align: middle;
     font-size: 22px;
-    font-family: 'PrivaPro-Four';
+    font-family: 'PrivaPro-Three';
     color: #3a3434;
     padding: 25px 0 25px 34px;
 }
@@ -39,11 +39,13 @@
 
 .accordion-item.open .type {
     background: url("../../images/active.png") no-repeat center;
+    background-size: contain;
 }
 
 .accordion-item .type {
     float: none;
     background: url("../../images/passive.png") no-repeat center;
+    background-size: contain;
 }
 
 .type{

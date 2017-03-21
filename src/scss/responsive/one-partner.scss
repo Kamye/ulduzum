@@ -272,16 +272,6 @@
 			padding-left: 9px;
 		}
 	}
-	.one-news-line{
-		&__link {
-			width: 218px;
-			height: 48px;
-			line-height: 48px;
-			margin-right: 11px;
-			padding-left: 60px;
-			font-size: 22px;
-		}
-	}
 	.one-partner-line{
 		margin-bottom: 0px;
 		&__name{
@@ -369,6 +359,22 @@
 					left: -26px;
 				}
 			}
+			&_phone-mob{
+				&:before{
+					width: 19px;
+					height: 33px;
+					top: 2px;
+					left: -21px;
+				}
+			}
+			&_site{
+				&:before{
+					width: 33px;
+					height: 33px;
+					top: 5px;
+					left: -27px;
+				}
+			}
 		}
 		&__text{
 			font-size: 24px;
@@ -380,7 +386,10 @@
 		line-height: 32px;
 	}
 	.one-partner-item__photo_link {
-		height: 166px;
+		height: 197px;
+	}
+	.one-partner-wrap{
+		margin: 0 0 16px 0;
 	}
 	.one-partner-process{
 		.work__list{
@@ -450,44 +459,49 @@
 
 @media screen and (max-width: 640px) {
 	.one-partner {
-		padding-top: 140px;
+		padding-top: 26px;
 		&__head{
 			font-size: 18px;
 			line-height: 22px;
 			padding-right: 0;
 			margin-bottom: 3px;
 		}
-	}
-	.one-news-line{
-		&__link{
-			width: 150px;
-			height: 35px;
-			line-height: 33px;
-			margin-right: 11px;
-			padding-left: 37px;
-			font-size: 16px;
-			&:after{
-				left: 14px;
-				top: 9px;
-			}
+		&__content{
+			padding-left: 0;
 		}
+		&__head{
+			margin-bottom: 23px;
+		}
+	}
+	.one-partner-line__name {
+		padding-top: 10px;
+		padding-left: 5px;
+		font-size: 14px;
 	}
 	.one-partner-content{
 		&__wrap {
-			padding-top: 30px;
+			padding-top: 7px;
 		}
 		&__logo {
 			width: 150px;
 		}
 	}
+	.one-partner-logo {
+		width: 131%;
+	}
+	.one-partner-item__head {
+		margin-bottom: 8px;
+	}
 	.one-partner-block{
 		&__present-line {
-			width: calc(100% - 150px);
-			padding-left: 10px;
+			width: calc(100% - 196px);
+			padding-left: 27px;
+			float: right;
 		}
 	}
 	.one-partner-item {
 		font-size: 16px;
+		margin-bottom: 20px;
 		&__photo{
 			text-align: center;
 		}
@@ -496,6 +510,10 @@
 		&__news {
 			width: 380px;
 			margin: 0 auto;
+		}
+		&__link{
+			line-height: 31px;
+			padding-left: 11px;
 		}
 	}
 	.one-partner-news{
@@ -510,15 +528,12 @@
 	}
 	.one-partner-wrap{
 		margin: 0;
-		&:nth-child(n + 2){
-			display: none;
-		}
 	}
 	.one-partner-present-link {
-		margin-bottom: 0;
-		width: 90px;
-		height: 30px;
-		font-size: 16px;
+		margin-bottom: 11px;
+		width: 84px;
+		height: 28px;
+		font-size: 14px;
 		line-height: 28px;
 	}
 	.one-partner-present-text{
@@ -526,14 +541,54 @@
 		line-height: 18px;
 	}
 	.one-partner-present{
-		margin-bottom: 0;
+		margin-bottom: 17px;
 		&__item{
 			width: 100px;
+			margin-right: 20px;
 		}
 	}
+	.one-partner-item__link_address:before {
+		width: 16px;
+		height: 22px;
+		top: 5px;
+		left: -24px;
+	}
+	.one-partner-item__link_phone-home:before {
+		width: 25px;
+		height: 25px;
+	}
+	.one-partner-item__link_phone-mob:before {
+		width: 14px;
+		height: 26px;
+		top: 2px;
+		left: -21px;
+	}
+	.one-partner-item__link_site:before {
+		width: 26px;
+		height: 26px;
+		top: 5px;
+		left: -25px;
+	}
+	.one-partner-item__text {
+		font-size: 18px;
+		line-height: 27px;
+	}
 	.one-partner-help{
+		margin-left: 34px;
 		&__link{
 			font-size: 18px;
+			&:before{
+				width: 23px;
+				height: 23px;
+				top: 1px;
+				left: -33px;
+			}
+		}
+	}
+	.one-partner-content{
+		&__wrap{
+			padding-bottom: 22px;
+			margin-bottom: 19px;
 		}
 	}
 	.one-partner-list {
@@ -541,6 +596,10 @@
 	}
 	.one-partner-process.modal{
 		padding: 25px 15px;
+	}
+
+	.one-partner-item__photo_link {
+		height: 148px;
 	}
 
 	.gallery__top .slick-next, .gallery__top .slick-prev {
@@ -574,33 +633,44 @@
 
 @media screen and (max-width: 480px) {
 	.one-partner {
-		padding-top: 116px;
+		padding-top: 17px;
+		.container {
+			padding: 0 11px;
+		}
 		&__line{
-			text-align: center;
+			margin-bottom: 16px
 		}
 	}
 	.one-partner-line__name {
-		float: none;
-		padding-left: 0;
-		margin-bottom: 15px;
+		padding-top: 4px;
+		padding-left: 2px;
+		font-size: 10px;
 	}
-	.one-news-line__link {
-		float: none;
-		display: inline-block;
+	.one-partner-content__logo {
+		width: 133px;
 	}
 	.one-partner-content__wrap {
-		padding-left: 10px;
+		padding-left: 0;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
 	}
 	.one-partner-item__text {
-		line-height: 28px;
+		font-size: 13px;
+		line-height: 17px;
 	}
 	.one-partner-item__link {
 		margin-left: 20px;
-		line-height: 30px;
+		line-height: 22px;
+		padding-left: 6px;
+		margin-bottom: 6px;
+
 		&:before{
 			left: -26px;
 			top: 3px;
 		}
+	}
+	.one-partner-logo {
+		width: 100%;
 	}
 	.one-partner-item__news {
 		width: 273px;
@@ -611,14 +681,76 @@
 	.one-partner-news-date {
 		padding-bottom: 5px;
 	}
-	.one-partner-content__logo {
-		width: 150px;
-		margin: 0 auto 18px;
-		display: block;
-		float: none;
-	}
 	.one-partner-block__present-line {
-		width: 100%;
-		padding-left: 0;
+		width: calc(100% - 134px);
+		padding-left: 14px;
+	}
+	.one-partner__head {
+		font-size: 12px;
+		line-height: 15px;
+		padding-right: 0;
+		margin-bottom: 15px;
+	}
+	.one-partner-present-link {
+		margin-bottom: 5px;
+		width: 57px;
+		height: 19px;
+		font-size: 9px;
+		line-height: 16px;
+	}
+	.one-partner-present-text {
+		font-size: 10px;
+		line-height: 14px;
+	}
+	.one-partner-present__item {
+		width: 66px;
+		margin-right: 14px;
+	}
+	.one-partner-help__link {
+		font-size: 11px;
+	}
+	.one-partner-help__link:before {
+		width: 16px;
+		height: 15px;
+		top: 1px;
+		left: -23px;
+	}
+	.one-partner-present {
+		margin-bottom: 3px;
+	}
+	.one-partner-help {
+		margin-left: 24px;
+	}
+	.one-partner-item__link_address:before {
+		width: 12px;
+		height: 16px;
+		top: 1px;
+		left: -17px;
+	}
+	.one-partner-item{
+		font-size: 12px;
+		margin-bottom: 15px
+	}
+	.one-partner-item__link_phone-home:before {
+		width: 17px;
+		height: 17px;
+		left: -18px;
+		top: 0;
+	}
+	.one-partner-item__link_phone-mob:before {
+		width: 9px;
+		height: 17px;
+		top: 3px;
+		left: -14px;
+	}
+	.one-partner-item__link_site:before {
+		width: 17px;
+		height: 17px;
+		top: 3px;
+		left: -18px;
+	}
+
+	.one-partner-item__photo_link {
+		height: 100px;
 	}
 }

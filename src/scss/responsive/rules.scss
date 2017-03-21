@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 992px) {
     .rules{
-        padding-top: 120px;
+        padding-top: 41px;
         .container{
             padding: 0 27px;
         }
@@ -16,10 +16,49 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .rules{
+        padding-top: 43px;
+        &__text{
+            font-size: 23px;
+            line-height: 36px;
+            margin-bottom: 35px;
+        }
+        &__head{
+            margin-bottom: 39px;
+        }
+    }
+}
+
 @media screen and (max-width: 640px) {
     .rules{
+        padding-top: 32px;
+        &__head{
+            margin-bottom: 25px;
+        }
         .container{
-            padding: 0 10px;
+            padding: 0 17px;
+        }
+        &__text{
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rules{
+        padding-top: 20px;
+        .container{
+            padding: 0 11px;
+        }
+        &__head{
+            margin-bottom: 19px;
+        }
+        &__text{
+            font-size: 13px;
+            line-height: 18px;
         }
     }
 }

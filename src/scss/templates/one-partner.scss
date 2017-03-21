@@ -9,7 +9,9 @@
 		margin-bottom: 24px;
 		width: 500px;
 	}
-
+.news-item{
+	text-align: left !important;
+	}
 }
 
 .map{
@@ -305,16 +307,6 @@
 		display: block;
 		color: #3a3434;
 		font-size: 0;
-		.news-item{
-			margin: 0 0 20px;
-			text-align: left;
-			&__content{
-				padding: 0 50px 0 30px !important;
-			}
-			&:last-child{
-				margin-bottom: 0;
-			}
-		}
 	}
 	&__photo{
 		&_link{
@@ -342,6 +334,12 @@
 			}
 
 		}
+	}
+}
+.news-1 {
+	margin-bottom: 20px;
+	&:last-child{
+		margin-bottom: 0;
 	}
 }
 

@@ -1,6 +1,6 @@
 @media screen and (max-width: 992px) {
 	.works{
-		padding-top: 120px;
+		padding-top: 19px;
 		.container{
 			padding: 0 27px;
 		}
@@ -16,7 +16,113 @@
 @media screen and (max-width: 767px) {
 	.works{
 		.container{
-			padding: 0 10px;
+			padding: 0 27px;
+		}
+		.work__list {
+			padding: 0 37px 0 37px;
+		}
+		&__process{
+			padding: 21px 0 32px;
+		}
+		&__head{
+			margin-bottom: 41px;
+			&_sub{
+				font-size: 24px;
+				line-height: 34px;
+			}
+		}
+		&__text{
+			font-size: 24px;
+			margin-bottom: 27px;
+			line-height: 34px;
+		}
+		&__list-1,
+		&__list-2{
+			font-size: 24px;
+			line-height: 34px;
 		}
 	}
+}
+
+@media screen and (max-width: 640px){
+	.works{
+		padding-top: 8px;
+		.container{
+			padding: 0 17px;
+		}
+		.work__list {
+			padding: 0 29px;
+		}
+		&__process{
+			padding: 21px 0 32px;
+		}
+		&__head{
+			margin-bottom: 26px;
+			&_sub{
+				font-size: 18px;
+				line-height: 26px;
+			}
+		}
+		&__text{
+			font-size: 18px;
+			line-height: 26px;
+			margin-bottom: 27px;
+		}
+		&__list-1,
+		&__list-2{
+			font-size: 18px;
+			line-height: 26px;
+		}
+		.process__head{
+			margin-bottom: 32px;
+		}
+		.works-item-2__img {
+			height: 25px;
+		}
+	}
+	padding: 12px 0 32px;
+}
+
+@media screen and (max-width: 480px){
+	.works{
+		padding-top: 8px;
+		.container{
+			padding: 0 10px;
+		}
+		.work__list {
+			padding: 0 10px;
+		}
+		&__process{
+			padding: 12px 0 20px;
+		}
+		&__head{
+			margin-bottom: 20px;
+			&_sub{
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+		&__text{
+			font-size: 12px;
+			line-height: 16px;
+			margin-bottom: 14px;
+		}
+		&__list-1,
+		&__list-2{
+			font-size: 12px;
+			line-height: 16px;
+			padding-right: 0;
+		}
+		.process__head{
+			margin-bottom: 18px;
+		}
+		.works-item-2__img {
+			height: 21px;
+			vertical-align: top;
+		}
+		&__list-2{
+			padding-left: 15px;
+		}
+	}
+
 }
