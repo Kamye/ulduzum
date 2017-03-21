@@ -79,13 +79,15 @@
 		.works-item-2__img {
 			height: 25px;
 		}
+		.works-item-2{
+			line-height: 24px;
+		}
 	}
-	padding: 12px 0 32px;
 }
 
 @media screen and (max-width: 480px){
 	.works{
-		padding-top: 8px;
+		padding: 12px 0 32px;
 		.container{
 			padding: 0 10px;
 		}

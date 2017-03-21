@@ -52,6 +52,7 @@
 @media all and (max-width: 640px) {
     .form .label{
         font-size: 19px;
+        display: inline-block;
     }
     .form__head {
         margin-bottom: 27px;
@@ -72,6 +73,10 @@
             }
             .inputfile+label{
                 margin: 0 auto;
+                width: 130px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 18px;
             }
         }
         .form-item-firm{
@@ -81,11 +86,16 @@
             float: none;
             display: block;
             margin: 0 auto;
+            width: 130px;
+            height: 45px;
+            font-size: 18px;
         }
     }
 
     .form-block__btn {
         margin: 0px 11px 0 0;
     }
-
+    .form-block-num{
+        border: 2px solid #e60029;
+    }
 }

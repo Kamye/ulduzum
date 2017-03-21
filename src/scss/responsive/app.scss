@@ -49,14 +49,21 @@
 		&__head{
 			text-align: center;
 		}
+		.horizontal{
+			text-align: left;
+		}
 	}
 	.tab-item{
 		display: none !important;
 	}
 	.applic-block{
 		width: 100%;
+		text-align: center;
 		&__link{
 			text-align: center;
+		}
+		&__head{
+			text-align: left;
 		}
 	}
 	.applic-logo{
@@ -70,6 +77,19 @@
 		font-size: 22px;
 		padding-left: 30px;
 		line-height: 32px;
+	}
+	.app-tabs{
+		.active{
+			.applic-item__img{
+				background: rgba(0, 0, 0, 0);
+				.applic-item-img{
+					display: block;
+					&_act{
+						display: none;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -128,7 +148,7 @@
 	}
 	.applic-item{
 		&__text{
-			font-size: 9px;
+			font-size: 11px;
 			line-height: 14px;
 		}
 	}
