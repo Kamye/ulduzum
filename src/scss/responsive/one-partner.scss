@@ -883,4 +883,23 @@
 			width: 49px;
 		}
 	}
+	.gallery{
+		&__top{
+			.slick-prev,
+			.slick-next{
+				height: 33px;
+				width: 33px;
+				&:before{
+					width: 8px;
+					height: 14px;
+				}
+			}
+			.slick-prev{
+				left: 12px;
+			}
+			.slick-next{
+				right: 12px;
+			}
+		}
+	}
 }
