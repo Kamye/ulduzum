@@ -48,8 +48,23 @@
 		font-size: 22px;
 		display: inline-block;
 		margin-bottom: 8px;
+		text-decoration: none;
+		position: relative;
+		&:before{
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: #e60029;
+			left: 0;
+			bottom: 0;
+			transition: width 500ms;
+		}
 		&:hover{
-			text-decoration: none;
+			&:before{
+				width: 0;
+			}
 		}
 	}
 }

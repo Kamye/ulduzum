@@ -344,6 +344,8 @@ $(document).ready(function(){
         for(var i = 0; i < +ussd_cur_count; i++){
             if(ussd_cur[i] == '$'){
                 ussd_str += '<i class="mob-btn mob-btn_call"></i>';
+            } else if(ussd_cur[i] == '*'){
+                ussd_str += '<i class="mob-btn mob-btn_star"></i>';
             } else{
                 ussd_str += '<i class="mob-btn">' + ussd_cur[i] + '</i>';
             }

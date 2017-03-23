@@ -1,0 +1,43 @@
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1366px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+	.s-results{
+		.partners.container{
+			padding: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 767px) {
+	.s-results{
+		.news__list.container{
+			padding: 0 26px;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.s-results{
+		.news__list.container{
+			padding: 0 21px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.s-results{
+		.container{
+			padding: 0 13px;
+		}
+	}
+}

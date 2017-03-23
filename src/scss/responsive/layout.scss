@@ -20,6 +20,9 @@
     .container{
         width: 750px;
     }
+    .mob-btn{
+        top: -7px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -38,6 +41,9 @@
     h5{
         font-size: 18px;
     }
+    .mob-btn{
+        top: -5px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -46,6 +52,19 @@
     }
     h5 {
         font-size: 16px;
+    }
+    .mob-btn{
+        top: -3px;
+        width: 18px;
+        height: 14px;
+        font-size: 12px;
+        line-height: 12px;
+        &_call:before{
+            width: 10px;
+            height: 10px;
+            left: calc(50% - 5px);
+            top: calc(50% - 5px);
+        }
     }
 }
 
