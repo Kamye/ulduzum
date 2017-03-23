@@ -136,45 +136,21 @@
 }
 
 .confirm-check{
-	vertical-align: top;
-	margin: 0 3px 0 0;
-	width: 17px;
-	height: 17px;
-	&:not(checked) {
-		position: absolute;
-		opacity: 0;
-	}
+	display: none;
 }
 
-.confirm-check + label {
-	cursor: pointer;
-}
-
-.confirm-check:not(checked) + label {
-	position: relative;
-	padding: 0;
-}
-
-.confirm-check:not(checked) + label:before {
-	content: '';
+.confirm-check + label span{
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 24px;
+	height: 24px;
 	border: 2px solid #423d3d;
-	margin-right: 14px;
 	border-radius: 2px;
+	cursor: pointer;
 	vertical-align: middle;
 }
 
-.confirm-check:checked + label:after {
-	content: " ";
-	display: inline-block;
-	width: 12px;
-	height: 11px;
-	background: url("../../images/check.png");
-	position: absolute;
-	top: -5px;
-	left: 7px;
+.confirm-check:checked + label span{
+	background: url("../../images/check.png") no-repeat 4px 6px;
 }
 
 .confirm{
@@ -188,6 +164,7 @@
 		text-decoration: none;
 		vertical-align: middle;
 		position: relative;
+		margin-left: 16px;
 		&:before{
 			content: '';
 			display: inline-block;

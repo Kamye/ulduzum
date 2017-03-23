@@ -118,9 +118,12 @@
 		.process__head{
 			margin-bottom: 18px;
 		}
-		.works-item-2__img {
-			height: 21px;
-			vertical-align: top;
+		.works-item-2{
+			line-height: 18px;
+			&__img {
+				height: 21px;
+				vertical-align: top;
+			}
 		}
 		&__list-2{
 			padding-left: 15px;

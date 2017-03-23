@@ -336,3 +336,20 @@ $(function() {
     });
 });
 
+$(document).ready(function(){
+    var ussd_str = '';
+    $('.ussd').each(function(){
+        var ussd_cur = $(this).text();
+        var ussd_cur_count = $(this).text().length;
+        for(var i = 0; i < +ussd_cur_count; i++){
+            if(ussd_cur[i] == '$'){
+                ussd_str += '<i class="mob-btn mob-btn_call"></i>';
+            } else{
+                ussd_str += '<i class="mob-btn">' + ussd_cur[i] + '</i>';
+            }
+        }
+        $(this).html(ussd_str);
+        i = 0; ussd_str = '';
+    });
+});
+
