@@ -12,11 +12,6 @@
 			width: 310px;
 		}
 	}
-
-	.gallery.modal a.close-modal {
-		top: 3px;
-		right: -68px;
-	}
 }
 
 @media screen and (max-width: 1366px) {
@@ -66,10 +61,6 @@
 				height: 174px;
 			}
 		}
-	}
-	.gallery.modal a.close-modal {
-		top: 30px;
-		right: -68px;
 	}
 }
 
@@ -139,10 +130,6 @@
 		width: 970px;
 	}
 
-	.gallery.modal a.close-modal {
-		top: 45px;
-		right: 25px;
-	}
 }
 
 @media screen and (max-width: 992px) {

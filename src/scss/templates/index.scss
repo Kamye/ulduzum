@@ -579,3 +579,79 @@
 .sort-modal{
     display: none;
 }
+
+.jq-selectbox.focused .jq-selectbox__select{
+    border: none;
+}
+
+.jq-selectbox__select:active{
+    box-shadow: none;
+    background: none;
+}
+
+.jq-selectbox__trigger{
+    width: 10px;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    border: none;
+    top: 11px;
+    right: 3px;
+    width: 9px;
+    height: 5px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAgMAAADqPS74AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEX///9XV1f///+zjZPAAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAcSURBVAjXYwhgdGAQYWVgYBVhYGAMYGBgcGAAAA8uAVXPrkUSAAAAAElFTkSuQmCC');
+}
+
+.jq-selectbox__dropdown{
+    border-radius: 0;
+    width: auto;
+    left: -18px;
+}
+
+.jq-selectbox__select-text{
+    width: 100% !important;
+}
+
+.jq-selectbox li.sel{
+    display: none;
+}
+
+.jq-selectbox li {
+    padding: 0;
+    width: 60px;
+    text-align: center;
+    background: #404040;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    position: relative;
+    border-bottom: 1px solid #515151;
+}
+
+.jq-selectbox li:hover{
+    background: #252525;
+}
+
+.jq-selectbox__select{
+    font-family: PrivaPro-One;
+    padding-right: 17px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding-left: 0;
+    height: 26px;
+    line-height: 26px;
+    &:hover{
+        background: none;
+    }
+}
+
+.footer-select{
+    border: none;
+}
+
+.jq-selectbox__trigger{
+    border: none;
+}
+

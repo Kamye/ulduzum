@@ -34,7 +34,7 @@
         margin-right: 0;
     }
 	.contacts{
-		padding-top: 220px;
+		padding-top: 40px;
 		.container{
 			padding: 0 27px;
 		}
@@ -51,7 +51,7 @@
         margin-bottom: 30px;
     }
 	.contacts {
-		padding-top: 206px;
+		padding-top: 45px;
 	}
 	.contacts__head{
 		text-align: center;
@@ -96,6 +96,7 @@
 
 @media screen and (max-width: 640px) {
 	.contacts{
+		padding-top: 32px;
 		.container{
 			padding: 0 13px;
 		}
@@ -106,9 +107,7 @@
 		padding-top: 9px;
 		margin-bottom: 30px;
 	}
-	.contacts {
-		padding-top: 157px;
-	}
+
 	.contacts__head{
 		margin-bottom: 15px;
 		text-align: center;
@@ -165,7 +164,7 @@
 
 @media screen and (max-width: 480px){
 	.contacts {
-		padding-top: 109px;
+		padding-top: 30px;
 		padding-bottom: 10px;
 	}
 	.inf-item a, .inf-item p {

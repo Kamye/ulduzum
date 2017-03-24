@@ -1,6 +1,7 @@
 //= jquery.js
 //= slick.js
 //= select2.js
+//= jquery.formstyler.js
 //= rating.js
 //= jquery.gray.js
 //= jquery-mask.js
@@ -10,3 +11,4 @@
 //= jquery.slicknav.js
 //= jquery.tabslet.js
 //= jquery.validate.min.js
+//= jquery.mousewheel.js
