@@ -21,6 +21,9 @@
 		left: 11px;
 		top: 124px;
 	}
+	.applic__finger {
+		left: 220px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -38,6 +41,11 @@
 	.tab-item{
 		left: 36px;
 		top: 178px;
+	}
+	.applic__finger {
+		left: 225px;
+		bottom: 191px;
+		width: 22.7px;
 	}
 }
 

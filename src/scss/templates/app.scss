@@ -14,6 +14,16 @@
         left: -249px;
         bottom: 0;
     }
+    &__finger{
+        position: absolute;
+        bottom: 209px;
+        left: 286px;
+        z-index: 999;
+    }
+}
+
+.applic-screen{
+    z-index: 1;
 }
 
 .applic-block{
