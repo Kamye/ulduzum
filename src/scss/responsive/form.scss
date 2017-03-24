@@ -12,13 +12,85 @@
         .container{
             padding: 0 26px;
         }
+        .form-block__btn {
+            font-size: 24px;
+            width: 169px;
+            height: 60px;
+            border-radius: 32px;
+            color: #000;
+            margin-top: 3px;
+            line-height: 55px;
+        }
     }
 }
 
 @media all and (max-width: 767px) {
+
+    .form{
+        padding-top: 38px;
+        padding-bottom: 54px;
+        .form-block__top {
+            margin-bottom: 33px;
+        }
+        .form-item{
+            width: 100%;
+            margin: 0 0 47px 0;
+            &:last-child{
+                margin-bottom: 21px;
+            }
+        }
+        .form__block:nth-child(2) {
+            margin-bottom: 23px;
+        }
+        .form-block__list_2{
+            background: transparent;
+            padding: 21px 0 0 0;
+        }
+        .form-block__head{
+            margin-bottom: 0px;
+        }
+        .checkbox:not(checked)+label:before{
+            top: 6px;
+        }
+        .checkbox:not(checked)+label:after{
+            top: 11px;
+        }
+        .form-item-wrap {
+            margin-right: 0;
+            width: 50%;
+            padding-right: 10px;
+        }
+        .inputfile+label {
+            width: 170px;
+            height: 58px;
+            border-radius: 32px;
+            line-height: 56px;
+            font-size: 24px;
+        }
+        .file__name {
+            font-size: 20px;
+            margin-top: 13px;
+            display: block;
+        }
+        .form-button {
+            width: 196px;
+            height: 58px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 24px;
+            margin: 0 auto;
+            float: none;
+            display: block;
+        }
+    }
+
     .form-item{
         width: 100%;
         margin: 0 0 31px 0;
+    }
+
+    .form__head{
+        text-align: center;
     }
 
     //.form-item__select .select2-container .select2-selection--single .select2-selection__rendered{
@@ -44,14 +116,14 @@
     }
 
     .form .label{
-        font-size: 22px;
+        font-size: 30px;
     }
 
 }
 
 @media all and (max-width: 640px) {
     .form .label{
-        font-size: 19px;
+        font-size: 22px;
         display: inline-block;
     }
     .form__head {
@@ -60,35 +132,69 @@
     .form{
         padding-bottom: 40px;
         padding-top: 35px;
+        .form-block__top {
+            margin-bottom: 11px;
+        }
         .container{
             padding: 0 13px;
         }
+        .form-block__btn {
+            font-size: 19px;
+            width: 127px;
+            height: 47px;
+            border-radius: 32px;
+            color: #000;
+            margin-top: 3px;
+            line-height: 43px;
+        }
+        .form__block {
+            margin-bottom: 11px;
+        }
+        .form-item{
+            width: 100%;
+            margin: 0 0 31px 0;
+        }
         .form-item-wrap{
-            margin-bottom: 22px;
-            float: none;
+            margin-bottom: 0px;
+            float: left;
             margin-right: 0;
-            text-align: center;
+            text-align: left;
             .file-upload{
-                text-align: center;
+                text-align: left;
             }
             .inputfile+label{
-                margin: 0 auto;
                 width: 130px;
-                height: 35px;
-                line-height: 35px;
+                height: 42px;
+                line-height: 42px;
                 font-size: 18px;
             }
         }
+        .file__name {
+            font-size: 17px;
+            margin-top: 10px;
+        }
         .form-item-firm{
-            text-align: center;
+            text-align: left;
         }
         .form-button{
             float: none;
             display: block;
             margin: 0 auto;
-            width: 130px;
+            width: 160px;
             height: 45px;
             font-size: 18px;
+        }
+        .checkbox:not(checked)+label:before {
+            width: 52px;
+            height: 26px;
+        }
+
+        .checkbox:not(checked)+label:after {
+            top: 10px;
+            right: -45px;
+        }
+        .checkbox:checked+label:after{
+            right: -68px;
         }
     }
 
@@ -97,5 +203,66 @@
     }
     .form-block-num{
         border: 2px solid #e60029;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .form {
+        padding-top: 22px;
+        .form__head {
+            margin-bottom: 24px;
+        }
+        .form-block__list {
+            padding-top: 8px;
+        }
+        .form .form-block__btn {
+            font-size: 14px;
+            width: 96px;
+            height: 32px;
+            margin-top: 1px;
+            line-height: 32px;
+        }
+        .label {
+            font-size: 15px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .label:nth-child(4) {
+            padding-left: 55px;
+        }
+        .checkbox:not(checked)+label:before {
+            width: 40px;
+            right: -47px;
+            height: 20px;
+            top: 4px;
+        }
+        .checkbox:not(checked)+label:after {
+            top: 7px;
+            right: -25px;
+            width: 14px;
+            height: 14px;
+        }
+        .checkbox:checked+label:after {
+            right: -43px;
+        }
+        .form-item-wrap .inputfile+label {
+            width: 102px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 15px;
+            margin-top: 14px;
+        }
+        .file__name {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .form-button {
+            width: 120px;
+            height: 38px;
+            font-size: 14px;
+        }
+        .form {
+            padding-bottom: 29px;
+        }
     }
 }
