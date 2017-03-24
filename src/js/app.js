@@ -9,9 +9,17 @@ $('.select').select2({
     minimumResultsForSearch: -1
 });
 
-$('.footer-select').select2({
-    minimumResultsForSearch: -1
-});
+// $('.footer-select').select2({
+//     minimumResultsForSearch: -1
+// });
+
+(function($) {
+    $(function() {
+
+        $('.footer-select').styler();
+
+    });
+})(jQuery);
 
 $('.form-select').select2({
     minimumResultsForSearch: -1
@@ -355,3 +363,18 @@ $(document).ready(function(){
     });
 });
 
+$('.select2-results__options').on('mousewheel DOMMouseScroll', function(e) {
+    var scrollTo = null;
+
+    if(e.type === 'mousewheel') {
+        scrollTo = (e.originalEvent.wheelDelta * -1);
+    }
+    else if(e.type === 'DOMMouseScroll') {
+        scrollTo = 40 * e.originalEvent.detail;
+    }
+
+    if(scrollTo) {
+        e.preventDefault();
+        $(this).scrollTop(scrollTo + $(this).scrollTop());
+    }
+});
