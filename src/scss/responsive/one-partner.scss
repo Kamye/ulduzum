@@ -146,6 +146,10 @@
 }
 
 @media screen and (max-width: 992px) {
+	.one-partner-item__photo_link:before{
+		border: none;
+	}
+
 	.map{
 		display: none;
 	}

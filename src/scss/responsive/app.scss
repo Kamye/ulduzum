@@ -52,6 +52,9 @@
 @media screen and (max-width: 992px) {
 	.applic{
 		padding: 20px 0 0;
+		&__finger{
+			display: none;
+		}
 		&__img{
 			display: none;
 		}

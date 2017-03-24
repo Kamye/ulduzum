@@ -7,6 +7,9 @@
 }
 
 @media screen and (max-width: 992px) {
+    .form .form-block__btn:hover{
+        color: #fff;
+    }
     .form{
         padding-top: 59px;
         .container{
@@ -215,7 +218,7 @@
         .form-block__list {
             padding-top: 8px;
         }
-        .form .form-block__btn {
+        .form-block__btn {
             font-size: 14px;
             width: 96px;
             height: 32px;
