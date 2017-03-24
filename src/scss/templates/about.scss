@@ -34,7 +34,15 @@
 .about-item{
   float: left;
   width: 20%;
+  border: 4px solid #dbdbdb;
   margin-left: -4px;
+  z-index: 1;
+  &:hover{
+    transition: 500ms;
+    z-index: 2;
+    border: 4px solid #e60029;
+    position: relative;
+  }
   &:first-child,
   &:nth-child(6){
     margin-left: 0;
@@ -46,7 +54,6 @@
 
 .about-link{
   display: block;
-  border: 4px solid #dbdbdb;
   text-align: center;
   text-decoration: none;
   color: #3a3434;
@@ -54,11 +61,6 @@
   z-index: 1;
   position: relative;
   padding: 0 32px;
-  &:hover{
-    transition: 500ms;
-    border: 4px solid #e60029;
-    z-index: 2;
-  }
   &__img-block{
     height: 107px;
     position: relative;
