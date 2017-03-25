@@ -257,6 +257,11 @@
 	.gallery, .gallery__top .slick-list {
 		height: auto;
 	}
+	.one-partner-item__photo_link:hover{
+		.gallery__hover{
+			opacity: 0;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
